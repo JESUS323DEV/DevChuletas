@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Yisus">
+    <meta name="description" content="Página informativa">
+    <meta name="keywords" content="chuletas,html,css3,js,bootstrap 5">
+    <title>CHULETAS YISUS - CSS3</title>
+    <!-- ? Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- ? Bootstrap CSS -->
+    <link rel="stylesheet" href="../css3/estilos-nav-2sidebar.css">
+    <link rel="stylesheet" href="../css3/chuletas-css.css">
+
+</head>
+
+<body>
+
+    <!--!===============HEADER=================-->
+    <header>
+
+        <!-- !===============MENÚ-PRINCIPAL-SOLO-EN-ESCRITORIO=================-->
+        <nav class="navbar navbar-nav navbar-expand-lg d-none border border-black d-lg-block bg-body-tertiary fixed-top "
+            aria-label="Menú Principal">
+            <div class="container-fluid">
+                <div class="d-flex align-items-center justify-content-around w-100">
+
+                    <!--!LOGO PRINCIPAL-->
+                    <a class="navbar-brand" href="#"><img class="img-fluid cont-logo " src="../media/img/logo.png"
+                            alt="Logo Principal"></a>
+
+
+
+                    <ul class="navbar-nav ">
+                        <li class="nav-item"><a class="nav-link text-dark" href="../index.html">Html</a></li>
+
+                        <li class="nav-item "><a class="nav-link text-dark" href="javascript:void(0)"
+                                data-bs-dismiss="offcanvas">CSS3</a></li>
+
+                        <li class="nav-item "><a class="nav-link text-dark" href="javascript:void(0)"
+                                data-bs-dismiss="offcanvas">Bootstrap</a></li>
+
+
+                        <li class="nav-item"><a class="nav-link text-dark" href="javascript:void(0)"
+                                data-bs-dismiss="offcanvas">Java
+                                Script</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- !===============MENÚ-PRINCIPAL-SOLO-EN-MÓVILES-Y-TABLETS=================-->
+        <nav class="navbar bg-body-tertiary  d-lg-none fixed-top" id="menubar" aria-label="Menú Principal ">
+            <div class="container-fluid cont-w-100 border border-black">
+
+                <!--? BOTÓN-OFFCANVAS-ABRIR-MENÚ-PRINCIPAL-SOLO-PARA-MÓVILES -->
+                <button class="btn" type="button" data-bs-toggle="offcanvas" aria-label="Abrir Menú Principal"
+                    data-bs-target="#menuNavOffcanvasLabel">
+                    <span><i class="bi bi-three-dots"></i></span>
+                </button>
+
+                <!--!LOGO PRINCIPAL-->
+                <a class="navbar-brand" href="#"><img class="img-fluid" src="../media/img/logo-solo-moviles.png"
+                        alt="Logo Principal"></a>
+
+                <!--? BOTÓN-OFFCANVAS-CERRAR-MENÚ-PRINCIPAL-SOLO-EN-MÓVILES-->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="menuNavOffcanvasLabel"
+                    aria-labelledby="menuNavOffcanvasLabel">
+                    <div class="offcanvas-header">
+                        <h5>MENÚ PRINCIPAL</h5>
+                        <button type="button" class="btn-close" aria-label="Cerrar Menú Principal"
+                            data-bs-dismiss="offcanvas"></button>
+                    </div>
+
+                    <!-- ?OFFCANVAS-BODY-SOLO-EN-MÓVILES-->
+                    <div class="offcanvas-body">
+                        <nav class="nav navbar-nav navbar-expand-xxl">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a class="nav-link text-dark" href="../index.html">Html</a></li>
+
+                                <li class="nav-item "><a class="nav-link text-dark" href="javascript:void(0)"
+                                        data-bs-dismiss="offcanvas">CSS3</a></li>
+
+                                <li class="nav-item "><a class="nav-link text-dark" href="javascript:void(0)"
+                                        data-bs-dismiss="offcanvas">Bootstrap</a></li>
+
+
+                                <li class="nav-item"><a class="nav-link text-dark" href="javascript:void(0)"
+                                        data-bs-dismiss="offcanvas">Java
+                                        Script</a></li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- BOTÓN-OFFCANVAS-ABRIR-SIDEBAR-LATERAL-SOLO-PARA-MÓVILES -->
+                <button class="btn d-lg-none" type="button" aria-label="Abrir sidebar lateral"
+                    data-bs-toggle="offcanvas" data-bs-target="#sideBarOffcanvas">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+        </nav>
+
+
+        <!-- !===============BOTONES-SIDEBAR-SOLO-EN-MÓVILES-LATERAL-SECCIONES-IMPORTANTES=================-->
+        <!-- ?BOTÓN-OFFCANVAS-CERRAR-SIDEBAR-LATERAL-SOLO-PARA-MÓVILES + SECCIONES-IMPORTANTES -->
+        <div class="offcanvas offcanvas-end " tabindex="-1" id="sideBarOffcanvas" aria-labelledby="sideBarOffcanvas">
+
+            <div class="offcanvas-header">
+                <h5>Chuletas HTML</h5>
+                <button type="button" class="btn-close" aria-label="Cerrar sidebar lateral"
+                    data-bs-dismiss="offcanvas"></button>
+            </div>
+
+
+            <!--BODY-SIDEBAR-OFFCANVAS-NAV-SOLO-EN-MÓVILES-->
+            <div class="offcanvas-body">
+                <nav class="nav ">
+                    <ul class="navbar-nav">
+                        <li> <a class="nav-link text-dark" href="#estructura" data-bs-dismiss="offcanvas">Estructura en
+                                HTML</a></li>
+                        <li><a class="nav-link text-dark" href="#importante2" data-bs-dismiss="offcanvas">Etiquetas
+                                Importantes Meta en HTML</a>
+                        </li>
+                        <li><a class="nav-link text-dark" href="#secciones" data-bs-dismiss="offcanvas">Secciones
+                                semánticas</a></li>
+                        <li><a class="nav-link text-dark" href="#texto-parrafo" data-bs-dismiss="offcanvas">Texto y
+                                Párrafos</a></li>
+                        <li><a class="nav-link text-dark" href="javascript:void(0)" data-bs-dismiss="offcanvas">Listas,
+                                Formularios y Tablas</a>
+                        </li>
+                        <li><a class="nav-link text-dark" href="javascript:void(0)" data-bs-dismiss="offcanvas">Img,
+                                Video, Audio y Links</a></li>
+
+                        <!-- !===============BOTONES-SIDEBAR-LATERAL-SECCIONES-IMPORTANTES=================-->
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <!--!===============EN-ESCRITORIO-Y-MÓVILES-2SIDEBAR-LATERALES+MAIN=================-->
+    <div class="container-fluid border ">
+        <div class="d-flex align-items-start min-vh-100">
+
+
+            <!--? Sidebar izquierdo -->
+            <nav class=" col-lg-2  d-none d-lg-block p-2 sticky-top cont-sidebar-left  ">
+                <ul class="navbar-nav">
+                    <li><a class="nav-link text-dark text-white p-3 mb-1" href="#estructuraCss">Estructura base de
+                            CSS3</a>
+                    </li>
+                    <li><a class="nav-link text-white  p-3  mb-1 " href="#textoYtipo">Texto y tipografía</a></li>
+                    <li><a class="nav-link text-white  p-3 mb-1 " href="#coloresFondos">Colores, fondos y bordes</a>
+                    </li>
+                    <li><a class="nav-link text-white  p-3 mb-1 " href="#">Modelo de caja</a></li>
+                    <li><a class="nav-link text-white  p-3 mb-1 " href="#">Diseño y posicionamiento</a></li>
+                    <li><a class="nav-link text-white  p-3 mb-1 " href="#">Flexbox (básico para maquetar)</a></li>
+                    <li><a class="nav-link text-white  p-3 mb-1 " href="#">Grid (nivel básico)</a></li>
+                    <li><a class="nav-link text-white  p-3 mb-1 " href="#">Transiciones y animaciones</a></li>
+                    <li><a class="nav-link text-white  p-3 mb-1" href="#">Responsive</a></li>
+                    <li><a class="nav-link text-white  p-3 mb-1 " href="#">Extras útiles</a></li>
+                </ul>
+            </nav>
+
+            <!--!===============MAIN-CENTRAL-SE-VISUALIZA-EN-MÓVILES-Y-ESCRITORIOS=================-->
+            <main class=" col-lg-7 col-xl-5  mx-auto">
+                <!--?===============SECCIÓN-ESTRUCTURA-CSS3 =================-->
+
+                <!--TODO: ========ESTRUCTURA BASE DE CSS3==========-->
+
+
+                <!--TODO: ========ESTRUCTURA BASE DE CSS3 || SELECTORES BÁSICOS==========-->
+                <section id="estructuraCss">
+                    <div class="container ">
+                        <h2 class="text-white bg-dark text-center py-2">Estructura base: Selectores en CSS3 </h2>
+                        <h5 class="bg-dark text-white py-1 mt-3 text-center">Selectores Básicos</h5>
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+
+                            <p class="bg-dark text-white "> elemento { propiedad: valor; }</p>
+                            <p>Selector básico que aplica estilos a todas las etiquetas de ese tipo. Ejemplo: <b>p</b>,
+                                <b>h1</b>, <b>div</b>.
+                            </p>
+                        </div>
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">.clase { propiedad: valor; }</p>
+                            <p>Selector de ID. Aplica estilos a un único elemento con ese identificador. Se recomienda
+                                no abusar de IDs en CSS.</p>
+                        </div>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white ">#id { propiedad: valor; }</p>
+                            <p>Selector de ID. Aplica estilos a un único elemento con ese identificador. Se recomienda
+                                no abusar de IDs en CSS.</p>
+                        </div>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white ">elemento elemento { propiedad: valor; }</p>
+                            <p>Selector descendiente. Aplica estilos a un elemento dentro de otro. Ejemplo: todos los
+                                <b>span</b> dentro de un <b>p</b>.
+                            </p>
+                        </div>
+
+                        <h5 class="bg-dark text-white py-1 mt-3 text-center">Selectores Combinados</h5>
+                        <!--TODO: ========ESTRUCTURA BASE DE CSS3 || SELECTORES COMBINADOS==========-->
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+
+                            <p class="bg-dark text-white ">elemento > hijo { propiedad: valor; }</p>
+
+                            <p>Selector de hijo directo. Aplica estilos solo a los elementos que son hijos directos, no
+                                a
+                                los nietos.</p>
+                        </div>
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white "> elemento + hermano { propiedad: valor; }</p>
+                            <p>Selector de hermano adyacente. Aplica estilos al elemento que está justo después del
+                                primero.</p>
+
+                        </div>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white ">elemento ~ hermanos { propiedad: valor; }</p>
+                            <p>Selector de hermanos generales. Aplica estilos a todos los hermanos que vienen después
+                                del elemento inicial.</p>
+                        </div>
+
+
+                        <!--TODO: ========ESTRUCTURA BASE DE CSS3 || SELECTORES AVANZADOS==========-->
+
+
+                        <h5 class="bg-dark text-white py-1 mt-3 text-center">Selectores avanzados</h5>
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">elemento:first-child { propiedad: valor; }</p>
+                            <p>Selecciona el primer hijo de un elemento padre. Ejemplo: el primer <b>li</b> dentro de
+                                una lista.</p>
+                        </div>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">elemento:last-child { propiedad: valor; }</p>
+                            <p>Selecciona el último hijo de un elemento padre. Ejemplo: el último <b>li</b> dentro de
+                                una lista.</p>
+                        </div>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">elemento:nth-child(n) { propiedad: valor; }</p>
+                            <p>Selecciona el hijo en la posición indicada (1, 2, 3...). También acepta fórmulas como
+                                <b>2n</b> (pares), <b>2n+1</b> (impares).
+                            </p>
+                        </div>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">elemento[atributo] { propiedad: valor; }</p>
+                            <p>Selecciona elementos que tengan un atributo específico, sin importar el valor. Ejemplo:
+                                todos los <b>input</b> que tengan atributo <b>required</b>.</p>
+                        </div>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">elemento[atributo="valor"] { propiedad: valor; }</p>
+                            <p>Selecciona elementos cuyo atributo sea igual al valor indicado. Ejemplo:
+                                <b>input[type="text"]</b>.
+                            </p>
+                        </div>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">elemento[atributo^="valor"] { propiedad: valor; }</p>
+                            <p>Selecciona elementos cuyo atributo comience con un valor específico. Ejemplo:
+                                <b>a[href^="https"]</b> (enlaces que empiezan por https).
+                            </p>
+                        </div>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">elemento[atributo$="valor"] { propiedad: valor; }</p>
+                            <p>Selecciona elementos cuyo atributo termine en un valor específico. Ejemplo:
+                                <b>img[src$=".png"]</b> (imágenes que terminan en .png).
+                            </p>
+                        </div>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">elemento[atributo*="valor"] { propiedad: valor; }</p>
+                            <p>Selecciona elementos cuyo atributo contenga el valor indicado en cualquier parte.
+                                Ejemplo: <b>a[href*="google"]</b>.</p>
+                        </div>
+
+
+
+                        <h5 class="bg-dark text-white py-1 mt-3 text-center">Pseudo-clases de estado</h5>
+                        <!--TODO: ========ESTRUCTURA BASE DE CSS3 || Pseudo-clases de estado (se activan según interacción o condición) ==========-->
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+
+                            <p class="bg-dark text-white">elemento:hover { propiedad: valor; }</p>
+                            <p>Pseudo-clase de estado. Aplica estilos cuando el ratón pasa por encima del elemento.</p>
+                        </div>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">elemento:active { propiedad: valor; }</p>
+                            <p>Se activa cuando el elemento está siendo clicado. Muy usado en botones y enlaces.</p>
+                        </div>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">elemento:focus { propiedad: valor; }</p>
+                            <p>Se aplica cuando un elemento (ejemplo: input o enlace) recibe foco, ya sea con el ratón o
+                                el teclado (tabulador).</p>
+                        </div>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">elemento:checked { propiedad: valor; }</p>
+                            <p>Aplica estilos a un checkbox o radio button cuando están seleccionados.</p>
+                        </div>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">elemento:disabled { propiedad: valor; }</p>
+                            <p>Selecciona inputs, botones o elementos de formulario que estén deshabilitados.</p>
+                        </div>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">elemento:enabled { propiedad: valor; }</p>
+                            <p>Contrario a disabled. Aplica estilos a campos de formulario que están habilitados.</p>
+                        </div>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">elemento:valid { propiedad: valor; }</p>
+                            <p>Selecciona inputs cuyo valor cumple con la validación (ejemplo: email válido).</p>
+                        </div>
+
+
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">elemento:invalid { propiedad: valor; }</p>
+                            <p>Selecciona inputs cuyo valor NO cumple con la validación.</p>
+                        </div>
+
+
+
+                        <h5 class="bg-dark text-white py-1 mt-3 text-center">Pseudo-elementos</h5>
+                        <!--TODO: ========ESTRUCTURA BASE DE CSS3 ||Pseudo-elementos (crean partes “falsas” del elemento para aplicar estilos):==========-->
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">elemento::before { contenido }</p>
+                            <p>Pseudo-elemento. Inserta contenido antes del elemento seleccionado. Requiere la propiedad
+                                <b>content</b>.
+                            </p>
+                        </div>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">elemento::after { contenido }</p>
+                            <p>Pseudo-elemento. Inserta contenido después del elemento seleccionado. Muy usado en
+                                decoración y trucos de CSS.</p>
+                        </div>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">elemento::first-letter { propiedad: valor; }</p>
+                            <p>Aplica estilos a la primera letra del texto de un elemento. Ejemplo: capital inicial en
+                                párrafos.</p>
+                        </div>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">elemento::first-line { propiedad: valor; }</p>
+                            <p>Aplica estilos a la primera línea de texto de un párrafo. El efecto depende del ancho del
+                                contenedor.</p>
+                        </div>
+
+                        <!--TODO: ========ESTRUCTURA BASE DE CSS3 || Otras pseudo-clases avanzadas==========-->
+
+                        <h5 class="bg-dark text-white py-1 mt-3 text-center">Otras pseudo-clases avanzadas</h5>
+
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">elemento:not(selección) { propiedad: valor; }</p>
+                            <p>Excluye elementos que coincidan con el selector indicado. Ejemplo:
+                                <b>p:not(.especial)</b> aplica estilos a todos los párrafos excepto los que tengan clase
+                                "especial".
+                            </p>
+                        </div>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">elemento:empty { propiedad: valor; }</p>
+                            <p>Selecciona elementos que no tienen contenido (ni texto ni hijos). Ejemplo:
+                                <b>div:empty</b>.
+                            </p>
+                        </div>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">elemento:only-child { propiedad: valor; }</p>
+                            <p>Selecciona un elemento que es el único hijo de su padre. Ejemplo: un <b>p</b> dentro de
+                                un div que solo contiene ese párrafo.</p>
+                        </div>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">elemento:first-of-type { propiedad: valor; }</p>
+                            <p>Selecciona el primer elemento de un tipo dentro del padre. Ejemplo: el primer <b>p</b>
+                                dentro de un div con varios elementos.</p>
+                        </div>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">elemento:last-of-type { propiedad: valor; }</p>
+                            <p>Selecciona el último elemento de un tipo dentro del padre.</p>
+                        </div>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">elemento:nth-of-type(n) { propiedad: valor; }</p>
+                            <p>Selecciona el elemento en la posición indicada, contando solo los de ese tipo. Ejemplo:
+                                el segundo <b>li</b> dentro de una lista, ignorando otros elementos diferentes.</p>
+                        </div>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">elemento:only-of-type { propiedad: valor; }</p>
+                            <p>Selecciona un elemento que es el único de su tipo dentro del padre. Ejemplo: un único
+                                <b>h1</b> dentro de un div con otros elementos.
+                            </p>
+                        </div>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">:root { propiedad: valor; }</p>
+                            <p>Selecciona el elemento raíz del documento (normalmente <b>&lt;html&gt;</b>). Muy útil
+                                para definir variables CSS globales.</p>
+                        </div>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">elemento:lang(codigo) { propiedad: valor; }</p>
+                            <p>Selecciona elementos según el idioma definido en el atributo <b>lang</b>. Ejemplo:
+                                <b>p:lang(es)</b> aplica estilos a párrafos en español.
+                            </p>
+                        </div>
+
+                        <!--TODO: ========ESTRUCTURA BASE DE CSS3 || pseudo-clases extras curiosas==========-->
+                        <h5 class="bg-dark text-white py-1 mt-3 text-center">Pseudo-clases extras curiosas</h5>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">elemento:target { propiedad: valor; }</p>
+                            <p>Selecciona el elemento que coincide con el ancla de la URL. Ejemplo: <b>#seccion</b>
+                                cuando visitas <b>pagina.html#seccion</b>.</p>
+                        </div>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">input:placeholder-shown { propiedad: valor; }</p>
+                            <p>Estiliza un campo de formulario solo cuando se está mostrando el placeholder.</p>
+                        </div>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">input:in-range { propiedad: valor; }</p>
+                            <p>Selecciona inputs de tipo numérico cuyo valor está dentro de los límites <b>min</b> y
+                                <b>max</b>.
+                            </p>
+                        </div>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">input:out-of-range { propiedad: valor; }</p>
+                            <p>Selecciona inputs de tipo numérico cuyo valor está fuera de los límites <b>min</b> y
+                                <b>max</b>.
+                            </p>
+                        </div>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">input:required { propiedad: valor; }</p>
+                            <p>Selecciona campos de formulario que son obligatorios (atributo <b>required</b>).</p>
+                        </div>
+
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p class="bg-dark text-white">input:optional { propiedad: valor; }</p>
+                            <p>Selecciona campos de formulario que son opcionales, es decir, que no tienen atributo
+                                <b>required</b>.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <!--TODO: ========Propiedades principales de texto y tipografía en CSS3==========-->
+                <!--TODO: ========Texto y tipografía css3==========-->
+                <section id="textoYtipo">
+                    <h2 class="text-white bg-dark text-center py-2 mt-5">Propiedades principales de texto y
+                        tipografía en CSS3 </h2>
+                    <div class="container mt-5 ">
+                        <div class="row d-flex align-items-center justify-content-center bg-body-secondary p-4">
+                            <div class="col-12 text-center fs-2">
+                                <p>Texto y tipografía en CSS3</p>
+                            </div>
+                            <div class="col-12">
+                                <p><b>font-family: </b>Define la tipografía del texto. Se recomienda usar varias
+                                    separadas
+                                    por
+                                    coma (ejemplo:
+                                    font-family: Arial, sans-serif;).</p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 ">
+                                <p><b>font-size</b> Controla el tamaño de la fuente (16px, 1.2em, 120%).</p>
+                                <p><b>font-style: </b> Estilo de la fuente: normal, italic, oblique.</p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 ">
+                                <p><b> font-weight: </b> Grosor de la fuente: normal, bold, lighter o valores de 100 a
+                                    900.
+                                </p>
+                                <p><b> line-height: </b> Espaciado vertical entre líneas de texto.</p>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <p><b>letter-spacing: </b>Espaciado entre letras (positivo o negativo).</p>
+                                <p><b>word-spacing: </b>Espaciado entre palabras. </p>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <p><b>text-align: </b>Alineación: left, right, center, justify.</p>
+                                <p><b>text-decoration: </b>Decoraciones del texto: underline, overline, line-through,
+                                    none.
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <p><b>text-transform: </b>Cambia el formato del texto: uppercase, lowercase, capitalize.
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <p><b>color: </b>Define el color del texto (nombre, HEX, RGB, RGBA, HSL, HSLA).</p>
+                            </div>
+                        </div>
+
+                        <!--TODO: ========Propiedades adicionales de texto==========-->
+                        <div class="row d-flex align-items-center justify-content-center bg-body-secondary p-4 ">
+                            <div class="col-12 text-center fs-2 mb-3">Propiedades adicionales de texto</div>
+                            <div class="col-12 col-lg-6">
+                                <p><b>overflow-wrap: </b>(antes word-wrap) → Controla si las palabras largas se
+                                    cortan o se van fuera del contenedor (normal, break-word).</p>
+                                <p><b>text-indent: </b>Sangría en la primera línea del párrafo.</p>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <p><b>white-space: </b>Controla cómo se gestionan los espacios y saltos de línea
+                                    (normal, nowrap, pre, pre-wrap, pre-line).</p>
+                                <p><b>text-shadow: </b>Aplica sombra al texto (desplazamiento-x desplazamiento-y blur
+                                    color).</p>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <p><b>direction: </b>Dirección del texto (ltr izquierda a derecha, rtl derecha a
+                                    izquierda).</p>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+
+                                <p><b>unicode-bidi: </b>Usado junto con direction para manejar texto en distintos
+                                    idiomas (más avanzado).</p>
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </section>
+
+
+                <!--TODO: ========Colores, fondos y bordes en CSS3==========-->
+                <!--TODO: ========COLORES Y FONDOS==========-->
+                <section id="coloresFondos">
+                    <div class="container">
+
+                        <h2 class="text-white bg-dark text-center py-2 mt-5">COLORES EN CSS3 </h2>
+                        <h5 class="bg-dark text-white py-1 mt-3 text-center">Colores y backgrounds</h5>
+                        <div class="table w-100 ">
+
+                            <!--TODO: ========TABLA DE COLORES ==========-->
+                            <table class="estiloTabla mx-auto p-3">
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center" colspan="2">COLORES</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <b class="fs-4">color</b> → Define el color del texto. Valores: nombre, HEX,
+                                            RGB, RGBA, HSL, HSLA.
+                                            <br><b>Ejemplo:</b> <code>p { color: red; }</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            opacity → Define la opacidad completa del elemento (0 = transparente, 1 =
+                                            opaco).
+                                            <br><b>Ejemplo:</b> <code>div { opacity: 0.5; }</code>
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center" colspan="2">BACKGROUNDS</td>
+                                    </tr>
+                                    <tr>
+                                        <td>background-color:</td>
+                                        <td>Color de fondo del elemento.
+                                            <br><b>Ejemplo:</b> <code>div { background-color: yellow; }</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>background-image:</td>
+                                        <td>Imagen de fondo.
+                                            <br><b>Ejemplo:</b>
+                                            <code>div { background-image: url("imagen.jpg"); }</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>background-repeat:</td>
+                                        <td>Repetición del fondo.
+                                            <br><b>Ejemplo:</b> <code>div { background-repeat: no-repeat; }</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>background-size:</td>
+                                        <td>Tamaño de la imagen.
+                                            <br><b>Ejemplo:</b> <code>div { background-size: cover; }</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>background-position:</td>
+                                        <td>Posición de la imagen.
+                                            <br><b>Ejemplo:</b> <code>div { background-position: center top; }</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>background-attachment:</td>
+                                        <td>Fija el fondo.
+                                            <br><b>Ejemplo:</b> <code>div { background-attachment: fixed; }</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>background:</td>
+                                        <td>Shorthand que agrupa varias propiedades.
+                                            <br><b>Ejemplo:</b>
+                                            <code>div { background: url("imagen.jpg") no-repeat center/cover; }</code>
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center" colspan="2">BORDER</td>
+                                    </tr>
+                                    <tr>
+                                        <td>border-width</td>
+                                        <td>Grosor del borde.
+                                            <br><b>Ejemplo:</b> <code>div { border-width: 5px; }</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>border-style</td>
+                                        <td>Estilo del borde.
+                                            <br><b>Ejemplo:</b> <code>div { border-style: dashed; }</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>border-color</td>
+                                        <td>Color del borde.
+                                            <br><b>Ejemplo:</b> <code>div { border-color: blue; }</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>border</td>
+                                        <td>Shorthand para width, style y color.
+                                            <br><b>Ejemplo:</b> <code>div { border: 2px solid red; }</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>border-radius</td>
+                                        <td>Bordes redondeados.
+                                            <br><b>Ejemplo:</b> <code>div { border-radius: 50%; }</code>
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+
+                            </table>
+
+                            <!--TODO: ========COLOREs Y FONDOS AVANZADOS==========-->
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Colores y fondos avanzados
+                            </h5>
+
+                            <!--TODO: ========TABLA DE COLORES AVANZADOS ==========-->
+                            <table class="estiloTabla mx-auto  w-100 mt-2">
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center" colspan="2">COLORES AVANZADOS</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>currentColor</td>
+                                        <td>Usa el mismo color que tenga definido <b>color</b>. Muy útil para bordes,
+                                            sombras, etc.
+                                            <br><b>Ejemplo:</b>
+                                            <code>div { color: blue; border: 2px solid currentColor; }</code>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>transparent</td>
+                                        <td>Fondo o borde transparente sin afectar al resto.
+                                            <br><b>Ejemplo:</b> <code>div { background-color: transparent; }</code>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="text-center" colspan="2">FONDOS AVANZADOS</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>background-clip</td>
+                                        <td>Define hasta dónde llega el fondo (<code>border-box</code>,
+                                            <code>padding-box</code>, <code>content-box</code>, <code>text</code>).
+                                            <br><b>Ejemplo:</b> <code>p { background-clip: text; }</code>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>background-origin</td>
+                                        <td>Punto de referencia del fondo (<code>border-box</code>,
+                                            <code>padding-box</code>, <code>content-box</code>).
+                                            <br><b>Ejemplo:</b> <code>div { background-origin: content-box; }</code>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Múltiples fondos</td>
+                                        <td>Se pueden poner varias imágenes separadas por comas.
+                                            <br><b>Ejemplo:</b>
+                                            <code>div { background-image: url("estrella.png"), url("cielo.jpg"); }</code>
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Gradientes (CSS3) y Bordes avanzados
+                            </h5>
+
+                            <table class="estiloTabla mx-auto  w-100 mt-2">
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center" colspan="2">GRADIENTES (CSS3)</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>linear-gradient()</td>
+                                        <td>Fondo con degradado lineal.
+                                            <br><b>Ejemplo:</b>
+                                            <code>div { background: linear-gradient(to right, red, blue); }</code>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>radial-gradient()</td>
+                                        <td>Fondo con degradado radial.
+                                            <br><b>Ejemplo:</b>
+                                            <code>div { background: radial-gradient(circle, red, yellow, green); }</code>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>conic-gradient()</td>
+                                        <td>Fondo con degradado cónico (tipo pastel de colores).
+                                            <br><b>Ejemplo:</b>
+                                            <code>div { background: conic-gradient(red, yellow, green, blue); }</code>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="text-center" colspan="2">BORDES AVANZADOS</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>border-top, border-right, border-bottom, border-left</td>
+                                        <td>Permiten personalizar cada borde de forma independiente.
+                                            <br><b>Ejemplo:</b>
+                                            <code>div { border-top: 5px solid red; border-right: 5px dashed blue; }</code>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>border-image</td>
+                                        <td>Usa una imagen como borde.
+                                            <br><b>Ejemplo:</b>
+                                            <code>div { border: 10px solid transparent; border-image: url("marco.png") 30 round; }</code>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>outline</td>
+                                        <td>Similar al borde, pero no ocupa espacio en el layout. Muy usado en
+                                            accesibilidad (enlaces, inputs).
+                                            <br><b>Ejemplo:</b> <code>input:focus { outline: 2px solid blue; }</code>
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+
+
+
+
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!--? Sidebar DERECHO -->
+            <nav class="col-lg-2 d-none d-lg-block p-2 sticky-top cont-sidebar-right ">
+                <ul class="navbar-nav">
+                    <li> <a class="nav-link text-white" href="#estructura">Estructura en HTML</a></li>
+                    <li><a class="nav-link text-white" href="#importante2">Etiquetas Importantes Meta en HTML</a></li>
+                    <li><a class="nav-link text-white" href="#secciones">Secciones semánticas</a></li>
+                    <li><a class="nav-link text-white" href="#texto-parrafo">Texto y Párrafos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <!--! =================== SCRIPTS =================== -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+    <script src="../js/script-layout.js"></script>
+
+</body>
+
+</html>

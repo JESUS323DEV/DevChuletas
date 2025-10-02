@@ -1,0 +1,147 @@
+/* =====================
+Reset Básico-IMPORTANTE
+   ===================== */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+
+
+    background-color: rgb(158, 157, 157);
+}
+
+main {
+    width: 100%;
+    max-width: 100%;
+    /* opcional */
+}
+
+html {
+
+    height: 100dvh;
+    /* viewport dinámico */
+}
+
+
+
+
+
+
+
+/* =======================================================================
+IMPORTANTE PARA QUE NO SE DESBORDE EN MÓVILES CUANDO USAS POSITION:STICKY
+   ========================================================================= */
+main {
+    flex: 1;
+    /* ocupa el espacio restante */
+    min-width: 0;
+    /* evita overflow por contenido largo */
+}
+
+/* =============================================
+   CONTENIDO PERSONALIZADO EN PÁRRAFOS Y TEXTOS
+   ============================================== */
+
+/*CONTENIDO PERSONALIZADO  - texto y párrafos*/
+.chuleta-parrafo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    font-family: monospace;
+    background: #f8f9fa;
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+.chuleta-parrafo div {
+    padding: 3px;
+}
+
+.chuleta-parrafo .codigo {
+    color: #0202ff;
+}
+
+/*CONTENIDO PERSONALIZADO */
+
+.ejem-tabla table,th,td,tr {
+
+    border: 1px solid rgb(207, 0, 0) !important;
+
+}
+
+
+
+/* =====================
+   MEDIA QUERIES RESPONSIVE
+   ===================== */
+
+/* Móviles XS (≤575px) */
+@media (max-width: 575px) {
+
+    .cont-ejm-form {
+
+        font-size: 10px;
+    }
+
+    section {
+
+        padding-top: 4.5rem;
+
+    }
+
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    .cont-main {
+
+        overflow-x: hidden !important;
+
+    }
+
+
+
+
+}
+
+
+
+
+
+/* Móviles verticales SM (576px – 767px) */
+@media (min-width: 576px) and (max-width: 767px) {}
+
+/* Tablets verticales MD (768px – 991px) */
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/* iPad Pro Vertical (Portrait) */
+@media (min-width: 834px) and (max-width: 1024px) {}
+
+/* Tablets horizontales / laptops pequeñas LG (992px – 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/*NEST HUB NORMAL YS I (1200px – 1279px) */
+@media (min-width: 1200px) and (max-width: 1279px) {}
+
+/* iPad Pro Horizontal (Landscape) */
+@media (min-width: 1025px) and (max-width: 1366px) {}
+
+/* NEST HUB MAX Y SIMILARES (1280px – 1399px) */
+@media (min-width: 1280px) and (max-width: 1399px) {}
+
+/* Pantallas grandes XXL ≥1400px */
+@media (min-width: 1400px) {}

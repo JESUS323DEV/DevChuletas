@@ -1,0 +1,261 @@
+/* =====================
+Reset Básico-IMPORTANTE
+   ===================== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box !important;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    padding-top: 3.5rem;
+}
+
+
+
+
+
+/* Altura del navbar */
+:root {
+    --navbar-height: 7rem !important;
+}
+
+/* Agregar un “espacio invisible” antes de cada sección */
+section::before {
+    content: "";
+    display: block;
+    height: var(--navbar-height);
+    /* altura del navbar */
+    margin-top: calc(-1 * var(--navbar-height));
+    /* mueve la sección hacia arriba */
+    visibility: hidden;
+    /* no se ve nada */
+}
+
+
+/* =============================================
+  SIDEBAR LATERALES 
+   ============================================== */
+.cont-sidebar-left {
+
+    background-color: rgb(27, 26, 26);
+    height: calc(100vh - 7rem);
+    overflow-y: scroll;
+    text-align: right;
+    position: sticky;
+    top: 7rem;
+    left: 11%;
+}
+
+.cont-sidebar-left a:hover {
+
+    background-color: rgb(146, 82, 27);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.cont-sidebar-left a:focus {
+
+    background-color: rgb(146, 82, 27);
+}
+
+.cont-sidebar-left a {
+
+    border-radius: 12px;
+}
+
+
+
+
+.cont-sidebar-right {
+
+    background-color: rgb(27, 26, 26);
+    height: calc(100vh - 7rem);
+    overflow-y: scroll;
+    direction: rtl;
+    /* manda el scroll a la izquierda */
+    text-align: left;
+    position: sticky;
+    top: 7rem;
+    right: 11%;
+
+}
+
+
+
+
+
+
+/* ===================================================
+   MEDIA QUERIES RESPONSIVE-MÓVILES-TABLETS PEQUEÑAS
+   =================================================== */
+
+/* Móviles XS (≤575px) */
+@media (max-width: 575px) {
+    body::before {
+        content: "≤575px XS";
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgb(185, 6, 6);
+        color: rgb(0, 0, 0);
+        padding: 5px;
+        z-index: 9999;
+
+    }
+
+
+    /*=========IMPORTANTE=========*/
+    .cont-main {
+        overflow-x: hidden !important;
+    }
+
+
+
+
+
+
+
+
+}
+
+/* Móviles verticales SM (576px – 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    body::before {
+        content: "576px-767px SM";
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgb(0, 255, 30);
+        color: rgb(0, 0, 0);
+        padding: 5px;
+        z-index: 9999;
+    }
+
+    .cont-w-100 {
+        max-width: 100%;
+
+    }
+
+
+
+}
+
+/* Tablets verticales MD (768px – 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    body::before {
+        content: "768px-991px MD";
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgb(1, 22, 255);
+        color: rgb(0, 0, 0);
+        padding: 5px;
+        z-index: 9999;
+
+    }
+
+
+}
+
+/* ==============================================================
+   MEDIA QUERIES RESPONSIVE--TABLETS-GRANDES-TABLETS HORIZONTALES
+   ============================================================= */
+/* Tablets-grandes-horizontales (992px – 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    body::before {
+        content: "992px-1199px LG";
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgb(196, 1, 255);
+        color: rgb(0, 0, 0);
+        padding: 5px;
+        z-index: 9999;
+
+    }
+
+    .cont-sidebar-left {
+
+        position: fixed;
+        top: 13%;
+        left: 0;
+        width: 20%;
+        height: 100vh;
+        border: 1px solid;
+        overflow-y: auto;
+
+    }
+
+    .cont-sidebar-right {
+
+        position: fixed;
+        top: 13%;
+        right: 0;
+        width: 20%;
+        height: 100vh;
+        border: 1px solid;
+        overflow-y: auto;
+    }
+
+
+
+}
+
+
+/*(1200px – 1279px) */
+@media (min-width: 1200px) and (max-width: 1279px) {
+    body::before {
+        content: "1200px-1279px";
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        padding: 5px;
+        z-index: 9999;
+
+    }
+
+}
+
+/* NEST HUB MAX Y SIMILARES (1280px – 1399px) */
+@media (min-width: 1280px) and (max-width: 1399px) {
+
+    body::before {
+        content: "1200px-1279px";
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgb(255, 102, 0);
+        color: rgb(255, 255, 255);
+        padding: 5px;
+        z-index: 9999;
+    }
+}
+
+/* Pantallas grandes XXL ≥1400px */
+@media (min-width: 1400px) {
+    body::before {
+        content: "1200px-1279px";
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgb(135, 181, 255);
+        color: rgb(255, 255, 255);
+        padding: 5px;
+        z-index: 9999;
+    }
+}
+
+
+/*--------------------------------------*/
+/* iPad Pro Horizontal (Landscape) */
+@media (min-width: 1025px) and (max-width: 1366px) {}
+
+/* iPad Pro Vertical (Portrait) */
+@media (min-width: 834px) and (max-width: 1024px) {}

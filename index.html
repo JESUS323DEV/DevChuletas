@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Yisus">
+    <meta name="description" content="Página informativa">
+    <meta name="keywords" content="chuletas,html,css3,js,bootstrap 5">
+    <title>CHULETAS YISUS</title>
+    <!-- ? Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- ? Bootstrap CSS -->
+    <link rel="stylesheet" href="css3/estilos-nav-2sidebar.css">
+    <link rel="stylesheet" href="css3/chuletas-html.css">
+
+</head>
+
+<body>
+
+    <!--!===============HEADER=================-->
+    <header>
+
+        <!-- !===============MENÚ-PRINCIPAL-SOLO-EN-ESCRITORIO=================-->
+        <nav class="navbar navbar-nav navbar-expand-lg d-none border border-black d-lg-block bg-body-tertiary fixed-top "
+            aria-label="Menú Principal">
+            <div class="container-fluid">
+                <div class="d-flex align-items-center justify-content-around w-100">
+
+                    <!--!LOGO PRINCIPAL-->
+                    <a class="navbar-brand" href="#"><img class="img-fluid cont-logo " src="media/img/logo.png"
+                            alt="Logo Principal"></a>
+
+
+
+                    <ul class="navbar-nav ">
+                        <li class="nav-item mx-0 mx-lg-3"><a class="nav-link text-dark" href="#estructura"
+                                data-bs-dismiss="offcanvas">Html</a></li>
+
+                        <li class="nav-item mx-0 mx-lg-3 "><a class="nav-link text-dark"
+                                href="html/chuletas-css.html">CSS3</a></li>
+
+                        <li class="nav-item mx-0 mx-lg-3"><a class="nav-link text-dark" href="javascript:void(0)"
+                                data-bs-dismiss="offcanvas">Bootstrap</a></li>
+
+
+                        <li class="nav-item mx-0 mx-lg-3"><a class="nav-link text-dark" href="javascript:void(0)"
+                                data-bs-dismiss="offcanvas">Java
+                                Script</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- !===============MENÚ-PRINCIPAL-SOLO-EN-MÓVILES-Y-TABLETS=================-->
+        <nav class="navbar bg-body-tertiary  d-lg-none fixed-top" id="menubar" aria-label="Menú Principal ">
+            <div class="container-fluid cont-w-100 border border-black">
+
+                <!--? BOTÓN-OFFCANVAS-ABRIR-MENÚ-PRINCIPAL-SOLO-PARA-MÓVILES -->
+                <button class="btn" type="button" data-bs-toggle="offcanvas" aria-label="Abrir Menú Principal"
+                    data-bs-target="#menuNavOffcanvasLabel">
+                    <span><i class="bi bi-three-dots"></i></span>
+                </button>
+
+                <!--!LOGO PRINCIPAL-->
+                <a class="navbar-brand" href="#"><img class="img-fluid" src="media/img/logo-solo-moviles.png"
+                        alt="Logo Principal"></a>
+
+                <!--? BOTÓN-OFFCANVAS-CERRAR-MENÚ-PRINCIPAL-SOLO-EN-MÓVILES-->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="menuNavOffcanvasLabel"
+                    aria-labelledby="menuNavOffcanvasLabel">
+                    <div class="offcanvas-header">
+                        <h5>MENÚ PRINCIPAL</h5>
+                        <button type="button" class="btn-close" aria-label="Cerrar Menú Principal"
+                            data-bs-dismiss="offcanvas"></button>
+                    </div>
+
+                    <!-- ?OFFCANVAS-BODY-SOLO-EN-MÓVILES-->
+                    <div class="offcanvas-body">
+                        <nav class="nav navbar-nav navbar-expand-xxl">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a class="nav-link text-dark" href="#estructura"
+                                        data-bs-dismiss="offcanvas">Html</a></li>
+
+                                <li class="nav-item "><a class="nav-link text-dark"
+                                        href="html/chuletas-css.html">CSS3</a></li>
+
+                                <li class="nav-item "><a class="nav-link text-dark" href="javascript:void(0)"
+                                        data-bs-dismiss="offcanvas">Bootstrap</a></li>
+
+
+                                <li class="nav-item"><a class="nav-link text-dark" href="javascript:void(0)"
+                                        data-bs-dismiss="offcanvas">Java
+                                        Script</a></li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- BOTÓN-OFFCANVAS-ABRIR-SIDEBAR-LATERAL-SOLO-PARA-MÓVILES -->
+                <button class="btn d-lg-none" type="button" aria-label="Abrir sidebar lateral"
+                    data-bs-toggle="offcanvas" data-bs-target="#sideBarOffcanvas">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+        </nav>
+
+
+        <!-- !===============BOTÓN-SIDEBAR-SOLO-EN-MÓVILES-LATERAL-SECCIONES-IMPORTANTES=================-->
+        <!-- ?BOTÓN-OFFCANVAS-CERRAR-SIDEBAR-LATERAL-SOLO-PARA-MÓVILES + SECCIONES-IMPORTANTES -->
+        <div class="offcanvas offcanvas-end " tabindex="-1" id="sideBarOffcanvas" aria-labelledby="sideBarOffcanvas">
+
+            <div class="offcanvas-header">
+                <h5>Chuletas HTML</h5>
+                <button type="button" class="btn-close" aria-label="Cerrar sidebar lateral"
+                    data-bs-dismiss="offcanvas"></button>
+            </div>
+
+
+            <!-- ?BODY-SIDEBAR-OFFCANVAS-NAV-SOLO-EN-MÓVILES-->
+            <div class="offcanvas-body">
+                <nav class="nav ">
+                    <ul class="navbar-nav">
+                        <li> <a class="nav-link text-dark" href="#estructura" data-bs-dismiss="offcanvas">Estructura en
+                                HTML</a></li>
+                        <li><a class="nav-link text-dark" href="#importante2" data-bs-dismiss="offcanvas">Etiquetas
+                                Importantes Meta en HTML</a>
+                        </li>
+                        <li><a class="nav-link text-dark" href="#secciones" data-bs-dismiss="offcanvas">Secciones
+                                semánticas</a></li>
+                        <li><a class="nav-link text-dark" href="#texto-parrafo" data-bs-dismiss="offcanvas">Texto y
+                                Párrafos</a></li>
+                        <li><a class="nav-link text-dark" href="javascript:void(0)" data-bs-dismiss="offcanvas">Listas,
+                                Formularios y Tablas</a>
+                        </li>
+                        <li><a class="nav-link text-dark" href="javascript:void(0)" data-bs-dismiss="offcanvas">Img,
+                                Video, Audio y Links</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <!--!===============SOLO-EN-ESCRITORIO-2SIDEBAR-LATERALES+MAIN=================-->
+    <div class="container-fluid  ">
+        <div class="d-flex align-items-start min-vh-100">
+
+
+            <!--? Sidebar izquierdo -->
+            <nav class=" col-lg-2  d-none d-lg-block  p-2 sticky-top cont-sidebar-left  ">
+                <ul class="navbar-nav ">
+
+                    <li class="nav-item"><a class="nav-link text-dark text-white p-3 mb-1" href="#estructura">Estructura
+                            en HTML</a></li>
+
+                    <li><a class="nav-link text-dark text-white p-3 mb-1" href="#etiquetas-meta">Etiquetas Importantes
+                            Meta
+                            en
+                            HTML</a></li>
+                    <li><a class="nav-link text-dark text-white p-3 mb-1" href="#texto-parrafo">Texto y Párrafos</a>
+                    </li>
+                    <li><a class="nav-link text-dark text-white p-3 mb-1" href="#form-list-table">Formulario, listas y
+                            Tablas</a>
+                    </li>
+                    <li><a class="nav-link text-dark text-white p-3 mb-2" href="#mediaLinks">Img, Video, Audio y
+                            Links</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+
+            <!--!===============MAIN-CENTRAL-CHULETAS-HTML-SE-VISUALIZA-EN-MÓVILES-Y-ESCRITORIOS=================-->
+
+            <div class="cont-main">
+                <main class="col-12 col-xl-8   mx-auto ">
+
+                    <!--?===============SECCIÓN-ESTRUCTURA-HTML=================-->
+
+                    <section id="estructura">
+                        <div class="container">
+
+                            <!--TODO: ========ESTRUCTURA Y DEFINICIÓN DE UN DOCUMENTO HTML==========-->
+                            <div>
+                                <h2 class="text-white bg-dark text-center py-2">Estructura en HTML </h2>
+                                <h5 class="bg-dark text-white py-1 mt-3 text-center">Estructura básica de HTML</h5>
+
+
+                                <div class="bg-dark text-white p-1 text-center">&lt;!DOCTYPE html&gt;</div>
+                                <div class="bg-body-secondary text-dark p-1 text-center">
+                                    <p>Siempre al inicio de tu documento. Declara que estás usando HTML5 y asegura que
+                                        el
+                                        navegador
+                                        interprete correctamente la página.</p>
+                                </div>
+
+                                <div class="bg-dark text-white p-1 text-center">&lt;head&gt;</div>
+                                <div class="bg-body-secondary text-dark p-1 text-center">
+                                    <p>Contiene metadatos y recursos de la página. Aquí va el título, enlaces a CSS,
+                                        scripts, meta etiquetas, fuentes y estilos internos.</p>
+                                </div>
+
+                                <div class="bg-dark text-white p-1 text-center">&lt;meta charset="UTF-8"&gt;</div>
+                                <div class="bg-body-secondary text-dark p-1 text-center">
+                                    <p>Definir la codificación de caracteres es obligatorio para que los acentos, la ñ y
+                                        los símbolos se muestren correctamente.</p>
+                                </div>
+
+                                <div class="bg-dark text-white p-1 text-center">&lt;title&gt;Título de la
+                                    página&lt;/title&gt;</div>
+                                <div class="bg-body-secondary text-dark p-1 text-center">
+                                    <p>Texto que aparece en la pestaña del navegador y en los resultados de buscadores.
+                                        Siempre debe estar presente y ser descriptivo.</p>
+                                </div>
+
+                                <div class="bg-dark text-white p-1 text-center">&lt;link rel="stylesheet"
+                                    href="estilos.css"&gt;</div>
+                                <div class="bg-body-secondary text-dark p-1 text-center">
+                                    <p>Enlaza tu hoja de estilos CSS externa. Úsalo siempre que quieras separar el
+                                        diseño del contenido.</p>
+                                </div>
+
+                                <div class="bg-dark text-white p-1 text-center">&lt;script
+                                    src="script.js"&gt;&lt;/script&gt;</div>
+                                <div class="bg-body-secondary text-dark p-1 text-center">
+                                    <p>Enlaza tu archivo JavaScript externo. Suele ir al final del &lt;body&gt; para
+                                        mejorar la carga, aunque también puede ir en &lt;head&gt;.</p>
+                                </div>
+
+                                <div class="bg-dark text-white p-1 text-center">&lt;/head&gt;</div>
+                                <div class="bg-body-secondary text-dark p-1 text-center">
+                                    <p>Cierra el head</p>
+                                </div>
+
+                                <div class="bg-dark text-white p-1 text-center">&lt;body&gt;</div>
+                                <div class="bg-body-secondary text-dark p-1 text-center">
+                                    <p>Contiene todo el contenido visible de la página: texto, imágenes, enlaces,
+                                        secciones, formularios, etc. Todo lo que el usuario ve o interactúa va aquí.</p>
+                                </div>
+
+                                <div class="bg-dark text-white p-1 text-center">&lt;header&gt;</div>
+                                <div class="bg-body-secondary text-dark p-1 text-center">
+                                    <p>Encabezado de la página o de una sección. Normalmente incluye el logo, título y
+                                        menú principal.</p>
+                                </div>
+
+                                <div class="bg-dark text-white p-1 text-center">&lt;nav&gt;</div>
+                                <div class="bg-body-secondary text-dark p-1 text-center">
+                                    <p>Área de navegación. Contiene los enlaces principales de tu página o sección.</p>
+                                </div>
+
+                                <div class="bg-dark text-white p-1 text-center">&lt;main&gt;</div>
+                                <div class="bg-body-secondary text-dark p-1 text-center">
+                                    <p>Contenido principal de la página. Solo debe haber un &lt;main&gt; por documento.
+                                    </p>
+                                </div>
+
+                                <div class="bg-dark text-white p-1 text-center">&lt;section&gt;</div>
+                                <div class="bg-body-secondary text-dark p-1 text-center">
+                                    <p>Bloque de contenido temático. Úsalo para agrupar información relacionada dentro
+                                        de &lt;main&gt; o &lt;article&gt;.</p>
+                                </div>
+
+                                <div class="bg-dark text-white p-1 text-center">&lt;article&gt;</div>
+                                <div class="bg-body-secondary text-dark p-1 text-center">
+                                    <p>Contenido independiente y autocontenido, como un post, noticia o entrada de blog.
+                                    </p>
+                                </div>
+
+                                <div class="bg-dark text-white p-1 text-center">&lt;aside&gt;</div>
+                                <div class="bg-body-secondary text-dark p-1 text-center">
+                                    <p>Contenido complementario o secundario. Por ejemplo, un sidebar con enlaces,
+                                        recomendaciones o anuncios.</p>
+                                </div>
+
+                                <div class="bg-dark text-white p-1 text-center">&lt;footer&gt;</div>
+                                <div class="bg-body-secondary text-dark p-1 text-center">
+                                    <p>Pie de página. Normalmente incluye información de contacto, derechos de autor,
+                                        enlaces legales o sociales.</p>
+                                </div>
+
+                                <div class="bg-dark text-white p-1 text-center">&lt;/body&gt;</div>
+                                <div class="bg-body-secondary text-dark p-1 text-center">
+                                    <p>Fin del contenido visible de la página.</p>
+                                </div>
+
+                                <div class="bg-dark text-white p-1 text-center">&lt;/html&gt;</div>
+                                <div class="bg-body-secondary text-dark p-1 text-center">
+                                    <p>Fin del documento HTML.</p>
+                                </div>
+
+                            </div>
+
+
+                            <!--TODO: ========ETIQUETAS-IMPORTANTES-DENTRO-DE-HEAD==========-->
+                            <div>
+                                <h5 class="text-white bg-dark py-1 text-center mt-3 ">Etiquetas importantes dentro
+                                    del&lt;head&gt;
+                                </h5>
+
+                                <div class="bg-dark text-white p-1 text-center">&lt;title&gt;</div>
+                                <div class="bg-body-secondary text-dark p-1 text-center">
+                                    <p>Título de la página Aparece en la pestaña del navegador</p>
+                                </div>
+
+                                <div class="bg-dark text-white p-1 text-center">&lt;link&gt;</div>
+                                <div class="bg-body-secondary text-dark p-1 text-center">
+                                    <p>Conectar recursos externos CSS, iconos, fuentes</p>
+                                </div>
+
+                                <div class="bg-dark text-white p-1 text-center">&lt;style&gt;</div>
+                                <div class="bg-body-secondary text-dark p-1 text-center">
+                                    <p>CSS interno Definir estilos directamente en HTML</p>
+                                </div>
+
+                                <div class="bg-dark text-white p-1 text-center"> &lt;script&gt;</div>
+
+                                <div class="bg-body-secondary text-dark p-1 text-center">
+                                    <p>Código JavaScript Vinculado o embebido</p>
+                                </div>
+
+                            </div>
+
+                            <!--todo: ejemplo práctico-->
+
+                            <h5 class="text-white bg-dark py-2 text-center mt-3">Ejemplo:</h5>
+                            <div class="container">
+                                <div class="p-3 border cont-ejm-form bg-body-secondary">
+                                    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;Mi Página&lt;/title&gt;
+        &lt;link rel="stylesheet" href="estilos.css"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;header&gt;
+            &lt;h1&gt;Bienvenido&lt;/h1&gt;
+        &lt;/header&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Inicio&lt;/li&gt;
+                &lt;li&gt;Contacto&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+        &lt;main&gt;
+            &lt;section&gt;
+                &lt;article&gt;
+                    &lt;p&gt;Contenido principal aquí.&lt;/p&gt;
+                &lt;/article&gt;
+            &lt;/section&gt;
+            &lt;aside&gt;
+                &lt;p&gt;Contenido complementario.&lt;/p&gt;
+            &lt;/aside&gt;
+        &lt;/main&gt;
+        &lt;footer&gt;
+            &lt;p&gt;Pie de página.&lt;/p&gt;
+        &lt;/footer&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--?===============SECCIÓN-ETIQUETAS-META-IMPORTANTES=================-->
+                    <section id="etiquetas-meta">
+                        <h2 class="bg-dark text-white py-2 mt-5 text-center">
+                            Etiquetas importantes &lt;meta&gt; en HTML
+                        </h2>
+
+                        <div class="bg-dark text-white p-1 text-center">
+                            &lt;meta charset="UTF-8"&gt;
+                        </div>
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p>Siempre debes usarla. Define la codificación de caracteres en UTF-8 (evita problemas con
+                                tildes, ñ, símbolos, emojis...). Ponla como la primera etiqueta dentro de &lt;head&gt;.
+                            </p>
+                        </div>
+
+                        <div class="bg-dark text-white p-1 text-center">
+                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        </div>
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p>Obligatoria en sitios responsive. Ajusta la página al ancho del dispositivo (móvil,
+                                tablet,
+                                PC). Si no la pones, tu web se verá diminuta en móviles.</p>
+                        </div>
+
+                        <div class="bg-dark text-white p-1 text-center">
+                            &lt;meta name="description" content="Descripción de la página"&gt;
+                        </div>
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p>Muy recomendable para SEO. Sirve como texto que aparece en los resultados de Google
+                                debajo
+                                del título. Úsala con frases claras y atractivas.</p>
+                        </div>
+
+                        <div class="bg-dark text-white p-1 text-center">
+                            &lt;meta name="keywords" content="html, css, javascript"&gt;
+                        </div>
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p>Se usaba para SEO, hoy ya no lo toma en cuenta Google. Solo inclúyela si quieres por
+                                nostalgia o para motores de búsqueda antiguos.</p>
+                        </div>
+
+                        <div class="bg-dark text-white p-1 text-center">
+                            &lt;meta name="author" content="Tu Nombre"&gt;
+                        </div>
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p>Opcional. Úsala si quieres dejar claro quién creó la página. Aparece en algunos
+                                navegadores o
+                                herramientas.</p>
+                        </div>
+
+                        <div class="bg-dark text-white p-1 text-center">
+                            &lt;meta name="robots" content="index, follow"&gt;
+                        </div>
+                        <div class="bg-body-secondary text-dark p-1 text-centerbg-body-secondary text-dark p-1 text-center">
+                            <p>Úsala para decirle a los buscadores cómo tratar tu página: “index” (pueden indexar) y
+                                “follow” (pueden seguir enlaces). Ejemplo: en páginas privadas pondrías “noindex,
+                                nofollow”.
+                            </p>
+                        </div>
+
+                        <div class="bg-dark text-white p-1 text-center">
+                            &lt;meta http-equiv="refresh" content="30"&gt;
+                        </div>
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p>Recarga la página cada 30 segundos. Úsala en webs donde el contenido cambia rápido (por
+                                ejemplo, monitor de datos). Ojo: no es recomendable para SEO porque genera recargas
+                                innecesarias.</p>
+                        </div>
+
+                        <div class="bg-dark text-white p-1 text-center">
+                            &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+                        </div>
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p>Sirve para Internet Explorer (obsoleto hoy en día). Solo inclúyela si quieres máxima
+                                compatibilidad con navegadores muy antiguos.</p>
+                        </div>
+
+                        <div class="bg-dark text-white p-1 text-center">
+                            &lt;meta property="og:title" content="Título para redes sociales"&gt;
+                        </div>
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p>Muy recomendable si quieres que al compartir tu web en Facebook/LinkedIn aparezca con un
+                                título bonito. Úsala en blogs, portfolios o webs que se compartan mucho.</p>
+                        </div>
+
+                        <div class="bg-dark text-white p-1 text-center">
+                            &lt;meta property="og:description" content="Descripción para redes sociales"&gt;
+                        </div>
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p>Complementa el og:title mostrando un resumen atractivo al compartir la página en redes
+                                sociales.</p>
+                        </div>
+
+                        <div class="bg-dark text-white p-1 text-center">
+                            &lt;meta property="og:image" content="url-de-la-imagen.jpg"&gt;
+                        </div>
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p>Recomendadísima. Es la imagen que aparece en la vista previa al compartir tu web en redes
+                                sociales. Sin esto, Facebook/Twitter mostrarán cualquier imagen al azar.</p>
+                        </div>
+
+                        <div class="bg-dark text-white p-1 text-center">
+                            &lt;meta property="og:url" content="https://ejemplo.com"&gt;
+                        </div>
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p>Indica la URL canónica para compartir. Úsala en páginas con varias rutas (ejemplo: blogs
+                                con
+                                filtros). Así evitas duplicidad.</p>
+                        </div>
+
+                        <div class="bg-dark text-white p-1 text-center">
+                            &lt;meta name="twitter:card" content="summary_large_image"&gt;
+                        </div>
+                        <div class="bg-body-secondary text-dark p-1 text-center">
+                            <p>Úsala si quieres controlar cómo se ve tu web en Twitter/X. “summary_large_image” es la
+                                más
+                                usada porque muestra una vista previa con imagen grande.</p>
+                        </div>
+                    </section>
+
+
+                    <!--?===============SECCIÓN-TEXTO-PÁRRAFO=================-->
+                    <section id="texto-parrafo">
+
+                        <div class="container mt-3">
+                            <div class="text-center mb-4">
+                                <h2 class="text-white bg-dark py-2 text-center ">TEXTO Y PÁRRAFOS</h2>
+                                <h5 class="bg-dark text-white py-1 mt-3">Formato de texto dentro de párrafos</h5>
+                            </div>
+
+                            <!--TODO: Formato de texto dentro de párrafos -->
+                            <div class=" chuleta-parrafo p-0 p-lg-3">
+                                <div class="codigo">&lt;strong&gt;Negrita Semántica&lt;/strong&gt;</div>
+
+                                <div class="text-dark"><strong>Negrita Semántica</strong></div>
+
+                                <div class="codigo">&lt;b&gt;Negrita visual&lt;/b&gt;</div>
+
+                                <div class="text-dark"><b>Negrita Visual</b></div>
+
+                                <div class="codigo">&lt;em&gt;Énfasis semántico&lt;/em&gt;</div>
+                                <div class="text-dark"><em>Cursiva Semántica</em></div>
+                                <div class="codigo">&lt;i&gt;Cursiva visual&lt;/i&gt;</div>
+                                <div class="text-dark"><i>Cursiva Visual</i></div>
+                                <div class="codigo">&lt;mark&gt;Resaltado&lt;/mark&gt;</div>
+                                <div class="text-dark"><mark>Resaltado</mark></div>
+                                <div class="codigo">&lt;small&gt;Texto pequeño&lt;/small&gt;</div>
+                                <div class="text-dark"><small>Texto Pequeño</small></div>
+                                <div class="codigo">&lt;del&gt;Tachado&lt;/del&gt;</div>
+                                <div class="text-dark"><del>Tachado</del></div>
+                                <div class="codigo">&lt;ins&gt;Subrayado&lt;/ins&gt;</div>
+                                <div class="text-dark"><ins>Subrayado Semántico</ins></div>
+                                <div class="codigo">&lt;u&gt;Subrayado visual&lt;/u&gt;</div>
+                                <div class="text-dark"><u>Subrayado Visual</u></div>
+                                <div class="codigo">H&lt;sub&gt;2&lt;/sub&gt;O</div>
+                                <div class="text-dark">H<sub>2</sub>O</div>
+                                <div class="codigo">X&lt;sup&gt;2&lt;/sup&gt;</div>
+                                <div class="text-dark">X<sup>2</sup></div>
+                                <div class="codigo">&lt;code&gt;Texto de código&lt;/code&gt;</div>
+                                <div class="text-dark"><code>Texto de código</code></div>
+                            </div>
+
+                            <!--TODO: ENCABEZADOS -->
+                            <div class="bg-body-secondary row justify-content-center align-items-center p-0 p-lg-3 font-family-cont mt-5">
+                                <h4 class="text-center border text-white bg-dark w-100 py-2 mb-3">ENCABEZADOS</h4>
+
+                                <div class="col-6">&lt;h1&gt;nivel 1&lt;/h1&gt;</div>
+                                <div class="col-6 text-secondary">
+                                    <h1>Encabezado nivel 1</h1>
+                                </div>
+
+                                <div class="col-6">&lt;h2&gt;nivel 2&lt;/h2&gt;</div>
+                                <div class="col-6 text-secondary">
+                                    <h2>Encabezado nivel 2</h2>
+                                </div>
+
+                                <div class="col-6">&lt;h3&gt;nivel 3&lt;/h3&gt;</div>
+                                <div class="col-6 text-secondary">
+                                    <h3>Encabezado nivel 3</h3>
+                                </div>
+
+                                <div class="col-6">&lt;h4&gt;nivel 4&lt;/h4&gt;</div>
+                                <div class="col-6 text-secondary">
+                                    <h4>Encabezado nivel 4</h4>
+                                </div>
+
+                                <div class="col-6">&lt;h5&gt;nivel 5&lt;/h5&gt;</div>
+                                <div class="col-6 text-secondary">
+                                    <h5>Encabezado nivel 5</h5>
+                                </div>
+
+                                <div class="col-6">&lt;h6&gt;nivel 6&lt;/h6&gt;</div>
+                                <div class="col-6 text-secondary">
+                                    <h6>Encabezado nivel 6</h6>
+                                </div>
+                            </div>
+
+                            <!--TODO: CONTACTO -->
+                            <div class="container bg-body-tertiary mt-5 text-black">
+                                <div class="row font-family-cont">
+                                    <h5 class="text-center bg-dark text-white w-100 py-2 mb-3">CONTACTO EN HTML</h5>
+
+                                    <div class="col-12 col-lg-6 p-3">
+                                        &lt;address&gt;
+                                        <strong>Empresa Chuletas Yisus</strong>
+                                        Calle Falsa 123, Madrid
+                                        Tel: &lt;a href="tel:+34123456789"&gt;+34 123 456 789
+                                        Email: &lt;a href="mailto:info@chuletas.com"&gt; <br>
+                                        info@chuletas.com&lt;/a&gt;
+                                        &lt;/address&gt;
+                                    </div>
+
+                                    <div class="col-12 col-lg-6 p-3">
+                                        <address>
+                                            <strong>Empresa Chuletas Yisus</strong>
+                                            Calle Falsa 123, Madrid
+                                            Tel: <a href="tel:+34123456789">+34 123 456 789</a>
+                                            Email: <a href="mailto:info@chuletas.com">info@chuletas.com</a>
+                                        </address>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--TODO: CITAS -->
+                            <div class="container mt-5">
+                                <div class="bg-body-secondary row font-family-cont">
+                                    <h5 class="text-center bg-dark text-white w-100 py-2 mb-3">CITAS</h5>
+
+                                    <div class="col-12 col-lg-6 p-3">
+                                        <h6 class="fw-bold">Citas largas</h6>
+                                        &lt;blockquote&gt;<br>La paciencia es la madre de la ciencia. <br>
+                                        &lt;/blockquote&gt;
+                                        <blockquote class="cont-color">La paciencia es la madre de la ciencia.
+                                        </blockquote>
+                                    </div>
+
+                                    <div class="col-12 col-lg-6 p-3">
+                                        <h6 class="fw-bold">Citas cortas</h6>
+                                        &lt;p&gt;Einstein dijo: &lt;q&gt;La imaginación es más importante que el
+                                        conocimiento.&lt;/q&gt;&lt;/p&gt;
+                                        <p class="cont-color">Einstein dijo: <q>La imaginación es más importante que el
+                                                conocimiento.</q></p>
+                                    </div>
+
+                                    <div class="col-12 col-lg-6 p-3">
+                                        <h6 class="fw-bold">Abreviaturas</h6>
+                                        &lt;p&gt;Trabajo en &lt;abbr title="HyperText Markup
+                                        Language"&gt;HTML&lt;/abbr&gt;.&lt;/p&gt;
+                                        <p class="cont-color">Trabajo en <abbr
+                                                title="HyperText Markup Language">HTML</abbr>.</p>
+                                    </div>
+
+                                    <div class="col-12 col-lg-6 p-3">
+                                        <h6 class="fw-bold">Citas con fuente</h6>
+                                        &lt;p&gt;El libro &lt;cite&gt;Don Quijote de la Mancha&lt;/cite&gt; fue escrito
+                                        por
+                                        Cervantes.&lt;/p&gt;
+                                        <p class="cont-color">El libro <cite>Don Quijote de la Mancha</cite> fue escrito
+                                            por
+                                            Cervantes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+
+                    <!--?===============SECCIÓN-FORMULARIOS=================-->
+                    <!--TODO: ========EJEMPLO-FORM==========-->
+                    <section id="form-list-table">
+                        <div class="container ">
+                            <h2 class="text-white bg-dark py-2 text-center ">Formularios - Listas - Tablas</h2>
+                            <h5 class="bg-dark text-white text-center py-1 mt-3">Formularios</h5>
+
+                            <form class="d-flex text-center flex-column align-items-center justify-content-center bg-body-secondary">
+                                <div class="my-2">
+                                    <p class="cont-color">&lt;form&gt; – Contenedor del formulario</p>
+                                </div>
+                                <div class="my-2">
+                                    <label for="nombre">&lt;label&gt; – Etiqueta del input
+                                    </label><br>
+                                    <input type="text" id="nombre" name="nombre"
+                                        placeholder="Nombre,Apellido,Email..etc">
+                                </div>
+                                <div class="my-2">
+                                    <label for="mensaje">&lt;textarea&gt; – Área de texto multi-línea</label><br>
+                                    <textarea id="mensaje" name="mensaje"></textarea>
+                                </div>
+                                <div class="my-2">
+                                    <label for="pais">&lt;select&gt; – Lista desplegable</label><br>
+                                    <select id="pais" name="pais">
+                                        <option value="es">España</option>
+                                        <option value="mx">México</option>
+                                    </select>
+                                </div>
+                                <label class="my-2">
+                                    &lt;input type="checkbox"&gt; <br> Acepto términos
+                                    <input type="checkbox" name="terminos">
+                                </label>
+                                <div class="my-2">
+                                    <button type="submit">&lt;button&gt; – Enviar formulario</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!--TODO: ========EJEMPLO-COMPLETO-FORM==========-->
+                        <h5 class="bg-dark text-white text-center py-1 mt-3">Ejemplo de un Formulario</h5>
+                        <div class="container">
+                            <div class="p-3 border cont-ejm-form bg-body-secondary ">
+                                <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;Formulario Ejemplo&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+        &lt;!-- FORMULARIO COMPLETO --&gt;
+        &lt;form action="#" method="post"&gt;
+
+            &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+            &lt;input type="text" id="nombre" name="nombre"
+            placeholder="Tu nombre"&gt;
+
+            &lt;label for="email"&gt;Email:&lt;/label&gt;
+            &lt;input type="email" id="email" name="email" 
+            placeholder="tu@email.com"&gt;
+
+            &lt;label for="mensaje"&gt;Mensaje:&lt;/label&gt;
+            &lt;textarea id="mensaje" name="mensaje" 
+            rows="4"&gt;&lt;/textarea&gt;
+
+            &lt;label for="pais"&gt;País:&lt;/label&gt;
+            &lt;select id="pais" name="pais"&gt;
+                &lt;option value="es"&gt;España&lt;/option&gt;
+                &lt;option value="mx"&gt;México&lt;/option&gt;
+                &lt;option value="ar"&gt;Argentina&lt;/option&gt;
+            &lt;/select&gt;
+
+            &lt;fieldset&gt;
+                &lt;legend&gt;Preferencias&lt;/legend&gt;
+                &lt;label&gt;
+                    &lt;input type="checkbox" name="noticias"&gt; 
+                    Recibir noticias
+                &lt;/label&gt;
+                &lt;label&gt;
+                    &lt;input type="radio" name="genero"
+                    value="masculino"&gt; Masculino
+                &lt;/label&gt;
+                &lt;label&gt;
+                    &lt;input type="radio" name="genero" 
+                    value="femenino"&gt; Femenino
+                &lt;/label&gt;
+            &lt;/fieldset&gt;
+
+            &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+            &lt;button type="reset"&gt;Limpiar&lt;/button&gt;
+
+        &lt;/form&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+                            </div>
+                        </div>
+
+                        <!--TODO: ========EJEMPLO-COMPLETO-FORM-EN-LA-WEB==========-->
+                        <div class="container">
+
+                            <div class="d-flex flex-column align-items-center justify-content-center my-4 ">
+                                <!--? FORMULARIO COMPLETO -->
+                                <form action="#" method="post">
+                                    <div
+                                        class="d-flex align-items-center flex-column border bg-body-secondary text-dark p-2 rounded">
+                                        <label for="nombre">Nombre:</label>
+                                        <input type="text" id="nombre2" name="nombre" placeholder="Tu nombre"><br>
+
+                                        <label for="email">Email:</label>
+                                        <input type="email" id="email" name="email" placeholder="tu@email.com"><br>
+
+                                        <label for="mensaje">Mensaje:</label>
+                                        <textarea id="mensaje2" name="mensaje" rows="4"></textarea><br>
+
+                                        <label for="pais">País:</label>
+                                        <select id="pais2" name="pais">
+                                            <option value="es">España</option>
+                                            <option value="mx">México</option>
+                                            <option value="ar">Argentina</option>
+                                        </select>
+
+                                        <fieldset class="text-center my-3">
+                                            <legend>Preferencias</legend>
+                                            <label>
+                                                <input type="checkbox" name="noticias"> Recibir noticias
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="genero" value="masculino"> Masculino
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="genero" value="femenino"> Femenino
+                                            </label>
+                                        </fieldset>
+                                        <div class="d-flex  gap-2">
+                                            <button type="submit">Enviar</button>
+                                            <button type="reset">Limpiar</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!--TODO: ========INPUT-IMPORTANTES==========-->
+                        <div class="container mt-5 ">
+                            <h5 class="bg-dark text-white text-center py-1 mt-3"> &lt;Input&gt; Importantes</h5>
+
+                            <div class="row">
+
+                                <!--? INPUT PASSWORD -->
+                                <div class="col-12 col-lg-6 mb-2 text-center">
+                                    <p class="p-1 border bg-body-secondary text-dark">&lt;input type="password"&gt; –
+                                        Campo
+                                        para
+                                        contraseña</p>
+                                    <input class="mb-2" type="password" placeholder="Contraseña">
+                                </div>
+                                <!--? INPUT EMAIL -->
+                                <div class="col-12 col-lg-6 mb-2 text-center">
+                                    <p class="p-1 border bg-body-secondary text-dark">&lt;input type="email"&gt; – Campo
+                                        para
+                                        correo electrónico</p>
+                                    <input class="mb-2" type="email" placeholder="correo@ejemplo.com">
+                                </div>
+                                <!--? INPUT NUMBER -->
+                                <div class="col-12 col-lg-6 mb-2 text-center">
+                                    <p class="p-1 border bg-body-secondary text-dark">&lt;input type="number"&gt; – Solo
+                                        números, con min, max y step</p>
+                                    <input class="mb-2" type="number" min="1" max="10" step="1">
+                                </div>
+                                <!--?INPUT URL -->
+                                <div class="col-12 col-lg-6 mb-2 text-center">
+                                    <p class="p-1 border bg-body-secondary text-dark">&lt;input type="url"&gt; –
+                                        Validación
+                                        de
+                                        URL
+                                    </p>
+                                    <input class="mb-2" type="url" placeholder="https://ejemplo.com">
+                                </div>
+                                <!--? INPUT TEL -->
+                                <div class="col-12 col-lg-6 mb-2 text-center">
+                                    <p class="p-1 border bg-body-secondary text-dark">&lt;input type="tel"&gt; – Número
+                                        de
+                                        teléfono</p>
+                                    <input class="mb-2" type="tel" placeholder="+34 600 000 000">
+                                </div>
+
+                                <!--? INPUT DATE -->
+                                <div class="col-12 col-lg-6 mb-2 text-center">
+                                    <p class="p-1 border bg-body-secondary text-dark">&lt;input type="date"&gt; –
+                                        Selector
+                                        de
+                                        fecha</p>
+                                    <input class="mb-2" type="date">
+                                </div>
+
+                                <!--? INPUT TIME -->
+                                <div class="col-12 col-lg-6 mb-2 text-center">
+                                    <p class="p-1 border bg-body-secondary text-dark">&lt;input type="time"&gt; –
+                                        Selector
+                                        de
+                                        hora</p>
+                                    <input class="mb-2" type="time">
+                                </div>
+
+                                <!--? INPUT Fecha y hora local -->
+                                <div class="col-12 col-lg-6 mb-2 text-center">
+                                    <p class="p-1 border bg-body-secondary text-dark">&lt;input type="
+                                        datetime-local"&gt; –
+                                        Fecha y hora local</p>
+                                    <input class="mb-2" type="datetime-local">
+                                </div>
+
+                                <!--? INPUT RANGE -->
+                                <div class="col-12 col-lg-6 mb-2 text-center">
+                                    <p class="p-1 border bg-body-secondary text-dark">&lt;input type="range"&gt; – Barra
+                                        deslizante</p>
+                                    <input class="mb-2" type="range" min="0" max="100" value="50">
+                                </div>
+                                <!--? INPUT COLOR -->
+                                <div class="col-12 col-lg-6 mb-2 text-center">
+                                    <p class="p-1 border bg-body-secondary text-dark">&lt;input type="color"&gt; –
+                                        Selector
+                                        de
+                                        color</p>
+                                    <input class="mb-2" type="color">
+                                </div>
+                                <div class="col-12 col-lg-6 mb-2 text-center">
+                                    <!--? INPUT FILE -->
+                                    <p class="p-1 border bg-body-secondary text-dark">&lt;input type="file"&gt; – Subir
+                                        archivos
+                                    </p>
+                                    <input class="mb-2" type="file">
+                                </div>
+                                <div class="col-12 col-lg-6 mb-2 text-center">
+                                    <!--? INPUT HIDDEN -->
+                                    <p class="p-1 border bg-body-secondary text-dark">&lt;input type="hidden"&gt; –
+                                        Valor
+                                        oculto
+                                    </p>
+                                    <input class="mb-2" type="hidden" value="12345">
+                                </div>
+                                <!--? BUTTONS -->
+                                <div class="text-center">
+                                    <p class="p-1 border bg-body-secondary text-dark">&lt;input type="submit"&gt; –
+                                        Botón
+                                        para
+                                        enviar</p>
+                                    <input class="mb-2" type="submit" value="Enviar">
+                                </div>
+                                <div class=" mb-2 text-center">
+                                    <p class="p-1 border bg-body-secondary text-dark">&lt;input type="reset"&gt; – Botón
+                                        para
+                                        limpiar formulario</p>
+                                    <input class="mb-2" type="reset" value="Limpiar">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!--TODO: ===============LISTAS: <UL> <OL> <LI>=================-->
+                        <h5 class="bg-dark text-white text-center py-2 mt-3">Listas</h5>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <div class="border p-2 bg-body-secondary mb-2">
+                                        <p class="text-dark ">&lt;ul&gt; – Lista desordenada con
+                                            viñetas</p>
+                                        <ul class="text-dark">
+                                            <li>Elemento 1</li>
+                                            <li>Elemento 2</li>
+                                            <li>Elemento 3</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-12 col-lg-6">
+                                    <div class="border p-2 bg-body-secondary text-dark ">
+                                        <p class="text-dark ">&lt;ol&gt; – Lista ordenada
+                                            con
+                                            números</p>
+
+                                        <ol class=" text-dark ">
+                                            <li>Primer paso</li>
+                                            <li>Segundo paso</li>
+                                            <li>Tercer paso</li>
+                                        </ol>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6">
+                                    <div class="border p-2 bg-body-secondary text-dark  ">
+                                        <p class="text-dark">&lt;ol style="list-style-type:
+                                            upper-roman;"&gt; – Lista ordenada
+                                            con números romanos</p>
+                                        <ol class="text-dark py-1" style="list-style-type: upper-roman;">
+                                            <li>Primer punto</li>
+                                            <li>Segundo punto</li>
+                                            <li>Tercer punto</li>
+                                        </ol>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-12 col-lg-6">
+                                    <div class="border p-2 bg-body-secondary text-dark">
+                                        <p class="text-dark">&lt;dl&gt; – Lista de definiciones</p>
+                                        <dl class="text-dark">
+                                            <dt>HTML</dt>
+                                            <dd>Lenguaje de marcado para páginas web</dd>
+                                            <dt>CSS</dt>
+                                            <dd>Lenguaje de estilos para la web</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--?============TABLAS====================-->
+
+                        <h5 class="bg-dark text-white text-center py-1 mt-3 ">Tablas</h5>
+                        <!--TODO: ========EJEMPLO-TABLA==========-->
+                        <div class="container">
+                            <div class="row ">
+                                <div class="col-6 p-2">
+                                    <p class="bg-body-secondary text-dark p-1">&lt;table&gt; – Contenedor de la tabla
+                                    </p>
+
+                                    <p class="bg-body-secondary text-dark p-1">&lt;tr&gt; – Fila de la tabla</p>
+
+                                    <p class="bg-body-secondary text-dark p-1">&lt;th&gt; – Celda de encabezado</p>
+
+                                    <p class="bg-body-secondary text-dark p-1">&lt;td&gt; – Celda de datos</p>
+                                </div>
+
+                                <div class="col-6 p-2">
+                                    <p class="bg-body-secondary text-dark p-1">&lt;thead&gt; – Encabezado de la tabla
+                                    </p>
+
+                                    <p class="bg-body-secondary text-dark p-1">&lt;tbody&gt; – Cuerpo de la tabla</p>
+
+                                    <p class="bg-body-secondary text-dark p-1">&lt;tfoot&gt; – Pie de la tabla</p>
+
+                                    <p class="bg-body-secondary text-dark p-1">&lt;caption&gt; – Título de la tabla</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!--TODO: ========Otras etiquetas útiles en tablas==========-->
+                        <h5 class="bg-dark text-white text-center py-1 mt-3 ">Otras etiquetas útiles en tablas</h5>
+                        <div class="container d-flex flex-lg-row flex-column  justify-content-center">
+                            <div class="border">
+                                <div class="bg-dark text-white">&lt;col&gt;</div>
+                                <div class="bg-body-secondary">
+                                    → Define una columna individual (usado junto a &lt;colgroup&gt;)
+                                </div>
+
+                                <div class="bg-dark text-white">&lt;colgroup&gt;</div>
+                                <div class="bg-body-secondary">
+                                    → Agrupa columnas para aplicar estilos o atributos de forma conjunta.
+                                </div>
+
+                                <div class="bg-dark text-white">&lt;thead&gt; / &lt;tbody&gt; / &lt;tfoot&gt;
+                                </div>
+                                <div class="bg-body-secondary">
+                                    → Ya los tienes, pero recuerda que permiten separar estructura de contenido.
+                                </div>
+                            </div>
+
+                            <div class="border">
+
+                                <div class="bg-dark text-white">&lt;th scope="col|row"&gt;</div>
+                                <div class="bg-body-secondary">
+                                    → Atributo para indicar si el encabezado aplica a una columna o a una fila.
+                                </div>
+
+                                <div class="bg-dark text-white">&lt;td colspan="n"&gt;</div>
+                                <div class="bg-body-secondary ">→ Una celda que ocupa varias columnas.<br>&lt;td
+                                    colspan="3"&gt;Esta
+                                    celda ocupa 3 columnas</div>
+
+                                <div class="bg-dark text-white">&lt;td rowspan="n"&gt;</div>
+                                <div class="bg-body-secondary "> → Una celda que ocupa varias filas.&lt;td rowspan="2"&gt;Celda
+                                    vertical, ocupa 2 filas </div>
+                            </div>
+                        </div>
+
+
+                        <!--TODO: ========EJEMPLO-TABLA-COMPLETA==========-->
+                        <h5 class="bg-dark text-white text-center py-1 mt-3 ">Ejemplo completo de una Tabla</h5>
+                        <div class="container">
+                            <div class="p-3 border cont-ejm-form bg-body-secondary">
+
+
+                                <pre><code>
+&lt;table border="1"&gt;
+    &lt;caption&gt;Ejemplo de tabla&lt;/caption&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Nombre&lt;/th&gt;
+            &lt;th&gt;Edad&lt;/th&gt;
+            &lt;th&gt;Ciudad&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Ana&lt;/td&gt;
+            &lt;td&gt;25&lt;/td&gt;
+            &lt;td&gt;Madrid&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Carlos&lt;/td&gt;
+            &lt;td&gt;30&lt;/td&gt;
+            &lt;td&gt;Barcelona&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Lucía&lt;/td&gt;
+            &lt;td&gt;28&lt;/td&gt;
+            &lt;td&gt;Valencia&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td colspan="3"&gt;Tabla de ejemplo&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;
+</code></pre>
+                            </div>
+
+                            <div>
+                                <h5 class="bg-dark text-white text-center py-2">EJEMPLO TABLA</h5>
+                                <table class="ejem-tabla border w-100 mt-3 text-center">
+                                    <thead>
+                                        <tr>
+                                            <th>Nombre</th>
+                                            <th>Edad</th>
+                                            <th>Ciudad</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Anna</td>
+                                            <td>25</td>
+                                            <td>Madrid</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Carlos</th>
+                                            <th>49</th>
+                                            <th>Barcelona</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Lucia</th>
+                                            <th>42</th>
+                                            <th>Valencia</th>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td class="p-2 border text-center" colspan="3">Tabla de Ejemplos</td>
+                                        </tr>
+                                    </tfoot>
+
+                                </table>
+                            </div>
+
+                        </div>
+                    </section>
+
+
+
+
+                    <!--?===============SECCIÓN-IMG+VIDEO+AUDIO+LINKS=================-->
+                    <!--TODO: Imágenes ==============-->
+                    <section id="mediaLinks">
+                        <div class="container">
+                            <h2 class="text-white bg-dark py-2 text-center mt-4 ">MEDIA: IMG + VIDEO + AUDIO</h2>
+                            <h5 class=" bg-dark text-white fs-4 mt-5 py-2 text-center">Imágenes</h5>
+                            <div class=" text-center border bg-body-secondary">
+                                <h5 class="p-2 fs-4">Inserta imágenes</h5>
+                                <div class="fs-4 my-2"> &lt;img src="imagen.jpg" alt="Texto alternativo"&gt;</div>
+                                <p>Inserta una imagen. <b class="fs-4">src</b> indica la ruta y <b class="fs-4">alt</b>
+                                    es el texto alternativo
+                                    (muy importante para accesibilidad y SEO). Se recomienda siempre definir ancho y
+                                    alto con CSS, no con atributos.</p>
+
+                                <h5 class="fs-4">Atributos Útiles</h5>
+                                <p>srcset → para imágenes responsive.</p>
+                                <p>loading="lazy" → carga diferida (mejora rendimiento).</p>
+                                <p>title → texto emergente al pasar el ratón.</p>
+                            </div>
+
+                            <!--TODO: Videos ==============-->
+                            <div class="container ">
+                                <h2 class="text-white bg-dark py-2 text-center mt-4 ">Video</h2>
+                                <div class="text-center border bg-body-secondary ">
+                                    <h5 class="p-2 fs-4">Inserta un video</h5>
+                                    <div class="fs-4 my-2">&lt;video src="video.mp4" controls &gt;&lt;/video &gt;</div>
+                                    <p>Inserta un video. Con <b>controls</b> aparecen los botones de play/pausa. Se
+                                        pueden poner varias fuentes con
+                                        &lt;source&gt; para distintos formatos.
+                                    </p>
+
+                                    <h5 class="fs-4">Atributos Útiles</h5>
+                                    <p>autoplay → inicia solo (ojo que muchos navegadores lo bloquean si no tiene
+                                        muted).</p>
+                                    <p>muted → silencia por defecto.</p>
+                                    <p>loop → el video se repite.</p>
+                                    <p>poster="imagen.jpg" → imagen previa antes de darle play.</p>
+
+
+                                </div>
+                            </div>
+
+                            <!--TODO: Audio y gif==============-->
+                            <div class="container">
+                                <h2 class="text-white bg-dark py-2 text-center mt-4 ">Audio</h2>
+                                <div class="text-center border border bg-body-secondary">
+
+                                    <h5 class="p-2 fs-4">Inserte Audio y Gif</h5>
+                                    <div class="fs-4 my-2"> &lt;audio src="audio.mp3" controls&gt; &lt;/audio&gt;</div>
+                                    <p>Inserta un audio con controles. Igual que video, puede llevar varias
+                                        &lt;source&gt;.</p>
+                                    <h5 class="fs-4">Atributos Útiles</h5>
+                                    <p>autoplay</p>
+                                    <p>loop</p>
+                                    <p>muted</p>
+
+                                    <h5 class="bg-dark p-2 fs-4">Gif</h5>
+                                    <div class="fs-4 my-2">&lt;img src="animacion.gif" alt="Descripción"&gt;</div>
+                                    <p>Un GIF no tiene etiqueta especial, se maneja como una <b>img</b>. El navegador lo
+                                        reproduce solo.</p>
+
+                                </div>
+                            </div>
+
+                            <!--TODO: Links==============-->
+                            <div class="container">
+                                <h2 class="text-white bg-dark py-2 text-center mt-4 ">Links</h2>
+                                <div class="text-center border border bg-body-secondary">
+                                    <h5 class="p-2 fs-4">Crear un enlace</h5>
+
+                                    <div class="fs-4 my-2"> &lt;a href="url"&gt;Texto del enlace&lt;/a&gt;</div>
+                                    <p>Crea un enlace a otra página, archivo, correo o sección interna. Atributos
+                                        útiles: <b>href</b> (destino), <b>target="_blank"</b> (abrir en nueva pestaña),
+                                        <b>download</b> (descargar archivo en lugar de abrirlo).
+                                    </p>
+
+                                    <div class="fs-4 my-2"> Etiqueta &lt;nav&gt; &lt;/nav&gt;</div>
+                                    <p>Sección semántica que agrupa enlaces de navegación principales (menús, barras de
+                                        navegación, índices de la página). Mejora la accesibilidad y la estructura del
+                                        documento.</p>
+
+
+
+
+
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+
+
+
+
+                    </section>
+                </main>
+            </div>
+
+
+
+            <!--? Sidebar DERECHO -->
+            <nav class="col-lg-2 d-none d-lg-block text-white p-2 sticky-top cont-sidebar-right ">
+                <ul class="navbar-nav">
+                    <li> <a class="nav-link text-dark text-white" href="#"> Lorem ipsum dolor, sit amet</a></li>
+                    <li><a class="nav-link text-dark text-white" href="#">Lorem ipsum dolor, sit amet</a></li>
+                    <li><a class="nav-link text-dark text-white" href="#">Lorem ipsum dolor, sit amet</a></li>
+                    <li><a class="nav-link text-dark text-white" href="#">Lorem ipsum dolor, sit amet</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <!--! =================== SCRIPTS =================== -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+    <script src="js/script-layout.js"></script>
+
+</body>
+
+</html>
