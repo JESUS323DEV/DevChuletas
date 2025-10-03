@@ -24,7 +24,7 @@
     <!--!===============HEADER=================-->
     <header>
 
-        <!-- !===============MENÚ-PRINCIPAL-SOLO-EN-ESCRITORIO=================-->
+        <!-- !===============MENÚ-PRINCIPAL-MODAL-HTM, CSS3, JS, BOOTSTRAP Y JAVA SCRIP SOLO EN ESCRITORIO=================-->
         <nav class="navbar navbar-nav navbar-expand-lg d-none border border-black d-lg-block bg-body-tertiary fixed-top "
             aria-label="Menú Principal">
             <div class="container-fluid">
@@ -55,7 +55,7 @@
         </nav>
 
 
-        <!-- !===============MENÚ-PRINCIPAL-SOLO-EN-MÓVILES-Y-TABLETS=================-->
+        <!-- !===============MENÚ-PRINCIPAL-MODAL-HTM, CSS3, JS, BOOTSTRAP Y JAVA SCRIP SOLO EN MÓVILES Y TABLETS=================-->
         <nav class="navbar bg-body-tertiary  d-lg-none fixed-top" id="menubar" aria-label="Menú Principal ">
             <div class="container-fluid cont-w-100 border border-black">
 
@@ -109,7 +109,7 @@
         </nav>
 
 
-        <!-- !===============BOTONES-SIDEBAR-SOLO-EN-MÓVILES-LATERAL-SECCIONES-IMPORTANTES=================-->
+        <!-- !===============BOTONES-MODAL-MENU-SIDEBAR-SOLO-EN-MÓVILES-LATERAL-SECCIONES-IMPORTANTES=================-->
         <!-- ?BOTÓN-OFFCANVAS-CERRAR-SIDEBAR-LATERAL-SOLO-PARA-MÓVILES + SECCIONES-IMPORTANTES -->
         <div class="offcanvas offcanvas-end " tabindex="-1" id="sideBarOffcanvas" aria-labelledby="sideBarOffcanvas">
 
@@ -120,7 +120,7 @@
             </div>
 
 
-            <!--BODY-SIDEBAR-OFFCANVAS-NAV-SOLO-EN-MÓVILES-->
+            <!--!=====================OFFCANVAS+BOTONES-SIDEBAR-LATERAL-SECCIONES-IMPORTANTES==============================  -->
             <div class="offcanvas-body">
                 <nav class="nav ">
                     <ul class="navbar-nav">
@@ -139,7 +139,7 @@
                         <li><a class="nav-link text-dark" href="javascript:void(0)" data-bs-dismiss="offcanvas">Img,
                                 Video, Audio y Links</a></li>
 
-                        <!-- !===============BOTONES-SIDEBAR-LATERAL-SECCIONES-IMPORTANTES=================-->
+                        <!-- !================================-->
 
                     </ul>
                 </nav>
@@ -148,7 +148,10 @@
     </header>
 
 
-    <!--!===============EN-ESCRITORIO-Y-MÓVILES-2SIDEBAR-LATERALES+MAIN=================-->
+    <!--!===============BARRAS LATERALES + MAIN=================-->
+
+
+    <!--!===============SOLO EN ESCRITORIO - MENU LATERAL IZQUIERDO SECCIONES IMPORTANTES=================-->
     <div class="container-fluid border ">
         <div class="d-flex align-items-start min-vh-100">
 
@@ -162,13 +165,16 @@
                     <li><a class="nav-link text-white  p-3  mb-1 " href="#textoYtipo">Texto y tipografía</a></li>
                     <li><a class="nav-link text-white  p-3 mb-1 " href="#coloresFondos">Colores, fondos y bordes</a>
                     </li>
-                    <li><a class="nav-link text-white  p-3 mb-1 " href="#">Modelo de caja</a></li>
-                    <li><a class="nav-link text-white  p-3 mb-1 " href="#">Diseño y posicionamiento</a></li>
-                    <li><a class="nav-link text-white  p-3 mb-1 " href="#">Flexbox (básico para maquetar)</a></li>
-                    <li><a class="nav-link text-white  p-3 mb-1 " href="#">Grid (nivel básico)</a></li>
-                    <li><a class="nav-link text-white  p-3 mb-1 " href="#">Transiciones y animaciones</a></li>
-                    <li><a class="nav-link text-white  p-3 mb-1" href="#">Responsive</a></li>
-                    <li><a class="nav-link text-white  p-3 mb-1 " href="#">Extras útiles</a></li>
+                    <li><a class="nav-link text-white  p-3 mb-1 " href="#modelCaja">Modelo de caja</a></li>
+                    <li><a class="nav-link text-white  p-3 mb-1 " href="#diseñoPosicion">Diseño y posicionamiento</a>
+                    </li>
+                    <li><a class="nav-link text-white  p-3 mb-1 " href="#flexBox">Flexbox (básico para maquetar)</a>
+                    </li>
+                    <li><a class="nav-link text-white  p-3 mb-1 " href="#gridBasico">Grid (nivel básico)</a></li>
+                    <li><a class="nav-link text-white  p-3 mb-1 " href="#animaciones">Transiciones y animaciones</a>
+                    </li>
+                    <li><a class="nav-link text-white  p-3 mb-1" href="#responsive">Responsive</a></li>
+                    <li><a class="nav-link text-white  p-3 mb-1 " href="#extras">Extras útiles</a></li>
                 </ul>
             </nav>
 
@@ -213,8 +219,8 @@
                         <h5 class="bg-dark text-white py-1 mt-3 text-center">Selectores Combinados</h5>
                         <!--TODO: ========ESTRUCTURA BASE DE CSS3 || SELECTORES COMBINADOS==========-->
 
-                        <div class="bg-body-secondary text-dark p-1 text-center">
 
+                        <div class="bg-body-secondary text-dark p-1 text-center">
                             <p class="bg-dark text-white ">elemento > hijo { propiedad: valor; }</p>
 
                             <p>Selector de hijo directo. Aplica estilos solo a los elementos que son hijos directos, no
@@ -473,8 +479,6 @@
                     </div>
                 </section>
 
-
-
                 <!--TODO: ========Propiedades principales de texto y tipografía en CSS3==========-->
                 <!--TODO: ========Texto y tipografía css3==========-->
                 <section id="textoYtipo">
@@ -553,19 +557,7 @@
                                 <p><b>unicode-bidi: </b>Usado junto con direction para manejar texto en distintos
                                     idiomas (más avanzado).</p>
                             </div>
-
                         </div>
-
-
-
-
-
-
-
-
-
-
-
                     </div>
                 </section>
 
@@ -594,7 +586,8 @@
                                     </tr>
                                     <tr>
                                         <td colspan="2">
-                                            opacity → Define la opacidad completa del elemento (0 = transparente, 1 =
+                                            <b class="fs-4">opacity </b>→ Define la opacidad completa del elemento (0 =
+                                            transparente, 1 =
                                             opaco).
                                             <br><b>Ejemplo:</b> <code>div { opacity: 0.5; }</code>
                                         </td>
@@ -748,6 +741,9 @@
 
                             </table>
 
+
+
+                            <!--TODO: ========TABLA DE GRADIENTES Y BORDES AVANZADOS ==========-->
                             <h5 class="bg-dark text-white py-1 mt-3 text-center">Gradientes (CSS3) y Bordes avanzados
                             </h5>
 
@@ -808,6 +804,24 @@
                                             <br><b>Ejemplo:</b> <code>input:focus { outline: 2px solid blue; }</code>
                                         </td>
                                     </tr>
+                                    <tr>
+                                        <td>border-radius</td>
+                                        <td>Redondea esquinas. <br> <b>Ejemplo: </b>
+                                            <code>  div { border-radius: 15px; } </code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>box-shadow</td>
+                                        <td>Sombra para cajas. <br> <b>Ejemplo: </b>
+                                            <code>div { box-shadow: 4px 4px 10px gray; }</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>text-shadow</td>
+                                        <td>Sombra para textos. <br> <b>Ejemplo: </b>
+                                            <code>h1 { text-shadow: 2px 2px 5px black; }</code>
+                                        </td>
+                                    </tr>
                                 </tbody>
 
 
@@ -818,6 +832,635 @@
                         </div>
                     </div>
                 </section>
+
+                <!--TODO: ========            MODELO DE CAJA EN CSS3              ==========-->
+                <section id="modelCaja">
+                    <div class="container">
+                        <h2 class="text-white bg-dark text-center py-2">Modelo de caja en CSS3 </h2>
+                        <div class="row border bg-body-secondary">
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>width / height</b> → ancho y alto del contenido.</p>
+                                <p><b>Ejemplo: </b><code>div { width: 200px; height: 100px; }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>padding</b> → espacio entre el contenido y el borde.</p>
+                                <p><b>Ejemplo: </b><code>div { padding: 20px; }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>padding-top / right / bottom / left</b> → control individual del relleno.</p>
+                                <p><b>Ejemplo: </b><code>div { padding-top: 10px; }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>margin</b> → espacio hacia afuera, separa del resto de elementos.</p>
+                                <p><b>Ejemplo: </b><code>div { margin: 15px; }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>margin-top / right / bottom / left</b> → control individual de márgenes.</p>
+                                <p><b>Ejemplo: </b><code>div { margin-left: 20px; }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>border</b> → el borde del elemento.</p>
+                                <p><b>Ejemplo: </b><code>div { border: 2px solid black; }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>box-sizing</b> → define cómo se calculan los tamaños.</p>
+                                <p><b>Ejemplo: </b><code>div { box-sizing: border-box; }</code></p>
+                                <p><i>content-box (por defecto):</i> el width solo cuenta el contenido.<br>
+                                    <i>border-box:</i> el width incluye contenido + padding + border.
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>overflow</b> → qué hacer si el contenido se desborda.</p>
+                                <p><b>Ejemplo: </b><code>div { overflow: auto; }</code></p>
+                                <p>Valores: visible | hidden | scroll | auto</p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>display</b> → cómo se comporta la caja.</p>
+                                <p><b>Ejemplo: </b><code>div { display: inline-block; }</code></p>
+                                <p>Valores: block | inline | inline-block | none</p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>visibility</b> → oculta o muestra el elemento pero mantiene el espacio.</p>
+                                <p><b>Ejemplo: </b><code>div { visibility: hidden; }</code></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--TODO: ======== DISEÑO Y POSICIONAMIENTO   ==========-->
+                <section id="diseñoPosicion">
+                    <h2 class="text-white bg-dark text-center my-3 py-2">Diseño y posicionamiento </h2>
+
+
+                    <div class="container">
+                        <div class="row bg-body-secondary">
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>position</b> → define el tipo de posicionamiento.</p>
+                                <p><b>Ejemplo: </b><code>div { position: absolute; }</code></p>
+                                <p>Valores: static | relative | absolute | fixed | sticky</p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>top / right / bottom / left</b> → mueven el elemento según su posición.</p>
+                                <p><b>Ejemplo: </b><code>div { top: 10px; left: 20px; }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>z-index</b> → controla el orden de apilamiento (qué elemento queda encima).</p>
+                                <p><b>Ejemplo: </b><code>div { z-index: 10; }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>float</b> → coloca el elemento a la izquierda o derecha.</p>
+                                <p><b>Ejemplo: </b><code>div { float: right; }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>clear</b> → controla cómo se comportan los elementos tras un float.</p>
+                                <p><b>Ejemplo: </b><code>div { clear: both; }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>display</b> → define cómo se muestra el elemento.</p>
+                                <p><b>Ejemplo: </b><code>div { display: inline-block; }</code></p>
+                                <p>Valores: block | inline | inline-block | flex | grid | none</p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>overflow</b> → qué pasa si el contenido se desborda.</p>
+                                <p><b>Ejemplo: </b><code>div { overflow: hidden; }</code></p>
+                                <p>Valores: visible | hidden | scroll | auto</p>
+                            </div>
+
+                            <!-- Extras -->
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>visibility</b> → oculta o muestra el elemento, pero mantiene el espacio.</p>
+                                <p><b>Ejemplo: </b><code>div { visibility: hidden; }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>opacity</b> → nivel de transparencia de un elemento.</p>
+                                <p><b>Ejemplo: </b><code>div { opacity: 0.5; }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>clip / clip-path</b> → recorta el área visible con formas.</p>
+                                <p><b>Ejemplo: </b><code>div { clip-path: circle(50%); }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>object-fit</b> → cómo se ajusta una imagen o vídeo dentro de su caja.</p>
+                                <p><b>Ejemplo: </b><code>img { object-fit: cover; }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>object-position</b> → posición de la imagen/vídeo dentro de su caja.</p>
+                                <p><b>Ejemplo: </b><code>img { object-position: top center; }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-12 border border-secondary">
+                                <p><b>transform</b> → mueve, rota o escala elementos.</p>
+                                <p><b>Ejemplo: </b><code>div { transform: rotate(45deg); }</code></p>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!--TODO: ======== FLEXBOX (PARA MAQUETAR)  ==========-->
+                <section id="flexBox">
+                    <div class="container">
+                        <h2 class="text-white bg-dark text-center py-2 my-3">Flexbox (básico para maquetar)</h2>
+                        <div class="row bg-body-secondary">
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>display: flex</b> → activa el modo Flexbox en un contenedor.</p>
+                                <p><b>Ejemplo: </b><code>div { display: flex; }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>flex-direction</b> → dirección principal de los elementos.</p>
+                                <p><b>Ejemplo: </b><code>div { flex-direction: row; }</code></p>
+                                <p>Valores: row | row-reverse | column | column-reverse</p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>justify-content</b> → alinea los elementos en el eje principal.</p>
+                                <p><b>Ejemplo: </b><code>div { justify-content: space-between; }</code></p>
+                                <p>Valores: flex-start | flex-end | center | space-between | space-around | space-evenly
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>align-items</b> → alinea los elementos en el eje secundario.</p>
+                                <p><b>Ejemplo: </b><code>div { align-items: center; }</code></p>
+                                <p>Valores: flex-start | flex-end | center | baseline | stretch</p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>flex-wrap</b> → permite que los elementos salten de línea.</p>
+                                <p><b>Ejemplo: </b><code>div { flex-wrap: wrap; }</code></p>
+                                <p>Valores: nowrap | wrap | wrap-reverse</p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>align-content</b> → alinea varias líneas de elementos (cuando hay wrap).</p>
+                                <p><b>Ejemplo: </b><code>div { align-content: space-around; }</code></p>
+                                <p>Valores: flex-start | flex-end | center | space-between | space-around | stretch</p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>gap</b> → espacio entre los elementos del flex.</p>
+                                <p><b>Ejemplo: </b><code>div { gap: 20px; }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>flex-grow</b> → define cuánto puede crecer un elemento dentro del contenedor.</p>
+                                <p><b>Ejemplo: </b><code>div { flex-grow: 1; }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>flex-shrink</b> → define cuánto puede encogerse un elemento si no hay espacio.</p>
+                                <p><b>Ejemplo: </b><code>div { flex-shrink: 0; }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>flex-basis</b> → tamaño inicial del elemento antes de aplicar grow/shrink.</p>
+                                <p><b>Ejemplo: </b><code>div { flex-basis: 200px; }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>flex</b> → shorthand de grow, shrink y basis.</p>
+                                <p><b>Ejemplo: </b><code>div { flex: 1 0 150px; }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>order</b> → cambia el orden visual de los elementos.</p>
+                                <p><b>Ejemplo: </b><code>div { order: 2; }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-12 border border-secondary">
+                                <p><b>align-self</b> → alinea un solo elemento de manera independiente.</p>
+                                <p><b>Ejemplo: </b><code>div { align-self: flex-end; }</code></p>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                </section>
+
+                <!--TODO: ======== Grid (nivel Básico)  ==========-->
+                <section id="gridBasico">
+                    <div class="container">
+                        <h2 class="text-white bg-dark text-center my-3 py-2">Grid (nivel básico) </h2>
+
+                        <div class="row bg-body-secondary">
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>display: grid</b> → activa el modo Grid en un contenedor.</p>
+                                <p><b>Ejemplo: </b><code>div { display: grid; }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>grid-template-columns</b> → define las columnas.</p>
+                                <p><b>Ejemplo: </b><code>div { grid-template-columns: 200px 1fr 2fr; }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>grid-template-rows</b> → define las filas.</p>
+                                <p><b>Ejemplo: </b><code>div { grid-template-rows: 100px auto; }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>gap</b> → espacio entre filas y columnas.</p>
+                                <p><b>Ejemplo: </b><code>div { gap: 20px; }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>row-gap / column-gap</b> → espacio separado para filas o columnas.</p>
+                                <p><b>Ejemplo: </b><code>div { row-gap: 10px; column-gap: 20px; }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>grid-column</b> → controla cuántas columnas ocupa un elemento.</p>
+                                <p><b>Ejemplo: </b><code>div { grid-column: 1 / 3; }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>grid-row</b> → controla cuántas filas ocupa un elemento.</p>
+                                <p><b>Ejemplo: </b><code>div { grid-row: 2 / 4; }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>justify-items</b> → alinea el contenido de las celdas en el eje horizontal.</p>
+                                <p><b>Ejemplo: </b><code>div { justify-items: center; }</code></p>
+                                <p>Valores: start | end | center | stretch</p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>align-items</b> → alinea el contenido de las celdas en el eje vertical.</p>
+                                <p><b>Ejemplo: </b><code>div { align-items: stretch; }</code></p>
+                                <p>Valores: start | end | center | stretch</p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>justify-content</b> → alinea todo el grid en horizontal dentro del contenedor.</p>
+                                <p><b>Ejemplo: </b><code>div { justify-content: space-between; }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>align-content</b> → alinea todo el grid en vertical dentro del contenedor.</p>
+                                <p><b>Ejemplo: </b><code>div { align-content: center; }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>place-items</b> → shorthand de justify-items y align-items.</p>
+                                <p><b>Ejemplo: </b><code>div { place-items: center; }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>place-content</b> → shorthand de justify-content y align-content.</p>
+                                <p><b>Ejemplo: </b><code>div { place-content: center space-between; }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>grid-area</b> → define la posición de un ítem en filas y columnas.</p>
+                                <p><b>Ejemplo: </b><code>div { grid-area: 1 / 1 / 3 / 3; }</code></p>
+                            </div>
+
+                            <!--TODO: ======== Grid (básico-avanzado)  ==========-->
+
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Grid nivel básico-avanzado</h5>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>repeat()</b> → repite columnas o filas fácilmente.</p>
+                                <p><b>Ejemplo: </b><code>div { grid-template-columns: repeat(3, 1fr); }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>minmax()</b> → define un tamaño mínimo y máximo.</p>
+                                <p><b>Ejemplo: </b><code>div { grid-template-columns: minmax(200px, 1fr); }</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>auto-fill</b> → llena el espacio con el máximo número de columnas posibles.</p>
+                                <p><b>Ejemplo: </b><code>div { grid-template-columns: repeat(auto-fill, 200px); }</code>
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>auto-fit</b> → parecido a auto-fill, pero ajusta las columnas al espacio
+                                    disponible.</p>
+                                <p><b>Ejemplo:
+                                    </b><code>div { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }</code>
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-12 border border-secondary">
+                                <p><b>fr</b> → unidad fraccional, reparte el espacio disponible proporcionalmente.</p>
+                                <p><b>Ejemplo: </b><code>div { grid-template-columns: 1fr 2fr; }</code></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--TODO: ======== Transiciones y Animaciones  ==========-->
+                <section id="animaciones">
+                    <div class="container">
+                        <h2 class="text-white bg-dark text-center my-3 py-2">Transiciones y Animaciones</h2>
+
+                        <h5 class="bg-dark text-white py-1 mt-3 text-center">Animaciones</h5>
+                        <!--TODO: ======== Animaciones  ==========-->
+                        <div class="row bg-body-secondary">
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>@keyframes</b> → define los fotogramas de la animación.</p>
+                                <p><b>Ejemplo:
+                                        <br>
+                                    </b><code>@keyframes mover { <br> from { left: 0; } <br> to { left: 100px; } <br>}</code>
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>animation-name</b> → nombre de la animación definida con @keyframes.</p>
+                                <p><b>Ejemplo:<br> </b><code>div { <br> animation-name: mover; <br>}</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>animation-duration</b> → duración de la animación.</p>
+                                <p><b>Ejemplo:<br> </b><code>div { <br> animation-duration: 2s; <br>}</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>animation-timing-function</b> → curva de aceleración.</p>
+                                <p><b>Ejemplo:<br>
+                                    </b><code>div { <br> animation-timing-function: ease-in-out; <br>}</code>
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>animation-delay</b> → tiempo de espera antes de iniciar.</p>
+                                <p><b>Ejemplo:<br> </b><code>div { <br> animation-delay: 1s; <br>}</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>animation-iteration-count</b> → número de repeticiones.</p>
+                                <p><b>Ejemplo:<br>
+                                    </b><code>div { <br> animation-iteration-count: infinite; <br>}</code>
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>animation-direction</b> → dirección de la animación.</p>
+                                <p><b>Ejemplo: </b><code>div { <br> animation-direction: alternate; <br>}</code></p>
+                                <p>Valores: normal | reverse | alternate | alternate-reverse</p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>animation-fill-mode</b> → estado del elemento antes y después de la animación.</p>
+                                <p><b>Ejemplo:<br> </b><code>div { <br> animation-fill-mode: forwards; <br>}</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>animation-play-state</b> → controla si la animación está corriendo o pausada.</p>
+                                <p><b>Ejemplo:<br> </b><code>div { <br> animation-play-state: paused; <br>}</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>animation</b> → shorthand con todas las propiedades en una sola.</p>
+                                <p><b>Ejemplo:
+                                        <br>
+                                    </b><code>div { <br> animation: mover 2s ease-in-out 1s infinite alternate; <br>}</code>
+                                </p>
+                            </div>
+
+                            <!--TODO: ======== transiciones  ==========-->
+
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Transiciones</h5>
+
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>transition</b> → propiedad abreviada para animar cambios.</p>
+                                <p><b>Ejemplo:<br> </b><code>div { <br> transition: all 0.5s ease; <br>}</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>transition-property</b> → define qué propiedad se anima.</p>
+                                <p><b>Ejemplo:<br>
+                                    </b><code>div { <br> transition-property: background-color; <br>}</code>
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>transition-duration</b> → tiempo que dura la transición.</p>
+                                <p><b>Ejemplo:<br> </b><code>div { <br> transition-duration: 0.3s; <br>}</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>transition-timing-function</b> → curva de aceleración.</p>
+                                <p><b>Ejemplo:
+                                        <br> </b><code>div { <br> transition-timing-function: ease-in-out; <br>}</code>
+                                </p>
+                                <p>Valores: linear | ease | ease-in | ease-out | ease-in-out | cubic-bezier()</p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>transition-delay</b> → retardo antes de empezar.</p>
+                                <p><b>Ejemplo:<br> </b><code>div { <br> transition-delay: 0.2s; <br>}</code></p>
+                            </div>
+
+                            <!-- Extras -->
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>transition: none</b> → desactiva todas las transiciones.</p>
+                                <p><b>Ejemplo:<br> </b><code>div { <br> transition: none; <br>}</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>transition multiple</b> → varias propiedades a la vez.</p>
+                                <p><b>Ejemplo:
+                                        <br>
+                                    </b><code>div { <br> transition: background-color 0.3s, transform 0.5s; <br>}</code>
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>cubic-bezier()</b> → curva de animación personalizada.</p>
+                                <p><b>Ejemplo:
+                                        <br>
+                                    </b><code>div { <br> transition-timing-function: cubic-bezier(0.68,-0.55,0.27,1.55); <br>}</code>
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>steps()</b> → transición por pasos (frame a frame).</p>
+                                <p><b>Ejemplo:<br>
+                                    </b><code>div { <br> transition-timing-function: steps(5); <br>}</code>
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </section>
+
+                <!--TODO: ======== RESPONSIVE  ==========-->
+                <section id="responsive">
+                    <div class="container">
+                        <h2 class="text-white bg-dark text-center my-3 py-2">RESPONSIVE </h2>
+
+                        <div class="row bg-body-secondary">
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>@media</b> → regla para aplicar estilos según el tamaño de pantalla o dispositivo.
+                                </p>
+                                <p><b>Ejemplo:
+                                    </b><code>@media (max-width: 768px) { <br> body { <br> font-size: 14px; <br> } <br>}</code>
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>max-width / min-width</b> → aplican estilos cuando la pantalla es menor o mayor a
+                                    un ancho específico.</p>
+                                <p><b>Ejemplo:
+                                        <br></b><code>@media (min-width: 1024px) { <br> div { <br> padding: 20px; <br> } <br>}</code>
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>orientation</b> → detecta la orientación de la pantalla.</p>
+                                <p><b>Ejemplo:
+                                        <br></b><code>@media (orientation: landscape) { <br> body { <br> background: lightblue; <br> } <br>}</code>
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>aspect-ratio</b> → aplica estilos según la relación de aspecto.</p>
+                                <p><b>Ejemplo:
+                                        <br></b><code>@media (aspect-ratio: 16/9) { <br> video { <br> max-width: 100%; <br> } <br>}</code>
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>unidades relativas</b> → se adaptan mejor que px fijos.</p>
+                                <p><b>Ejemplo: <br> </b><code>div { <br> width: 50%; <br> font-size: 2em; <br>}</code>
+                                </p>
+                                <p>Unidades: % | em | rem | vw | vh | vmin | vmax</p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>clamp()</b> → define un valor adaptable con mínimo, ideal y máximo.</p>
+                                <p><b>Ejemplo: <br> </b><code>h1 { <br> font-size: clamp(16px, 5vw, 32px); <br>}</code>
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-12 border border-secondary">
+                                <p><b>container queries</b> (CSS más moderno) → aplican estilos según el tamaño del
+                                    contenedor, no del viewport.</p>
+                                <p><b>Ejemplo:
+                                        <br>
+                                    </b><code>@container (min-width: 400px) { <br> div { <br> font-size: 18px; <br> } <br>}</code>
+                                </p>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </section>
+
+                <!--TODO: ======== EXTRAS ==========-->
+                <section id="extras">
+                    <div class="container">
+                        <h2 class="text-white bg-dark text-center my-3 py-2">EXTRAS</h2>
+
+                        <div class="row bg-body-secondary">
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>cursor</b> → cambia el estilo del cursor.</p>
+                                <p><b>Ejemplo: </b><code>div { <br> cursor: pointer; <br>}</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>overflow-x / overflow-y</b> → controlan el scroll en ejes separados.</p>
+                                <p><b>Ejemplo:
+                                    </b><code>div { <br> overflow-x: scroll; <br> overflow-y: hidden; <br>}</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>object-fit</b> → ajuste de imágenes/vídeos.</p>
+                                <p><b>Ejemplo: </b><code>img { <br> object-fit: cover; <br>}</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>object-position</b> → posición de imagen/vídeo dentro de su caja.</p>
+                                <p><b>Ejemplo: </b><code>img { <br> object-position: top center; <br>}</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>clip-path</b> → recorta elementos con formas.</p>
+                                <p><b>Ejemplo: </b><code>div { <br> clip-path: circle(50%); <br>}</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>filter</b> → efectos visuales (blur, brillo, contraste, etc.).</p>
+                                <p><b>Ejemplo: </b><code>img { <br> filter: grayscale(100%); <br>}</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>backdrop-filter</b> → efectos de fondo (vidrio esmerilado, blur detrás).</p>
+                                <p><b>Ejemplo: </b><code>div { <br> backdrop-filter: blur(5px); <br>}</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>box-shadow</b> → sombra para cajas.</p>
+                                <p><b>Ejemplo: </b><code>div { <br> box-shadow: 4px 4px 10px gray; <br>}</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>text-shadow</b> → sombra para textos.</p>
+                                <p><b>Ejemplo: </b><code>h1 { <br> text-shadow: 2px 2px 5px black; <br>}</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>resize</b> → permite redimensionar elementos (ej. textareas).</p>
+                                <p><b>Ejemplo: </b><code>textarea { <br> resize: none; <br>}</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>pointer-events</b> → controla la interacción con el puntero.</p>
+                                <p><b>Ejemplo: </b><code>div { <br> pointer-events: none; <br>}</code></p>
+                            </div>
+
+                            <div class="col-12 col-lg-6 border border-secondary">
+                                <p><b>will-change</b> → avisa al navegador qué propiedades van a cambiar (optimización).
+                                </p>
+                                <p><b>Ejemplo: </b><code>div { <br> will-change: transform; <br>}</code></p>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </section>
+
+
+
 
 
 

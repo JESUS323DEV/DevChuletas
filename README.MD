@@ -17,7 +17,7 @@ Es mi propio manual de referencia para repasar rápido, con ejemplos prácticos 
 ## ✨ Estado actual
 
 - ✅ Sección de **HTML5** terminada  
-- ✅ Empezando la sección de **CSS3**  
+- ✅ Sección de **CSS3** terminada  
 - 🚧 Próximamente: **Bootstrap 5**  
 - 🚧 Próximamente: **JavaScript**  
 - 🎨 Próximamente: **Mejoras visuales y diseño más atractivo**  
@@ -59,8 +59,8 @@ Ahora mismo voy por **CSS3**, pero irá creciendo con cada nueva tecnología que
 ---
 
 ## 🚀 Próximos pasos
-
-- [ ] Completar la sección de **CSS3**  
+- [x] Completar la sección de **Html**
+- [x] Completar la sección de **CSS3**  
 - [ ] Añadir secciones de **Bootstrap** y **JavaScript**  
 - [ ] Incluir ejemplos interactivos  
 - [ ] Publicar en **GitHub Pages** para acceso rápido online  
