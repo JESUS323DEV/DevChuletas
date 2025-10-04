@@ -34,8 +34,11 @@ Es mi propio manual de referencia para repasar rápido, con ejemplos prácticos 
 
 ---
 
+
+
 ## 📂 Estructura del proyecto
 
+```plaintext
 /WEB-CHULETA
 │
 ├── css3/
@@ -56,8 +59,7 @@ Es mi propio manual de referencia para repasar rápido, con ejemplos prácticos 
 ├── index.html
 └── README.md
 
-
-
+```
 
 ---
 
