@@ -11,9 +11,17 @@ Reset Básico-IMPORTANTE
 
 html,
 body {
-    padding-top: 3.5rem;
+    --navbar-height: 7rem !important;
+
 }
 
+
+/* Enlaces de sidebars (izquierda, derecha y móvil) */
+.cont-sidebar-left .nav-link,
+.cont-sidebar-right .nav-link,
+.offcanvas-body .nav-link {
+    color: white !important;
+}
 
 
 
@@ -54,7 +62,6 @@ section::before {
 
     background-color: rgb(146, 82, 27);
     border-radius: 10px;
-    padding: 10px;
 }
 
 .cont-sidebar-left a:focus {

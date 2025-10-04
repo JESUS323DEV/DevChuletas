@@ -26,13 +26,24 @@ menuLinks.forEach(link => {
 
 //para que viewport se ajuste al menu-nav
 function ajustarPadding() {
-  const navbar = document.querySelector('.navbar');
-  document.body.style.paddingTop = navbar.offsetHeight + 'px';
+    // Coge todos los navbars fijos
+    const navbars = document.querySelectorAll('.navbar.fixed-top');
+    let altura = 0;
+
+    navbars.forEach(n => {
+        if (n.offsetHeight > altura) {
+            altura = n.offsetHeight;
+        }
+    });
+
+    // Aplica padding al body
+    document.body.style.paddingTop = altura + 'px';
+
+    console.log("Navbar height aplicada:", altura); // para debug
 }
 
-// Se recalcula en cada scroll, resize y carga
-window.addEventListener('scroll', ajustarPadding);
 window.addEventListener('resize', ajustarPadding);
 window.addEventListener('load', ajustarPadding);
+
 
 
