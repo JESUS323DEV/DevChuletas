@@ -38,7 +38,6 @@ Es mi propio manual de referencia para repasar rápido, con ejemplos prácticos 
 
 ## 📂 Estructura del proyecto
 
-```plaintext
 /WEB-CHULETA
 │
 ├── css3/
