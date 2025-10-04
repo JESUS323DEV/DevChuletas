@@ -39,3 +39,12 @@ tr {
     padding: 10px;
 }
 
+/* =======================================================================
+IMPORTANTE PARA QUE NO SE DESBORDE EN MÓVILES CUANDO USAS POSITION:STICKY
+   ========================================================================= */
+main {
+    flex: 1;
+    /* ocupa el espacio restante */
+    min-width: 0;
+    /* evita overflow por contenido largo */
+}

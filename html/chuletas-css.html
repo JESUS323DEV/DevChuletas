@@ -146,9 +146,9 @@
     </header>
 
 
+
+
     <!--!===============BARRAS LATERALES + MAIN=================-->
-
-
     <!--!===============SOLO EN ESCRITORIO - MENU LATERAL IZQUIERDO SECCIONES IMPORTANTES=================-->
     <div class="container-fluid border ">
         <div class="d-flex align-items-start min-vh-100">
@@ -177,1282 +177,1353 @@
             </nav>
 
             <!--!===============MAIN-CENTRAL-SE-VISUALIZA-EN-MÓVILES-Y-ESCRITORIOS=================-->
-            <main class=" col-lg-7 col-xl-5  mx-auto">
-                <!--?===============SECCIÓN-ESTRUCTURA-CSS3 =================-->
+            <div class="cont-main">
+                <main class="col-12 col-xl-8   mx-auto ">
+                    <!--?===============SECCIÓN-ESTRUCTURA-CSS3 =================-->
 
-                <!--TODO: ========ESTRUCTURA BASE DE CSS3 || SELECTORES BÁSICOS==========-->
-                <section id="estructuraCss">
-                    <div class="container ">
-                        <h2 class="text-white bg-dark text-center py-2">Estructura base: Selectores en CSS3 </h2>
-                        <h5 class="bg-dark text-white py-1 mt-3 text-center">Selectores Básicos</h5>
-                        <div class="bg-body-secondary text-dark p-1 text-center">
+                    <!--TODO: ========ESTRUCTURA BASE DE CSS3 || SELECTORES BÁSICOS==========-->
+                    <section id="estructuraCss">
+                        <div class="container ">
+                            <h2 class="text-white bg-dark text-center py-2">Estructura base: Selectores en CSS3 </h2>
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Selectores Básicos</h5>
+                            <div class="bg-body-secondary text-dark p-1 text-center">
 
-                            <p class="bg-dark text-white "> elemento { propiedad: valor; }</p>
-                            <p>Selector básico que aplica estilos a todas las etiquetas de ese tipo. Ejemplo: <b>p</b>,
-                                <b>h1</b>, <b>div</b>.
-                            </p>
-                        </div>
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">.clase { propiedad: valor; }</p>
-                            <p>Selector de ID. Aplica estilos a un único elemento con ese identificador. Se recomienda
-                                no abusar de IDs en CSS.</p>
-                        </div>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white ">#id { propiedad: valor; }</p>
-                            <p>Selector de ID. Aplica estilos a un único elemento con ese identificador. Se recomienda
-                                no abusar de IDs en CSS.</p>
-                        </div>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white ">elemento elemento { propiedad: valor; }</p>
-                            <p>Selector descendiente. Aplica estilos a un elemento dentro de otro. Ejemplo: todos los
-                                <b>span</b> dentro de un <b>p</b>.
-                            </p>
-                        </div>
-
-                        <h5 class="bg-dark text-white py-1 mt-3 text-center">Selectores Combinados</h5>
-                        <!--TODO: ========ESTRUCTURA BASE DE CSS3 || SELECTORES COMBINADOS==========-->
-
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white ">elemento > hijo { propiedad: valor; }</p>
-
-                            <p>Selector de hijo directo. Aplica estilos solo a los elementos que son hijos directos, no
-                                a
-                                los nietos.</p>
-                        </div>
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white "> elemento + hermano { propiedad: valor; }</p>
-                            <p>Selector de hermano adyacente. Aplica estilos al elemento que está justo después del
-                                primero.</p>
-
-                        </div>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white ">elemento ~ hermanos { propiedad: valor; }</p>
-                            <p>Selector de hermanos generales. Aplica estilos a todos los hermanos que vienen después
-                                del elemento inicial.</p>
-                        </div>
-
-
-                        <!--TODO: ========ESTRUCTURA BASE DE CSS3 || SELECTORES AVANZADOS==========-->
-
-
-                        <h5 class="bg-dark text-white py-1 mt-3 text-center">Selectores avanzados</h5>
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">elemento:first-child { propiedad: valor; }</p>
-                            <p>Selecciona el primer hijo de un elemento padre. Ejemplo: el primer <b>li</b> dentro de
-                                una lista.</p>
-                        </div>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">elemento:last-child { propiedad: valor; }</p>
-                            <p>Selecciona el último hijo de un elemento padre. Ejemplo: el último <b>li</b> dentro de
-                                una lista.</p>
-                        </div>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">elemento:nth-child(n) { propiedad: valor; }</p>
-                            <p>Selecciona el hijo en la posición indicada (1, 2, 3...). También acepta fórmulas como
-                                <b>2n</b> (pares), <b>2n+1</b> (impares).
-                            </p>
-                        </div>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">elemento[atributo] { propiedad: valor; }</p>
-                            <p>Selecciona elementos que tengan un atributo específico, sin importar el valor. Ejemplo:
-                                todos los <b>input</b> que tengan atributo <b>required</b>.</p>
-                        </div>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">elemento[atributo="valor"] { propiedad: valor; }</p>
-                            <p>Selecciona elementos cuyo atributo sea igual al valor indicado. Ejemplo:
-                                <b>input[type="text"]</b>.
-                            </p>
-                        </div>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">elemento[atributo^="valor"] { propiedad: valor; }</p>
-                            <p>Selecciona elementos cuyo atributo comience con un valor específico. Ejemplo:
-                                <b>a[href^="https"]</b> (enlaces que empiezan por https).
-                            </p>
-                        </div>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">elemento[atributo$="valor"] { propiedad: valor; }</p>
-                            <p>Selecciona elementos cuyo atributo termine en un valor específico. Ejemplo:
-                                <b>img[src$=".png"]</b> (imágenes que terminan en .png).
-                            </p>
-                        </div>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">elemento[atributo*="valor"] { propiedad: valor; }</p>
-                            <p>Selecciona elementos cuyo atributo contenga el valor indicado en cualquier parte.
-                                Ejemplo: <b>a[href*="google"]</b>.</p>
-                        </div>
-
-
-
-                        <h5 class="bg-dark text-white py-1 mt-3 text-center">Pseudo-clases de estado</h5>
-                        <!--TODO: ========ESTRUCTURA BASE DE CSS3 || Pseudo-clases de estado (se activan según interacción o condición) ==========-->
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-
-                            <p class="bg-dark text-white">elemento:hover { propiedad: valor; }</p>
-                            <p>Pseudo-clase de estado. Aplica estilos cuando el ratón pasa por encima del elemento.</p>
-                        </div>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">elemento:active { propiedad: valor; }</p>
-                            <p>Se activa cuando el elemento está siendo clicado. Muy usado en botones y enlaces.</p>
-                        </div>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">elemento:focus { propiedad: valor; }</p>
-                            <p>Se aplica cuando un elemento (ejemplo: input o enlace) recibe foco, ya sea con el ratón o
-                                el teclado (tabulador).</p>
-                        </div>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">elemento:checked { propiedad: valor; }</p>
-                            <p>Aplica estilos a un checkbox o radio button cuando están seleccionados.</p>
-                        </div>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">elemento:disabled { propiedad: valor; }</p>
-                            <p>Selecciona inputs, botones o elementos de formulario que estén deshabilitados.</p>
-                        </div>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">elemento:enabled { propiedad: valor; }</p>
-                            <p>Contrario a disabled. Aplica estilos a campos de formulario que están habilitados.</p>
-                        </div>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">elemento:valid { propiedad: valor; }</p>
-                            <p>Selecciona inputs cuyo valor cumple con la validación (ejemplo: email válido).</p>
-                        </div>
-
-
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">elemento:invalid { propiedad: valor; }</p>
-                            <p>Selecciona inputs cuyo valor NO cumple con la validación.</p>
-                        </div>
-
-
-
-                        <h5 class="bg-dark text-white py-1 mt-3 text-center">Pseudo-elementos</h5>
-                        <!--TODO: ========ESTRUCTURA BASE DE CSS3 ||Pseudo-elementos (crean partes “falsas” del elemento para aplicar estilos):==========-->
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">elemento::before { contenido }</p>
-                            <p>Pseudo-elemento. Inserta contenido antes del elemento seleccionado. Requiere la propiedad
-                                <b>content</b>.
-                            </p>
-                        </div>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">elemento::after { contenido }</p>
-                            <p>Pseudo-elemento. Inserta contenido después del elemento seleccionado. Muy usado en
-                                decoración y trucos de CSS.</p>
-                        </div>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">elemento::first-letter { propiedad: valor; }</p>
-                            <p>Aplica estilos a la primera letra del texto de un elemento. Ejemplo: capital inicial en
-                                párrafos.</p>
-                        </div>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">elemento::first-line { propiedad: valor; }</p>
-                            <p>Aplica estilos a la primera línea de texto de un párrafo. El efecto depende del ancho del
-                                contenedor.</p>
-                        </div>
-
-                        <!--TODO: ========ESTRUCTURA BASE DE CSS3 || Otras pseudo-clases avanzadas==========-->
-
-                        <h5 class="bg-dark text-white py-1 mt-3 text-center">Otras pseudo-clases avanzadas</h5>
-
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">elemento:not(selección) { propiedad: valor; }</p>
-                            <p>Excluye elementos que coincidan con el selector indicado. Ejemplo:
-                                <b>p:not(.especial)</b> aplica estilos a todos los párrafos excepto los que tengan clase
-                                "especial".
-                            </p>
-                        </div>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">elemento:empty { propiedad: valor; }</p>
-                            <p>Selecciona elementos que no tienen contenido (ni texto ni hijos). Ejemplo:
-                                <b>div:empty</b>.
-                            </p>
-                        </div>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">elemento:only-child { propiedad: valor; }</p>
-                            <p>Selecciona un elemento que es el único hijo de su padre. Ejemplo: un <b>p</b> dentro de
-                                un div que solo contiene ese párrafo.</p>
-                        </div>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">elemento:first-of-type { propiedad: valor; }</p>
-                            <p>Selecciona el primer elemento de un tipo dentro del padre. Ejemplo: el primer <b>p</b>
-                                dentro de un div con varios elementos.</p>
-                        </div>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">elemento:last-of-type { propiedad: valor; }</p>
-                            <p>Selecciona el último elemento de un tipo dentro del padre.</p>
-                        </div>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">elemento:nth-of-type(n) { propiedad: valor; }</p>
-                            <p>Selecciona el elemento en la posición indicada, contando solo los de ese tipo. Ejemplo:
-                                el segundo <b>li</b> dentro de una lista, ignorando otros elementos diferentes.</p>
-                        </div>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">elemento:only-of-type { propiedad: valor; }</p>
-                            <p>Selecciona un elemento que es el único de su tipo dentro del padre. Ejemplo: un único
-                                <b>h1</b> dentro de un div con otros elementos.
-                            </p>
-                        </div>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">:root { propiedad: valor; }</p>
-                            <p>Selecciona el elemento raíz del documento (normalmente <b>&lt;html&gt;</b>). Muy útil
-                                para definir variables CSS globales.</p>
-                        </div>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">elemento:lang(codigo) { propiedad: valor; }</p>
-                            <p>Selecciona elementos según el idioma definido en el atributo <b>lang</b>. Ejemplo:
-                                <b>p:lang(es)</b> aplica estilos a párrafos en español.
-                            </p>
-                        </div>
-
-                        <!--TODO: ========ESTRUCTURA BASE DE CSS3 || pseudo-clases extras curiosas==========-->
-                        <h5 class="bg-dark text-white py-1 mt-3 text-center">Pseudo-clases extras curiosas</h5>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">elemento:target { propiedad: valor; }</p>
-                            <p>Selecciona el elemento que coincide con el ancla de la URL. Ejemplo: <b>#seccion</b>
-                                cuando visitas <b>pagina.html#seccion</b>.</p>
-                        </div>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">input:placeholder-shown { propiedad: valor; }</p>
-                            <p>Estiliza un campo de formulario solo cuando se está mostrando el placeholder.</p>
-                        </div>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">input:in-range { propiedad: valor; }</p>
-                            <p>Selecciona inputs de tipo numérico cuyo valor está dentro de los límites <b>min</b> y
-                                <b>max</b>.
-                            </p>
-                        </div>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">input:out-of-range { propiedad: valor; }</p>
-                            <p>Selecciona inputs de tipo numérico cuyo valor está fuera de los límites <b>min</b> y
-                                <b>max</b>.
-                            </p>
-                        </div>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">input:required { propiedad: valor; }</p>
-                            <p>Selecciona campos de formulario que son obligatorios (atributo <b>required</b>).</p>
-                        </div>
-
-                        <div class="bg-body-secondary text-dark p-1 text-center">
-                            <p class="bg-dark text-white">input:optional { propiedad: valor; }</p>
-                            <p>Selecciona campos de formulario que son opcionales, es decir, que no tienen atributo
-                                <b>required</b>.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-
-                <!--TODO: ========Propiedades principales de texto y tipografía en CSS3==========-->
-                <!--TODO: ========Texto y tipografía css3==========-->
-                <section id="textoYtipo">
-                    <h2 class="text-white bg-dark text-center py-2 mt-5">Propiedades principales de texto y
-                        tipografía en CSS3 </h2>
-                    <div class="container mt-5 ">
-                        <div class="row d-flex align-items-center justify-content-center bg-body-secondary p-4">
-                            <div class="col-12 text-center fs-2">
-                                <p>Texto y tipografía en CSS3</p>
-                            </div>
-                            <div class="col-12">
-                                <p><b>font-family: </b>Define la tipografía del texto. Se recomienda usar varias
-                                    separadas
-                                    por
-                                    coma (ejemplo:
-                                    font-family: Arial, sans-serif;).</p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 ">
-                                <p><b>font-size</b> Controla el tamaño de la fuente (16px, 1.2em, 120%).</p>
-                                <p><b>font-style: </b> Estilo de la fuente: normal, italic, oblique.</p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 ">
-                                <p><b> font-weight: </b> Grosor de la fuente: normal, bold, lighter o valores de 100 a
-                                    900.
+                                <p class="bg-dark text-white "> elemento { propiedad: valor; }</p>
+                                <p>Selector básico que aplica estilos a todas las etiquetas de ese tipo. Ejemplo:
+                                    <b>p</b>,
+                                    <b>h1</b>, <b>div</b>.
                                 </p>
-                                <p><b> line-height: </b> Espaciado vertical entre líneas de texto.</p>
+                            </div>
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">.clase { propiedad: valor; }</p>
+                                <p>Selector de ID. Aplica estilos a un único elemento con ese identificador. Se
+                                    recomienda
+                                    no abusar de IDs en CSS.</p>
                             </div>
 
-                            <div class="col-12 col-lg-6">
-                                <p><b>letter-spacing: </b>Espaciado entre letras (positivo o negativo).</p>
-                                <p><b>word-spacing: </b>Espaciado entre palabras. </p>
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white ">#id { propiedad: valor; }</p>
+                                <p>Selector de ID. Aplica estilos a un único elemento con ese identificador. Se
+                                    recomienda
+                                    no abusar de IDs en CSS.</p>
                             </div>
 
-                            <div class="col-12 col-lg-6">
-                                <p><b>text-align: </b>Alineación: left, right, center, justify.</p>
-                                <p><b>text-decoration: </b>Decoraciones del texto: underline, overline, line-through,
-                                    none.
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white ">elemento elemento { propiedad: valor; }</p>
+                                <p>Selector descendiente. Aplica estilos a un elemento dentro de otro. Ejemplo: todos
+                                    los
+                                    <b>span</b> dentro de un <b>p</b>.
                                 </p>
                             </div>
 
-                            <div class="col-12 col-lg-6">
-                                <p><b>text-transform: </b>Cambia el formato del texto: uppercase, lowercase, capitalize.
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Selectores Combinados</h5>
+                            <!--TODO: ========ESTRUCTURA BASE DE CSS3 || SELECTORES COMBINADOS==========-->
+
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white ">elemento > hijo { propiedad: valor; }</p>
+
+                                <p>Selector de hijo directo. Aplica estilos solo a los elementos que son hijos directos,
+                                    no
+                                    a
+                                    los nietos.</p>
+                            </div>
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white "> elemento + hermano { propiedad: valor; }</p>
+                                <p>Selector de hermano adyacente. Aplica estilos al elemento que está justo después del
+                                    primero.</p>
+
+                            </div>
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white ">elemento ~ hermanos { propiedad: valor; }</p>
+                                <p>Selector de hermanos generales. Aplica estilos a todos los hermanos que vienen
+                                    después
+                                    del elemento inicial.</p>
+                            </div>
+
+
+                            <!--TODO: ========ESTRUCTURA BASE DE CSS3 || SELECTORES AVANZADOS==========-->
+
+
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Selectores avanzados</h5>
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">elemento:first-child { propiedad: valor; }</p>
+                                <p>Selecciona el primer hijo de un elemento padre. Ejemplo: el primer <b>li</b> dentro
+                                    de
+                                    una lista.</p>
+                            </div>
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">elemento:last-child { propiedad: valor; }</p>
+                                <p>Selecciona el último hijo de un elemento padre. Ejemplo: el último <b>li</b> dentro
+                                    de
+                                    una lista.</p>
+                            </div>
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">elemento:nth-child(n) { propiedad: valor; }</p>
+                                <p>Selecciona el hijo en la posición indicada (1, 2, 3...). También acepta fórmulas como
+                                    <b>2n</b> (pares), <b>2n+1</b> (impares).
                                 </p>
                             </div>
 
-                            <div class="col-12 col-lg-6">
-                                <p><b>color: </b>Define el color del texto (nombre, HEX, RGB, RGBA, HSL, HSLA).</p>
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">elemento[atributo] { propiedad: valor; }</p>
+                                <p>Selecciona elementos que tengan un atributo específico, sin importar el valor.
+                                    Ejemplo:
+                                    todos los <b>input</b> que tengan atributo <b>required</b>.</p>
+                            </div>
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">elemento[atributo="valor"] { propiedad: valor; }</p>
+                                <p>Selecciona elementos cuyo atributo sea igual al valor indicado. Ejemplo:
+                                    <b>input[type="text"]</b>.
+                                </p>
+                            </div>
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">elemento[atributo^="valor"] { propiedad: valor; }</p>
+                                <p>Selecciona elementos cuyo atributo comience con un valor específico. Ejemplo:
+                                    <b>a[href^="https"]</b> (enlaces que empiezan por https).
+                                </p>
+                            </div>
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">elemento[atributo$="valor"] { propiedad: valor; }</p>
+                                <p>Selecciona elementos cuyo atributo termine en un valor específico. Ejemplo:
+                                    <b>img[src$=".png"]</b> (imágenes que terminan en .png).
+                                </p>
+                            </div>
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">elemento[atributo*="valor"] { propiedad: valor; }</p>
+                                <p>Selecciona elementos cuyo atributo contenga el valor indicado en cualquier parte.
+                                    Ejemplo: <b>a[href*="google"]</b>.</p>
+                            </div>
+
+
+
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Pseudo-clases de estado</h5>
+                            <!--TODO: ========ESTRUCTURA BASE DE CSS3 || Pseudo-clases de estado (se activan según interacción o condición) ==========-->
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+
+                                <p class="bg-dark text-white">elemento:hover { propiedad: valor; }</p>
+                                <p>Pseudo-clase de estado. Aplica estilos cuando el ratón pasa por encima del elemento.
+                                </p>
+                            </div>
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">elemento:active { propiedad: valor; }</p>
+                                <p>Se activa cuando el elemento está siendo clicado. Muy usado en botones y enlaces.</p>
+                            </div>
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">elemento:focus { propiedad: valor; }</p>
+                                <p>Se aplica cuando un elemento (ejemplo: input o enlace) recibe foco, ya sea con el
+                                    ratón o
+                                    el teclado (tabulador).</p>
+                            </div>
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">elemento:checked { propiedad: valor; }</p>
+                                <p>Aplica estilos a un checkbox o radio button cuando están seleccionados.</p>
+                            </div>
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">elemento:disabled { propiedad: valor; }</p>
+                                <p>Selecciona inputs, botones o elementos de formulario que estén deshabilitados.</p>
+                            </div>
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">elemento:enabled { propiedad: valor; }</p>
+                                <p>Contrario a disabled. Aplica estilos a campos de formulario que están habilitados.
+                                </p>
+                            </div>
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">elemento:valid { propiedad: valor; }</p>
+                                <p>Selecciona inputs cuyo valor cumple con la validación (ejemplo: email válido).</p>
+                            </div>
+
+
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">elemento:invalid { propiedad: valor; }</p>
+                                <p>Selecciona inputs cuyo valor NO cumple con la validación.</p>
+                            </div>
+
+
+
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Pseudo-elementos</h5>
+                            <!--TODO: ========ESTRUCTURA BASE DE CSS3 ||Pseudo-elementos (crean partes “falsas” del elemento para aplicar estilos):==========-->
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">elemento::before { contenido }</p>
+                                <p>Pseudo-elemento. Inserta contenido antes del elemento seleccionado. Requiere la
+                                    propiedad
+                                    <b>content</b>.
+                                </p>
+                            </div>
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">elemento::after { contenido }</p>
+                                <p>Pseudo-elemento. Inserta contenido después del elemento seleccionado. Muy usado en
+                                    decoración y trucos de CSS.</p>
+                            </div>
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">elemento::first-letter { propiedad: valor; }</p>
+                                <p>Aplica estilos a la primera letra del texto de un elemento. Ejemplo: capital inicial
+                                    en
+                                    párrafos.</p>
+                            </div>
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">elemento::first-line { propiedad: valor; }</p>
+                                <p>Aplica estilos a la primera línea de texto de un párrafo. El efecto depende del ancho
+                                    del
+                                    contenedor.</p>
+                            </div>
+
+                            <!--TODO: ========ESTRUCTURA BASE DE CSS3 || Otras pseudo-clases avanzadas==========-->
+
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Otras pseudo-clases avanzadas</h5>
+
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">elemento:not(selección) { propiedad: valor; }</p>
+                                <p>Excluye elementos que coincidan con el selector indicado. Ejemplo:
+                                    <b>p:not(.especial)</b> aplica estilos a todos los párrafos excepto los que tengan
+                                    clase
+                                    "especial".
+                                </p>
+                            </div>
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">elemento:empty { propiedad: valor; }</p>
+                                <p>Selecciona elementos que no tienen contenido (ni texto ni hijos). Ejemplo:
+                                    <b>div:empty</b>.
+                                </p>
+                            </div>
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">elemento:only-child { propiedad: valor; }</p>
+                                <p>Selecciona un elemento que es el único hijo de su padre. Ejemplo: un <b>p</b> dentro
+                                    de
+                                    un div que solo contiene ese párrafo.</p>
+                            </div>
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">elemento:first-of-type { propiedad: valor; }</p>
+                                <p>Selecciona el primer elemento de un tipo dentro del padre. Ejemplo: el primer
+                                    <b>p</b>
+                                    dentro de un div con varios elementos.</p>
+                            </div>
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">elemento:last-of-type { propiedad: valor; }</p>
+                                <p>Selecciona el último elemento de un tipo dentro del padre.</p>
+                            </div>
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">elemento:nth-of-type(n) { propiedad: valor; }</p>
+                                <p>Selecciona el elemento en la posición indicada, contando solo los de ese tipo.
+                                    Ejemplo:
+                                    el segundo <b>li</b> dentro de una lista, ignorando otros elementos diferentes.</p>
+                            </div>
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">elemento:only-of-type { propiedad: valor; }</p>
+                                <p>Selecciona un elemento que es el único de su tipo dentro del padre. Ejemplo: un único
+                                    <b>h1</b> dentro de un div con otros elementos.
+                                </p>
+                            </div>
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">:root { propiedad: valor; }</p>
+                                <p>Selecciona el elemento raíz del documento (normalmente <b>&lt;html&gt;</b>). Muy útil
+                                    para definir variables CSS globales.</p>
+                            </div>
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">elemento:lang(codigo) { propiedad: valor; }</p>
+                                <p>Selecciona elementos según el idioma definido en el atributo <b>lang</b>. Ejemplo:
+                                    <b>p:lang(es)</b> aplica estilos a párrafos en español.
+                                </p>
+                            </div>
+
+                            <!--TODO: ========ESTRUCTURA BASE DE CSS3 || pseudo-clases extras curiosas==========-->
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Pseudo-clases extras curiosas</h5>
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">elemento:target { propiedad: valor; }</p>
+                                <p>Selecciona el elemento que coincide con el ancla de la URL. Ejemplo: <b>#seccion</b>
+                                    cuando visitas <b>pagina.html#seccion</b>.</p>
+                            </div>
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">input:placeholder-shown { propiedad: valor; }</p>
+                                <p>Estiliza un campo de formulario solo cuando se está mostrando el placeholder.</p>
+                            </div>
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">input:in-range { propiedad: valor; }</p>
+                                <p>Selecciona inputs de tipo numérico cuyo valor está dentro de los límites <b>min</b> y
+                                    <b>max</b>.
+                                </p>
+                            </div>
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">input:out-of-range { propiedad: valor; }</p>
+                                <p>Selecciona inputs de tipo numérico cuyo valor está fuera de los límites <b>min</b> y
+                                    <b>max</b>.
+                                </p>
+                            </div>
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">input:required { propiedad: valor; }</p>
+                                <p>Selecciona campos de formulario que son obligatorios (atributo <b>required</b>).</p>
+                            </div>
+
+                            <div class="bg-body-secondary text-dark p-1 text-center">
+                                <p class="bg-dark text-white">input:optional { propiedad: valor; }</p>
+                                <p>Selecciona campos de formulario que son opcionales, es decir, que no tienen atributo
+                                    <b>required</b>.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--TODO: ========Propiedades principales de texto y tipografía en CSS3==========-->
+                    <!--TODO: ========Texto y tipografía css3==========-->
+                    <section id="textoYtipo">
+                        <h2 class="text-white bg-dark text-center py-2 mt-5">Propiedades principales de texto y
+                            tipografía en CSS3 </h2>
+                        <div class="container mt-5 ">
+                            <div class="row d-flex align-items-center justify-content-center bg-body-secondary p-4">
+                                <div class="col-12 text-center fs-2">
+                                    <p>Texto y tipografía en CSS3</p>
+                                </div>
+                                <div class="col-12">
+                                    <p><b>font-family: </b>Define la tipografía del texto. Se recomienda usar varias
+                                        separadas
+                                        por
+                                        coma (ejemplo:
+                                        font-family: Arial, sans-serif;).</p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 ">
+                                    <p><b>font-size</b> Controla el tamaño de la fuente (16px, 1.2em, 120%).</p>
+                                    <p><b>font-style: </b> Estilo de la fuente: normal, italic, oblique.</p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 ">
+                                    <p><b> font-weight: </b> Grosor de la fuente: normal, bold, lighter o valores de 100
+                                        a
+                                        900.
+                                    </p>
+                                    <p><b> line-height: </b> Espaciado vertical entre líneas de texto.</p>
+                                </div>
+
+                                <div class="col-12 col-lg-6">
+                                    <p><b>letter-spacing: </b>Espaciado entre letras (positivo o negativo).</p>
+                                    <p><b>word-spacing: </b>Espaciado entre palabras. </p>
+                                </div>
+
+                                <div class="col-12 col-lg-6">
+                                    <p><b>text-align: </b>Alineación: left, right, center, justify.</p>
+                                    <p><b>text-decoration: </b>Decoraciones del texto: underline, overline,
+                                        line-through,
+                                        none.
+                                    </p>
+                                </div>
+
+                                <div class="col-12 col-lg-6">
+                                    <p><b>text-transform: </b>Cambia el formato del texto: uppercase, lowercase,
+                                        capitalize.
+                                    </p>
+                                </div>
+
+                                <div class="col-12 col-lg-6">
+                                    <p><b>color: </b>Define el color del texto (nombre, HEX, RGB, RGBA, HSL, HSLA).</p>
+                                </div>
+                            </div>
+
+                            <!--TODO: ========Propiedades adicionales de texto==========-->
+                            <div class="row d-flex align-items-center justify-content-center bg-body-secondary p-4 ">
+                                <div class="col-12 text-center fs-2 mb-3">Propiedades adicionales de texto</div>
+                                <div class="col-12 col-lg-6">
+                                    <p><b>overflow-wrap: </b>(antes word-wrap) → Controla si las palabras largas se
+                                        cortan o se van fuera del contenedor (normal, break-word).</p>
+                                    <p><b>text-indent: </b>Sangría en la primera línea del párrafo.</p>
+                                </div>
+
+                                <div class="col-12 col-lg-6">
+                                    <p><b>white-space: </b>Controla cómo se gestionan los espacios y saltos de línea
+                                        (normal, nowrap, pre, pre-wrap, pre-line).</p>
+                                    <p><b>text-shadow: </b>Aplica sombra al texto (desplazamiento-x desplazamiento-y
+                                        blur
+                                        color).</p>
+                                </div>
+
+                                <div class="col-12 col-lg-6">
+                                    <p><b>direction: </b>Dirección del texto (ltr izquierda a derecha, rtl derecha a
+                                        izquierda).</p>
+                                </div>
+
+                                <div class="col-12 col-lg-6">
+
+                                    <p><b>unicode-bidi: </b>Usado junto con direction para manejar texto en distintos
+                                        idiomas (más avanzado).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <!--TODO: ========Colores, fondos y bordes en CSS3==========-->
+                    <!--TODO: ========COLORES Y FONDOS==========-->
+                    <section id="coloresFondos">
+                        <div class="container">
+
+                            <h2 class="text-white bg-dark text-center py-2 mt-5">COLORES EN CSS3 </h2>
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Colores y backgrounds</h5>
+                            <div class="table w-100 ">
+
+                                <!--TODO: ========TABLA DE COLORES ==========-->
+                                <table class="estiloTabla mx-auto p-3">
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center" colspan="2">COLORES</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <b class="fs-4">color</b> → Define el color del texto. Valores: nombre,
+                                                HEX,
+                                                RGB, RGBA, HSL, HSLA.
+                                                <br><b>Ejemplo:</b> <code>p { color: red; }</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <b class="fs-4">opacity </b>→ Define la opacidad completa del elemento
+                                                (0 =
+                                                transparente, 1 =
+                                                opaco).
+                                                <br><b>Ejemplo:</b> <code>div { opacity: 0.5; }</code>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center" colspan="2">BACKGROUNDS</td>
+                                        </tr>
+                                        <tr>
+                                            <td>background-color:</td>
+                                            <td>Color de fondo del elemento.
+                                                <br><b>Ejemplo:</b> <code>div { background-color: yellow; }</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>background-image:</td>
+                                            <td>Imagen de fondo.
+                                                <br><b>Ejemplo:</b>
+                                                <code>div { background-image: url("imagen.jpg"); }</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>background-repeat:</td>
+                                            <td>Repetición del fondo.
+                                                <br><b>Ejemplo:</b> <code>div { background-repeat: no-repeat; }</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>background-size:</td>
+                                            <td>Tamaño de la imagen.
+                                                <br><b>Ejemplo:</b> <code>div { background-size: cover; }</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>background-position:</td>
+                                            <td>Posición de la imagen.
+                                                <br><b>Ejemplo:</b>
+                                                <code>div { background-position: center top; }</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>background-attachment:</td>
+                                            <td>Fija el fondo.
+                                                <br><b>Ejemplo:</b> <code>div { background-attachment: fixed; }</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>background:</td>
+                                            <td>Shorthand que agrupa varias propiedades.
+                                                <br><b>Ejemplo:</b>
+                                                <code>div { background: url("imagen.jpg") no-repeat center/cover; }</code>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center" colspan="2">BORDER</td>
+                                        </tr>
+                                        <tr>
+                                            <td>border-width</td>
+                                            <td>Grosor del borde.
+                                                <br><b>Ejemplo:</b> <code>div { border-width: 5px; }</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>border-style</td>
+                                            <td>Estilo del borde.
+                                                <br><b>Ejemplo:</b> <code>div { border-style: dashed; }</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>border-color</td>
+                                            <td>Color del borde.
+                                                <br><b>Ejemplo:</b> <code>div { border-color: blue; }</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>border</td>
+                                            <td>Shorthand para width, style y color.
+                                                <br><b>Ejemplo:</b> <code>div { border: 2px solid red; }</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>border-radius</td>
+                                            <td>Bordes redondeados.
+                                                <br><b>Ejemplo:</b> <code>div { border-radius: 50%; }</code>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+
+
+                                </table>
+
+                                <!--TODO: ========COLOREs Y FONDOS AVANZADOS==========-->
+                                <h5 class="bg-dark text-white py-1 mt-3 text-center">Colores y fondos avanzados
+                                </h5>
+
+                                <!--TODO: ========TABLA DE COLORES AVANZADOS ==========-->
+                                <table class="estiloTabla mx-auto  w-100 mt-2">
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center" colspan="2">COLORES AVANZADOS</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>currentColor</td>
+                                            <td>Usa el mismo color que tenga definido <b>color</b>. Muy útil para
+                                                bordes,
+                                                sombras, etc.
+                                                <br><b>Ejemplo:</b>
+                                                <code>div { color: blue; border: 2px solid currentColor; }</code>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>transparent</td>
+                                            <td>Fondo o borde transparente sin afectar al resto.
+                                                <br><b>Ejemplo:</b> <code>div { background-color: transparent; }</code>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-center" colspan="2">FONDOS AVANZADOS</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>background-clip</td>
+                                            <td>Define hasta dónde llega el fondo (<code>border-box</code>,
+                                                <code>padding-box</code>, <code>content-box</code>, <code>text</code>).
+                                                <br><b>Ejemplo:</b> <code>p { background-clip: text; }</code>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>background-origin</td>
+                                            <td>Punto de referencia del fondo (<code>border-box</code>,
+                                                <code>padding-box</code>, <code>content-box</code>).
+                                                <br><b>Ejemplo:</b> <code>div { background-origin: content-box; }</code>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Múltiples fondos</td>
+                                            <td>Se pueden poner varias imágenes separadas por comas.
+                                                <br><b>Ejemplo:</b>
+                                                <code>div { background-image: url("estrella.png"), url("cielo.jpg"); }</code>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+
+
+
+                                <!--TODO: ========TABLA DE GRADIENTES Y BORDES AVANZADOS ==========-->
+                                <h5 class="bg-dark text-white py-1 mt-3 text-center">Gradientes (CSS3) y Bordes
+                                    avanzados
+                                </h5>
+
+                                <table class="estiloTabla mx-auto  w-100 mt-2">
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center" colspan="2">GRADIENTES (CSS3)</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>linear-gradient()</td>
+                                            <td>Fondo con degradado lineal.
+                                                <br><b>Ejemplo:</b>
+                                                <code>div { background: linear-gradient(to right, red, blue); }</code>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>radial-gradient()</td>
+                                            <td>Fondo con degradado radial.
+                                                <br><b>Ejemplo:</b>
+                                                <code>div { background: radial-gradient(circle, red, yellow, green); }</code>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>conic-gradient()</td>
+                                            <td>Fondo con degradado cónico (tipo pastel de colores).
+                                                <br><b>Ejemplo:</b>
+                                                <code>div { background: conic-gradient(red, yellow, green, blue); }</code>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-center" colspan="2">BORDES AVANZADOS</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>border-top, border-right, border-bottom, border-left</td>
+                                            <td>Permiten personalizar cada borde de forma independiente.
+                                                <br><b>Ejemplo:</b>
+                                                <code>div { border-top: 5px solid red; border-right: 5px dashed blue; }</code>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>border-image</td>
+                                            <td>Usa una imagen como borde.
+                                                <br><b>Ejemplo:</b>
+                                                <code>div { border: 10px solid transparent; border-image: url("marco.png") 30 round; }</code>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>outline</td>
+                                            <td>Similar al borde, pero no ocupa espacio en el layout. Muy usado en
+                                                accesibilidad (enlaces, inputs).
+                                                <br><b>Ejemplo:</b>
+                                                <code>input:focus { outline: 2px solid blue; }</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>border-radius</td>
+                                            <td>Redondea esquinas. <br> <b>Ejemplo: </b>
+                                                <code>  div { border-radius: 15px; } </code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>box-shadow</td>
+                                            <td>Sombra para cajas. <br> <b>Ejemplo: </b>
+                                                <code>div { box-shadow: 4px 4px 10px gray; }</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>text-shadow</td>
+                                            <td>Sombra para textos. <br> <b>Ejemplo: </b>
+                                                <code>h1 { text-shadow: 2px 2px 5px black; }</code>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+
+
+
+
+
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--TODO: ========            MODELO DE CAJA EN CSS3              ==========-->
+                    <section id="modelCaja">
+                        <div class="container">
+                            <h2 class="text-white bg-dark text-center py-2">Modelo de caja en CSS3 </h2>
+                            <div class="row border bg-body-secondary">
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>width / height</b> → ancho y alto del contenido.</p>
+                                    <p><b>Ejemplo: </b><code>div { width: 200px; height: 100px; }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>padding</b> → espacio entre el contenido y el borde.</p>
+                                    <p><b>Ejemplo: </b><code>div { padding: 20px; }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>padding-top / right / bottom / left</b> → control individual del relleno.</p>
+                                    <p><b>Ejemplo: </b><code>div { padding-top: 10px; }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>margin</b> → espacio hacia afuera, separa del resto de elementos.</p>
+                                    <p><b>Ejemplo: </b><code>div { margin: 15px; }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>margin-top / right / bottom / left</b> → control individual de márgenes.</p>
+                                    <p><b>Ejemplo: </b><code>div { margin-left: 20px; }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>border</b> → el borde del elemento.</p>
+                                    <p><b>Ejemplo: </b><code>div { border: 2px solid black; }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>box-sizing</b> → define cómo se calculan los tamaños.</p>
+                                    <p><b>Ejemplo: </b><code>div { box-sizing: border-box; }</code></p>
+                                    <p><i>content-box (por defecto):</i> el width solo cuenta el contenido.<br>
+                                        <i>border-box:</i> el width incluye contenido + padding + border.
+                                    </p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>overflow</b> → qué hacer si el contenido se desborda.</p>
+                                    <p><b>Ejemplo: </b><code>div { overflow: auto; }</code></p>
+                                    <p>Valores: visible | hidden | scroll | auto</p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>display</b> → cómo se comporta la caja.</p>
+                                    <p><b>Ejemplo: </b><code>div { display: inline-block; }</code></p>
+                                    <p>Valores: block | inline | inline-block | none</p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>visibility</b> → oculta o muestra el elemento pero mantiene el espacio.</p>
+                                    <p><b>Ejemplo: </b><code>div { visibility: hidden; }</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--TODO: ======== DISEÑO Y POSICIONAMIENTO   ==========-->
+                    <section id="diseñoPosicion">
+                        <h2 class="text-white bg-dark text-center my-3 py-2">Diseño y posicionamiento </h2>
+
+
+                        <div class="container">
+                            <div class="row bg-body-secondary">
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>position</b> → define el tipo de posicionamiento.</p>
+                                    <p><b>Ejemplo: </b><code>div { position: absolute; }</code></p>
+                                    <p>Valores: static | relative | absolute | fixed | sticky</p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>top / right / bottom / left</b> → mueven el elemento según su posición.</p>
+                                    <p><b>Ejemplo: </b><code>div { top: 10px; left: 20px; }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>z-index</b> → controla el orden de apilamiento (qué elemento queda encima).
+                                    </p>
+                                    <p><b>Ejemplo: </b><code>div { z-index: 10; }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>float</b> → coloca el elemento a la izquierda o derecha.</p>
+                                    <p><b>Ejemplo: </b><code>div { float: right; }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>clear</b> → controla cómo se comportan los elementos tras un float.</p>
+                                    <p><b>Ejemplo: </b><code>div { clear: both; }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>display</b> → define cómo se muestra el elemento.</p>
+                                    <p><b>Ejemplo: </b><code>div { display: inline-block; }</code></p>
+                                    <p>Valores: block | inline | inline-block | flex | grid | none</p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>overflow</b> → qué pasa si el contenido se desborda.</p>
+                                    <p><b>Ejemplo: </b><code>div { overflow: hidden; }</code></p>
+                                    <p>Valores: visible | hidden | scroll | auto</p>
+                                </div>
+
+                                <!-- Extras -->
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>visibility</b> → oculta o muestra el elemento, pero mantiene el espacio.</p>
+                                    <p><b>Ejemplo: </b><code>div { visibility: hidden; }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>opacity</b> → nivel de transparencia de un elemento.</p>
+                                    <p><b>Ejemplo: </b><code>div { opacity: 0.5; }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>clip / clip-path</b> → recorta el área visible con formas.</p>
+                                    <p><b>Ejemplo: </b><code>div { clip-path: circle(50%); }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>object-fit</b> → cómo se ajusta una imagen o vídeo dentro de su caja.</p>
+                                    <p><b>Ejemplo: </b><code>img { object-fit: cover; }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>object-position</b> → posición de la imagen/vídeo dentro de su caja.</p>
+                                    <p><b>Ejemplo: </b><code>img { object-position: top center; }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-12 border border-secondary">
+                                    <p><b>transform</b> → mueve, rota o escala elementos.</p>
+                                    <p><b>Ejemplo: </b><code>div { transform: rotate(45deg); }</code></p>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <!--TODO: ======== FLEXBOX (PARA MAQUETAR)  ==========-->
+                    <section id="flexBox">
+                        <div class="container">
+                            <h2 class="text-white bg-dark text-center py-2 my-3">Flexbox (básico para maquetar)</h2>
+                            <div class="row bg-body-secondary">
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>display: flex</b> → activa el modo Flexbox en un contenedor.</p>
+                                    <p><b>Ejemplo: </b><code>div { display: flex; }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>flex-direction</b> → dirección principal de los elementos.</p>
+                                    <p><b>Ejemplo: </b><code>div { flex-direction: row; }</code></p>
+                                    <p>Valores: row | row-reverse | column | column-reverse</p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>justify-content</b> → alinea los elementos en el eje principal.</p>
+                                    <p><b>Ejemplo: </b><code>div { justify-content: space-between; }</code></p>
+                                    <p>Valores: flex-start | flex-end | center | space-between | space-around |
+                                        space-evenly
+                                    </p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>align-items</b> → alinea los elementos en el eje secundario.</p>
+                                    <p><b>Ejemplo: </b><code>div { align-items: center; }</code></p>
+                                    <p>Valores: flex-start | flex-end | center | baseline | stretch</p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>flex-wrap</b> → permite que los elementos salten de línea.</p>
+                                    <p><b>Ejemplo: </b><code>div { flex-wrap: wrap; }</code></p>
+                                    <p>Valores: nowrap | wrap | wrap-reverse</p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>align-content</b> → alinea varias líneas de elementos (cuando hay wrap).</p>
+                                    <p><b>Ejemplo: </b><code>div { align-content: space-around; }</code></p>
+                                    <p>Valores: flex-start | flex-end | center | space-between | space-around | stretch
+                                    </p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>gap</b> → espacio entre los elementos del flex.</p>
+                                    <p><b>Ejemplo: </b><code>div { gap: 20px; }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>flex-grow</b> → define cuánto puede crecer un elemento dentro del contenedor.
+                                    </p>
+                                    <p><b>Ejemplo: </b><code>div { flex-grow: 1; }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>flex-shrink</b> → define cuánto puede encogerse un elemento si no hay espacio.
+                                    </p>
+                                    <p><b>Ejemplo: </b><code>div { flex-shrink: 0; }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>flex-basis</b> → tamaño inicial del elemento antes de aplicar grow/shrink.</p>
+                                    <p><b>Ejemplo: </b><code>div { flex-basis: 200px; }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>flex</b> → shorthand de grow, shrink y basis.</p>
+                                    <p><b>Ejemplo: </b><code>div { flex: 1 0 150px; }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>order</b> → cambia el orden visual de los elementos.</p>
+                                    <p><b>Ejemplo: </b><code>div { order: 2; }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-12 border border-secondary">
+                                    <p><b>align-self</b> → alinea un solo elemento de manera independiente.</p>
+                                    <p><b>Ejemplo: </b><code>div { align-self: flex-end; }</code></p>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                    </section>
+
+                    <!--TODO: ======== Grid (nivel Básico)  ==========-->
+                    <section id="gridBasico">
+                        <div class="container">
+                            <h2 class="text-white bg-dark text-center my-3 py-2">Grid (nivel básico) </h2>
+
+                            <div class="row bg-body-secondary">
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>display: grid</b> → activa el modo Grid en un contenedor.</p>
+                                    <p><b>Ejemplo: </b><code>div { display: grid; }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>grid-template-columns</b> → define las columnas.</p>
+                                    <p><b>Ejemplo: </b><code>div { grid-template-columns: 200px 1fr 2fr; }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>grid-template-rows</b> → define las filas.</p>
+                                    <p><b>Ejemplo: </b><code>div { grid-template-rows: 100px auto; }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>gap</b> → espacio entre filas y columnas.</p>
+                                    <p><b>Ejemplo: </b><code>div { gap: 20px; }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>row-gap / column-gap</b> → espacio separado para filas o columnas.</p>
+                                    <p><b>Ejemplo: </b><code>div { row-gap: 10px; column-gap: 20px; }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>grid-column</b> → controla cuántas columnas ocupa un elemento.</p>
+                                    <p><b>Ejemplo: </b><code>div { grid-column: 1 / 3; }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>grid-row</b> → controla cuántas filas ocupa un elemento.</p>
+                                    <p><b>Ejemplo: </b><code>div { grid-row: 2 / 4; }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>justify-items</b> → alinea el contenido de las celdas en el eje horizontal.
+                                    </p>
+                                    <p><b>Ejemplo: </b><code>div { justify-items: center; }</code></p>
+                                    <p>Valores: start | end | center | stretch</p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>align-items</b> → alinea el contenido de las celdas en el eje vertical.</p>
+                                    <p><b>Ejemplo: </b><code>div { align-items: stretch; }</code></p>
+                                    <p>Valores: start | end | center | stretch</p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>justify-content</b> → alinea todo el grid en horizontal dentro del contenedor.
+                                    </p>
+                                    <p><b>Ejemplo: </b><code>div { justify-content: space-between; }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>align-content</b> → alinea todo el grid en vertical dentro del contenedor.</p>
+                                    <p><b>Ejemplo: </b><code>div { align-content: center; }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>place-items</b> → shorthand de justify-items y align-items.</p>
+                                    <p><b>Ejemplo: </b><code>div { place-items: center; }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>place-content</b> → shorthand de justify-content y align-content.</p>
+                                    <p><b>Ejemplo: </b><code>div { place-content: center space-between; }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>grid-area</b> → define la posición de un ítem en filas y columnas.</p>
+                                    <p><b>Ejemplo: </b><code>div { grid-area: 1 / 1 / 3 / 3; }</code></p>
+                                </div>
+
+                                <!--TODO: ======== Grid (básico-avanzado)  ==========-->
+
+                                <h5 class="bg-dark text-white py-1 mt-3 text-center">Grid nivel básico-avanzado</h5>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>repeat()</b> → repite columnas o filas fácilmente.</p>
+                                    <p><b>Ejemplo: </b><code>div { grid-template-columns: repeat(3, 1fr); }</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>minmax()</b> → define un tamaño mínimo y máximo.</p>
+                                    <p><b>Ejemplo: </b><code>div { grid-template-columns: minmax(200px, 1fr); }</code>
+                                    </p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>auto-fill</b> → llena el espacio con el máximo número de columnas posibles.
+                                    </p>
+                                    <p><b>Ejemplo:
+                                        </b><code>div { grid-template-columns: repeat(auto-fill, 200px); }</code>
+                                    </p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>auto-fit</b> → parecido a auto-fill, pero ajusta las columnas al espacio
+                                        disponible.</p>
+                                    <p><b>Ejemplo:
+                                        </b><code>div { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }</code>
+                                    </p>
+                                </div>
+
+                                <div class="col-12 col-lg-12 border border-secondary">
+                                    <p><b>fr</b> → unidad fraccional, reparte el espacio disponible proporcionalmente.
+                                    </p>
+                                    <p><b>Ejemplo: </b><code>div { grid-template-columns: 1fr 2fr; }</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--TODO: ======== Transiciones y Animaciones  ==========-->
+                    <section id="animaciones">
+                        <div class="container">
+                            <h2 class="text-white bg-dark text-center my-3 py-2">Transiciones y Animaciones</h2>
+
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Animaciones</h5>
+                            <!--TODO: ======== Animaciones  ==========-->
+                            <div class="row bg-body-secondary">
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>@keyframes</b> → define los fotogramas de la animación.</p>
+                                    <p><b>Ejemplo:
+                                            <br>
+                                        </b><code>@keyframes mover { <br> from { left: 0; } <br> to { left: 100px; } <br>}</code>
+                                    </p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>animation-name</b> → nombre de la animación definida con @keyframes.</p>
+                                    <p><b>Ejemplo:<br> </b><code>div { <br> animation-name: mover; <br>}</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>animation-duration</b> → duración de la animación.</p>
+                                    <p><b>Ejemplo:<br> </b><code>div { <br> animation-duration: 2s; <br>}</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>animation-timing-function</b> → curva de aceleración.</p>
+                                    <p><b>Ejemplo:<br>
+                                        </b><code>div { <br> animation-timing-function: ease-in-out; <br>}</code>
+                                    </p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>animation-delay</b> → tiempo de espera antes de iniciar.</p>
+                                    <p><b>Ejemplo:<br> </b><code>div { <br> animation-delay: 1s; <br>}</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>animation-iteration-count</b> → número de repeticiones.</p>
+                                    <p><b>Ejemplo:<br>
+                                        </b><code>div { <br> animation-iteration-count: infinite; <br>}</code>
+                                    </p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>animation-direction</b> → dirección de la animación.</p>
+                                    <p><b>Ejemplo: </b><code>div { <br> animation-direction: alternate; <br>}</code></p>
+                                    <p>Valores: normal | reverse | alternate | alternate-reverse</p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>animation-fill-mode</b> → estado del elemento antes y después de la animación.
+                                    </p>
+                                    <p><b>Ejemplo:<br> </b><code>div { <br> animation-fill-mode: forwards; <br>}</code>
+                                    </p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>animation-play-state</b> → controla si la animación está corriendo o pausada.
+                                    </p>
+                                    <p><b>Ejemplo:<br> </b><code>div { <br> animation-play-state: paused; <br>}</code>
+                                    </p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>animation</b> → shorthand con todas las propiedades en una sola.</p>
+                                    <p><b>Ejemplo:
+                                            <br>
+                                        </b><code>div { <br> animation: mover 2s ease-in-out 1s infinite alternate; <br>}</code>
+                                    </p>
+                                </div>
+
+                                <!--TODO: ======== transiciones  ==========-->
+
+                                <h5 class="bg-dark text-white py-1 mt-3 text-center">Transiciones</h5>
+
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>transition</b> → propiedad abreviada para animar cambios.</p>
+                                    <p><b>Ejemplo:<br> </b><code>div { <br> transition: all 0.5s ease; <br>}</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>transition-property</b> → define qué propiedad se anima.</p>
+                                    <p><b>Ejemplo:<br>
+                                        </b><code>div { <br> transition-property: background-color; <br>}</code>
+                                    </p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>transition-duration</b> → tiempo que dura la transición.</p>
+                                    <p><b>Ejemplo:<br> </b><code>div { <br> transition-duration: 0.3s; <br>}</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>transition-timing-function</b> → curva de aceleración.</p>
+                                    <p><b>Ejemplo:
+                                            <br>
+                                        </b><code>div { <br> transition-timing-function: ease-in-out; <br>}</code>
+                                    </p>
+                                    <p>Valores: linear | ease | ease-in | ease-out | ease-in-out | cubic-bezier()</p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>transition-delay</b> → retardo antes de empezar.</p>
+                                    <p><b>Ejemplo:<br> </b><code>div { <br> transition-delay: 0.2s; <br>}</code></p>
+                                </div>
+
+                                <!-- Extras -->
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>transition: none</b> → desactiva todas las transiciones.</p>
+                                    <p><b>Ejemplo:<br> </b><code>div { <br> transition: none; <br>}</code></p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>transition multiple</b> → varias propiedades a la vez.</p>
+                                    <p><b>Ejemplo:
+                                            <br>
+                                        </b><code>div { <br> transition: background-color 0.3s, transform 0.5s; <br>}</code>
+                                    </p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>cubic-bezier()</b> → curva de animación personalizada.</p>
+                                    <p><b>Ejemplo:
+                                            <br>
+                                        </b><code>div { <br> transition-timing-function: cubic-bezier(0.68,-0.55,0.27,1.55); <br>}</code>
+                                    </p>
+                                </div>
+
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>steps()</b> → transición por pasos (frame a frame).</p>
+                                    <p><b>Ejemplo:<br>
+                                        </b><code>div { <br> transition-timing-function: steps(5); <br>}</code>
+                                    </p>
+                                </div>
+
+
                             </div>
                         </div>
 
-                        <!--TODO: ========Propiedades adicionales de texto==========-->
-                        <div class="row d-flex align-items-center justify-content-center bg-body-secondary p-4 ">
-                            <div class="col-12 text-center fs-2 mb-3">Propiedades adicionales de texto</div>
-                            <div class="col-12 col-lg-6">
-                                <p><b>overflow-wrap: </b>(antes word-wrap) → Controla si las palabras largas se
-                                    cortan o se van fuera del contenedor (normal, break-word).</p>
-                                <p><b>text-indent: </b>Sangría en la primera línea del párrafo.</p>
-                            </div>
+                    </section>
 
-                            <div class="col-12 col-lg-6">
-                                <p><b>white-space: </b>Controla cómo se gestionan los espacios y saltos de línea
-                                    (normal, nowrap, pre, pre-wrap, pre-line).</p>
-                                <p><b>text-shadow: </b>Aplica sombra al texto (desplazamiento-x desplazamiento-y blur
-                                    color).</p>
-                            </div>
+                    <!--TODO: ======== RESPONSIVE  ==========-->
+                    <section id="responsive">
+                        <div class="container">
+                            <h2 class="text-white bg-dark text-center my-3 py-2">RESPONSIVE </h2>
 
-                            <div class="col-12 col-lg-6">
-                                <p><b>direction: </b>Dirección del texto (ltr izquierda a derecha, rtl derecha a
-                                    izquierda).</p>
-                            </div>
+                            <div class="row bg-body-secondary">
 
-                            <div class="col-12 col-lg-6">
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>@media</b> → regla para aplicar estilos según el tamaño de pantalla o
+                                        dispositivo.
+                                    </p>
+                                    <p><b>Ejemplo:
+                                        </b><code>@media (max-width: 768px) { <br> body { <br> font-size: 14px; <br> } <br>}</code>
+                                    </p>
+                                </div>
 
-                                <p><b>unicode-bidi: </b>Usado junto con direction para manejar texto en distintos
-                                    idiomas (más avanzado).</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>max-width / min-width</b> → aplican estilos cuando la pantalla es menor o
+                                        mayor a
+                                        un ancho específico.</p>
+                                    <p><b>Ejemplo:
+                                            <br></b><code>@media (min-width: 1024px) { <br> div { <br> padding: 20px; <br> } <br>}</code>
+                                    </p>
+                                </div>
 
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>orientation</b> → detecta la orientación de la pantalla.</p>
+                                    <p><b>Ejemplo:
+                                            <br></b><code>@media (orientation: landscape) { <br> body { <br> background: lightblue; <br> } <br>}</code>
+                                    </p>
+                                </div>
 
-                <!--TODO: ========Colores, fondos y bordes en CSS3==========-->
-                <!--TODO: ========COLORES Y FONDOS==========-->
-                <section id="coloresFondos">
-                    <div class="container">
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>aspect-ratio</b> → aplica estilos según la relación de aspecto.</p>
+                                    <p><b>Ejemplo:
+                                            <br></b><code>@media (aspect-ratio: 16/9) { <br> video { <br> max-width: 100%; <br> } <br>}</code>
+                                    </p>
+                                </div>
 
-                        <h2 class="text-white bg-dark text-center py-2 mt-5">COLORES EN CSS3 </h2>
-                        <h5 class="bg-dark text-white py-1 mt-3 text-center">Colores y backgrounds</h5>
-                        <div class="table w-100 ">
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>unidades relativas</b> → se adaptan mejor que px fijos.</p>
+                                    <p><b>Ejemplo: <br>
+                                        </b><code>div { <br> width: 50%; <br> font-size: 2em; <br>}</code>
+                                    </p>
+                                    <p>Unidades: % | em | rem | vw | vh | vmin | vmax</p>
+                                </div>
 
-                            <!--TODO: ========TABLA DE COLORES ==========-->
-                            <table class="estiloTabla mx-auto p-3">
-                                <tbody>
-                                    <tr>
-                                        <td class="text-center" colspan="2">COLORES</td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2">
-                                            <b class="fs-4">color</b> → Define el color del texto. Valores: nombre, HEX,
-                                            RGB, RGBA, HSL, HSLA.
-                                            <br><b>Ejemplo:</b> <code>p { color: red; }</code>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2">
-                                            <b class="fs-4">opacity </b>→ Define la opacidad completa del elemento (0 =
-                                            transparente, 1 =
-                                            opaco).
-                                            <br><b>Ejemplo:</b> <code>div { opacity: 0.5; }</code>
-                                        </td>
-                                    </tr>
-                                </tbody>
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>clamp()</b> → define un valor adaptable con mínimo, ideal y máximo.</p>
+                                    <p><b>Ejemplo: <br>
+                                        </b><code>h1 { <br> font-size: clamp(16px, 5vw, 32px); <br>}</code>
+                                    </p>
+                                </div>
 
-                                <tbody>
-                                    <tr>
-                                        <td class="text-center" colspan="2">BACKGROUNDS</td>
-                                    </tr>
-                                    <tr>
-                                        <td>background-color:</td>
-                                        <td>Color de fondo del elemento.
-                                            <br><b>Ejemplo:</b> <code>div { background-color: yellow; }</code>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>background-image:</td>
-                                        <td>Imagen de fondo.
-                                            <br><b>Ejemplo:</b>
-                                            <code>div { background-image: url("imagen.jpg"); }</code>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>background-repeat:</td>
-                                        <td>Repetición del fondo.
-                                            <br><b>Ejemplo:</b> <code>div { background-repeat: no-repeat; }</code>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>background-size:</td>
-                                        <td>Tamaño de la imagen.
-                                            <br><b>Ejemplo:</b> <code>div { background-size: cover; }</code>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>background-position:</td>
-                                        <td>Posición de la imagen.
-                                            <br><b>Ejemplo:</b> <code>div { background-position: center top; }</code>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>background-attachment:</td>
-                                        <td>Fija el fondo.
-                                            <br><b>Ejemplo:</b> <code>div { background-attachment: fixed; }</code>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>background:</td>
-                                        <td>Shorthand que agrupa varias propiedades.
-                                            <br><b>Ejemplo:</b>
-                                            <code>div { background: url("imagen.jpg") no-repeat center/cover; }</code>
-                                        </td>
-                                    </tr>
-                                </tbody>
-
-                                <tbody>
-                                    <tr>
-                                        <td class="text-center" colspan="2">BORDER</td>
-                                    </tr>
-                                    <tr>
-                                        <td>border-width</td>
-                                        <td>Grosor del borde.
-                                            <br><b>Ejemplo:</b> <code>div { border-width: 5px; }</code>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>border-style</td>
-                                        <td>Estilo del borde.
-                                            <br><b>Ejemplo:</b> <code>div { border-style: dashed; }</code>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>border-color</td>
-                                        <td>Color del borde.
-                                            <br><b>Ejemplo:</b> <code>div { border-color: blue; }</code>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>border</td>
-                                        <td>Shorthand para width, style y color.
-                                            <br><b>Ejemplo:</b> <code>div { border: 2px solid red; }</code>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>border-radius</td>
-                                        <td>Bordes redondeados.
-                                            <br><b>Ejemplo:</b> <code>div { border-radius: 50%; }</code>
-                                        </td>
-                                    </tr>
-                                </tbody>
-
-
-                            </table>
-
-                            <!--TODO: ========COLOREs Y FONDOS AVANZADOS==========-->
-                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Colores y fondos avanzados
-                            </h5>
-
-                            <!--TODO: ========TABLA DE COLORES AVANZADOS ==========-->
-                            <table class="estiloTabla mx-auto  w-100 mt-2">
-                                <tbody>
-                                    <tr>
-                                        <td class="text-center" colspan="2">COLORES AVANZADOS</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>currentColor</td>
-                                        <td>Usa el mismo color que tenga definido <b>color</b>. Muy útil para bordes,
-                                            sombras, etc.
-                                            <br><b>Ejemplo:</b>
-                                            <code>div { color: blue; border: 2px solid currentColor; }</code>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>transparent</td>
-                                        <td>Fondo o borde transparente sin afectar al resto.
-                                            <br><b>Ejemplo:</b> <code>div { background-color: transparent; }</code>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="text-center" colspan="2">FONDOS AVANZADOS</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>background-clip</td>
-                                        <td>Define hasta dónde llega el fondo (<code>border-box</code>,
-                                            <code>padding-box</code>, <code>content-box</code>, <code>text</code>).
-                                            <br><b>Ejemplo:</b> <code>p { background-clip: text; }</code>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>background-origin</td>
-                                        <td>Punto de referencia del fondo (<code>border-box</code>,
-                                            <code>padding-box</code>, <code>content-box</code>).
-                                            <br><b>Ejemplo:</b> <code>div { background-origin: content-box; }</code>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>Múltiples fondos</td>
-                                        <td>Se pueden poner varias imágenes separadas por comas.
-                                            <br><b>Ejemplo:</b>
-                                            <code>div { background-image: url("estrella.png"), url("cielo.jpg"); }</code>
-                                        </td>
-                                    </tr>
-                                </tbody>
-
-                            </table>
+                                <div class="col-12 col-lg-12 border border-secondary">
+                                    <p><b>container queries</b> (CSS más moderno) → aplican estilos según el tamaño del
+                                        contenedor, no del viewport.</p>
+                                    <p><b>Ejemplo:
+                                            <br>
+                                        </b><code>@container (min-width: 400px) { <br> div { <br> font-size: 18px; <br> } <br>}</code>
+                                    </p>
+                                </div>
 
 
 
-                            <!--TODO: ========TABLA DE GRADIENTES Y BORDES AVANZADOS ==========-->
-                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Gradientes (CSS3) y Bordes avanzados
-                            </h5>
-
-                            <table class="estiloTabla mx-auto  w-100 mt-2">
-                                <tbody>
-                                    <tr>
-                                        <td class="text-center" colspan="2">GRADIENTES (CSS3)</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>linear-gradient()</td>
-                                        <td>Fondo con degradado lineal.
-                                            <br><b>Ejemplo:</b>
-                                            <code>div { background: linear-gradient(to right, red, blue); }</code>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>radial-gradient()</td>
-                                        <td>Fondo con degradado radial.
-                                            <br><b>Ejemplo:</b>
-                                            <code>div { background: radial-gradient(circle, red, yellow, green); }</code>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>conic-gradient()</td>
-                                        <td>Fondo con degradado cónico (tipo pastel de colores).
-                                            <br><b>Ejemplo:</b>
-                                            <code>div { background: conic-gradient(red, yellow, green, blue); }</code>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="text-center" colspan="2">BORDES AVANZADOS</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>border-top, border-right, border-bottom, border-left</td>
-                                        <td>Permiten personalizar cada borde de forma independiente.
-                                            <br><b>Ejemplo:</b>
-                                            <code>div { border-top: 5px solid red; border-right: 5px dashed blue; }</code>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>border-image</td>
-                                        <td>Usa una imagen como borde.
-                                            <br><b>Ejemplo:</b>
-                                            <code>div { border: 10px solid transparent; border-image: url("marco.png") 30 round; }</code>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>outline</td>
-                                        <td>Similar al borde, pero no ocupa espacio en el layout. Muy usado en
-                                            accesibilidad (enlaces, inputs).
-                                            <br><b>Ejemplo:</b> <code>input:focus { outline: 2px solid blue; }</code>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>border-radius</td>
-                                        <td>Redondea esquinas. <br> <b>Ejemplo: </b>
-                                            <code>  div { border-radius: 15px; } </code>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>box-shadow</td>
-                                        <td>Sombra para cajas. <br> <b>Ejemplo: </b>
-                                            <code>div { box-shadow: 4px 4px 10px gray; }</code>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>text-shadow</td>
-                                        <td>Sombra para textos. <br> <b>Ejemplo: </b>
-                                            <code>h1 { text-shadow: 2px 2px 5px black; }</code>
-                                        </td>
-                                    </tr>
-                                </tbody>
-
-
-
-
-
-                            </table>
-                        </div>
-                    </div>
-                </section>
-
-                <!--TODO: ========            MODELO DE CAJA EN CSS3              ==========-->
-                <section id="modelCaja">
-                    <div class="container">
-                        <h2 class="text-white bg-dark text-center py-2">Modelo de caja en CSS3 </h2>
-                        <div class="row border bg-body-secondary">
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>width / height</b> → ancho y alto del contenido.</p>
-                                <p><b>Ejemplo: </b><code>div { width: 200px; height: 100px; }</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>padding</b> → espacio entre el contenido y el borde.</p>
-                                <p><b>Ejemplo: </b><code>div { padding: 20px; }</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>padding-top / right / bottom / left</b> → control individual del relleno.</p>
-                                <p><b>Ejemplo: </b><code>div { padding-top: 10px; }</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>margin</b> → espacio hacia afuera, separa del resto de elementos.</p>
-                                <p><b>Ejemplo: </b><code>div { margin: 15px; }</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>margin-top / right / bottom / left</b> → control individual de márgenes.</p>
-                                <p><b>Ejemplo: </b><code>div { margin-left: 20px; }</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>border</b> → el borde del elemento.</p>
-                                <p><b>Ejemplo: </b><code>div { border: 2px solid black; }</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>box-sizing</b> → define cómo se calculan los tamaños.</p>
-                                <p><b>Ejemplo: </b><code>div { box-sizing: border-box; }</code></p>
-                                <p><i>content-box (por defecto):</i> el width solo cuenta el contenido.<br>
-                                    <i>border-box:</i> el width incluye contenido + padding + border.
-                                </p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>overflow</b> → qué hacer si el contenido se desborda.</p>
-                                <p><b>Ejemplo: </b><code>div { overflow: auto; }</code></p>
-                                <p>Valores: visible | hidden | scroll | auto</p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>display</b> → cómo se comporta la caja.</p>
-                                <p><b>Ejemplo: </b><code>div { display: inline-block; }</code></p>
-                                <p>Valores: block | inline | inline-block | none</p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>visibility</b> → oculta o muestra el elemento pero mantiene el espacio.</p>
-                                <p><b>Ejemplo: </b><code>div { visibility: hidden; }</code></p>
                             </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
 
-                <!--TODO: ======== DISEÑO Y POSICIONAMIENTO   ==========-->
-                <section id="diseñoPosicion">
-                    <h2 class="text-white bg-dark text-center my-3 py-2">Diseño y posicionamiento </h2>
+                    <!--TODO: ======== EXTRAS ==========-->
+                    <section id="extras">
+                        <div class="container">
+                            <h2 class="text-white bg-dark text-center my-3 py-2">EXTRAS</h2>
 
+                            <div class="row bg-body-secondary">
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>cursor</b> → cambia el estilo del cursor.</p>
+                                    <p><b>Ejemplo: </b><code>div { <br> cursor: pointer; <br>}</code></p>
+                                </div>
 
-                    <div class="container">
-                        <div class="row bg-body-secondary">
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>position</b> → define el tipo de posicionamiento.</p>
-                                <p><b>Ejemplo: </b><code>div { position: absolute; }</code></p>
-                                <p>Valores: static | relative | absolute | fixed | sticky</p>
-                            </div>
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>overflow-x / overflow-y</b> → controlan el scroll en ejes separados.</p>
+                                    <p><b>Ejemplo:
+                                        </b><code>div { <br> overflow-x: scroll; <br> overflow-y: hidden; <br>}</code>
+                                    </p>
+                                </div>
 
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>top / right / bottom / left</b> → mueven el elemento según su posición.</p>
-                                <p><b>Ejemplo: </b><code>div { top: 10px; left: 20px; }</code></p>
-                            </div>
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>object-fit</b> → ajuste de imágenes/vídeos.</p>
+                                    <p><b>Ejemplo: </b><code>img { <br> object-fit: cover; <br>}</code></p>
+                                </div>
 
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>z-index</b> → controla el orden de apilamiento (qué elemento queda encima).</p>
-                                <p><b>Ejemplo: </b><code>div { z-index: 10; }</code></p>
-                            </div>
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>object-position</b> → posición de imagen/vídeo dentro de su caja.</p>
+                                    <p><b>Ejemplo: </b><code>img { <br> object-position: top center; <br>}</code></p>
+                                </div>
 
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>float</b> → coloca el elemento a la izquierda o derecha.</p>
-                                <p><b>Ejemplo: </b><code>div { float: right; }</code></p>
-                            </div>
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>clip-path</b> → recorta elementos con formas.</p>
+                                    <p><b>Ejemplo: </b><code>div { <br> clip-path: circle(50%); <br>}</code></p>
+                                </div>
 
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>clear</b> → controla cómo se comportan los elementos tras un float.</p>
-                                <p><b>Ejemplo: </b><code>div { clear: both; }</code></p>
-                            </div>
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>filter</b> → efectos visuales (blur, brillo, contraste, etc.).</p>
+                                    <p><b>Ejemplo: </b><code>img { <br> filter: grayscale(100%); <br>}</code></p>
+                                </div>
 
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>display</b> → define cómo se muestra el elemento.</p>
-                                <p><b>Ejemplo: </b><code>div { display: inline-block; }</code></p>
-                                <p>Valores: block | inline | inline-block | flex | grid | none</p>
-                            </div>
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>backdrop-filter</b> → efectos de fondo (vidrio esmerilado, blur detrás).</p>
+                                    <p><b>Ejemplo: </b><code>div { <br> backdrop-filter: blur(5px); <br>}</code></p>
+                                </div>
 
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>overflow</b> → qué pasa si el contenido se desborda.</p>
-                                <p><b>Ejemplo: </b><code>div { overflow: hidden; }</code></p>
-                                <p>Valores: visible | hidden | scroll | auto</p>
-                            </div>
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>box-shadow</b> → sombra para cajas.</p>
+                                    <p><b>Ejemplo: </b><code>div { <br> box-shadow: 4px 4px 10px gray; <br>}</code></p>
+                                </div>
 
-                            <!-- Extras -->
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>visibility</b> → oculta o muestra el elemento, pero mantiene el espacio.</p>
-                                <p><b>Ejemplo: </b><code>div { visibility: hidden; }</code></p>
-                            </div>
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>text-shadow</b> → sombra para textos.</p>
+                                    <p><b>Ejemplo: </b><code>h1 { <br> text-shadow: 2px 2px 5px black; <br>}</code></p>
+                                </div>
 
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>opacity</b> → nivel de transparencia de un elemento.</p>
-                                <p><b>Ejemplo: </b><code>div { opacity: 0.5; }</code></p>
-                            </div>
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>resize</b> → permite redimensionar elementos (ej. textareas).</p>
+                                    <p><b>Ejemplo: </b><code>textarea { <br> resize: none; <br>}</code></p>
+                                </div>
 
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>clip / clip-path</b> → recorta el área visible con formas.</p>
-                                <p><b>Ejemplo: </b><code>div { clip-path: circle(50%); }</code></p>
-                            </div>
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>pointer-events</b> → controla la interacción con el puntero.</p>
+                                    <p><b>Ejemplo: </b><code>div { <br> pointer-events: none; <br>}</code></p>
+                                </div>
 
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>object-fit</b> → cómo se ajusta una imagen o vídeo dentro de su caja.</p>
-                                <p><b>Ejemplo: </b><code>img { object-fit: cover; }</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>object-position</b> → posición de la imagen/vídeo dentro de su caja.</p>
-                                <p><b>Ejemplo: </b><code>img { object-position: top center; }</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-12 border border-secondary">
-                                <p><b>transform</b> → mueve, rota o escala elementos.</p>
-                                <p><b>Ejemplo: </b><code>div { transform: rotate(45deg); }</code></p>
-                            </div>
+                                <div class="col-12 col-lg-6 border border-secondary">
+                                    <p><b>will-change</b> → avisa al navegador qué propiedades van a cambiar
+                                        (optimización).
+                                    </p>
+                                    <p><b>Ejemplo: </b><code>div { <br> will-change: transform; <br>}</code></p>
+                                </div>
 
 
-                        </div>
 
-                    </div>
-
-                </section>
-
-                <!--TODO: ======== FLEXBOX (PARA MAQUETAR)  ==========-->
-                <section id="flexBox">
-                    <div class="container">
-                        <h2 class="text-white bg-dark text-center py-2 my-3">Flexbox (básico para maquetar)</h2>
-                        <div class="row bg-body-secondary">
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>display: flex</b> → activa el modo Flexbox en un contenedor.</p>
-                                <p><b>Ejemplo: </b><code>div { display: flex; }</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>flex-direction</b> → dirección principal de los elementos.</p>
-                                <p><b>Ejemplo: </b><code>div { flex-direction: row; }</code></p>
-                                <p>Valores: row | row-reverse | column | column-reverse</p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>justify-content</b> → alinea los elementos en el eje principal.</p>
-                                <p><b>Ejemplo: </b><code>div { justify-content: space-between; }</code></p>
-                                <p>Valores: flex-start | flex-end | center | space-between | space-around | space-evenly
-                                </p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>align-items</b> → alinea los elementos en el eje secundario.</p>
-                                <p><b>Ejemplo: </b><code>div { align-items: center; }</code></p>
-                                <p>Valores: flex-start | flex-end | center | baseline | stretch</p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>flex-wrap</b> → permite que los elementos salten de línea.</p>
-                                <p><b>Ejemplo: </b><code>div { flex-wrap: wrap; }</code></p>
-                                <p>Valores: nowrap | wrap | wrap-reverse</p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>align-content</b> → alinea varias líneas de elementos (cuando hay wrap).</p>
-                                <p><b>Ejemplo: </b><code>div { align-content: space-around; }</code></p>
-                                <p>Valores: flex-start | flex-end | center | space-between | space-around | stretch</p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>gap</b> → espacio entre los elementos del flex.</p>
-                                <p><b>Ejemplo: </b><code>div { gap: 20px; }</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>flex-grow</b> → define cuánto puede crecer un elemento dentro del contenedor.</p>
-                                <p><b>Ejemplo: </b><code>div { flex-grow: 1; }</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>flex-shrink</b> → define cuánto puede encogerse un elemento si no hay espacio.</p>
-                                <p><b>Ejemplo: </b><code>div { flex-shrink: 0; }</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>flex-basis</b> → tamaño inicial del elemento antes de aplicar grow/shrink.</p>
-                                <p><b>Ejemplo: </b><code>div { flex-basis: 200px; }</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>flex</b> → shorthand de grow, shrink y basis.</p>
-                                <p><b>Ejemplo: </b><code>div { flex: 1 0 150px; }</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>order</b> → cambia el orden visual de los elementos.</p>
-                                <p><b>Ejemplo: </b><code>div { order: 2; }</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-12 border border-secondary">
-                                <p><b>align-self</b> → alinea un solo elemento de manera independiente.</p>
-                                <p><b>Ejemplo: </b><code>div { align-self: flex-end; }</code></p>
-                            </div>
-
-
-                        </div>
-
-                    </div>
-
-
-                </section>
-
-                <!--TODO: ======== Grid (nivel Básico)  ==========-->
-                <section id="gridBasico">
-                    <div class="container">
-                        <h2 class="text-white bg-dark text-center my-3 py-2">Grid (nivel básico) </h2>
-
-                        <div class="row bg-body-secondary">
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>display: grid</b> → activa el modo Grid en un contenedor.</p>
-                                <p><b>Ejemplo: </b><code>div { display: grid; }</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>grid-template-columns</b> → define las columnas.</p>
-                                <p><b>Ejemplo: </b><code>div { grid-template-columns: 200px 1fr 2fr; }</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>grid-template-rows</b> → define las filas.</p>
-                                <p><b>Ejemplo: </b><code>div { grid-template-rows: 100px auto; }</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>gap</b> → espacio entre filas y columnas.</p>
-                                <p><b>Ejemplo: </b><code>div { gap: 20px; }</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>row-gap / column-gap</b> → espacio separado para filas o columnas.</p>
-                                <p><b>Ejemplo: </b><code>div { row-gap: 10px; column-gap: 20px; }</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>grid-column</b> → controla cuántas columnas ocupa un elemento.</p>
-                                <p><b>Ejemplo: </b><code>div { grid-column: 1 / 3; }</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>grid-row</b> → controla cuántas filas ocupa un elemento.</p>
-                                <p><b>Ejemplo: </b><code>div { grid-row: 2 / 4; }</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>justify-items</b> → alinea el contenido de las celdas en el eje horizontal.</p>
-                                <p><b>Ejemplo: </b><code>div { justify-items: center; }</code></p>
-                                <p>Valores: start | end | center | stretch</p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>align-items</b> → alinea el contenido de las celdas en el eje vertical.</p>
-                                <p><b>Ejemplo: </b><code>div { align-items: stretch; }</code></p>
-                                <p>Valores: start | end | center | stretch</p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>justify-content</b> → alinea todo el grid en horizontal dentro del contenedor.</p>
-                                <p><b>Ejemplo: </b><code>div { justify-content: space-between; }</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>align-content</b> → alinea todo el grid en vertical dentro del contenedor.</p>
-                                <p><b>Ejemplo: </b><code>div { align-content: center; }</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>place-items</b> → shorthand de justify-items y align-items.</p>
-                                <p><b>Ejemplo: </b><code>div { place-items: center; }</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>place-content</b> → shorthand de justify-content y align-content.</p>
-                                <p><b>Ejemplo: </b><code>div { place-content: center space-between; }</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>grid-area</b> → define la posición de un ítem en filas y columnas.</p>
-                                <p><b>Ejemplo: </b><code>div { grid-area: 1 / 1 / 3 / 3; }</code></p>
-                            </div>
-
-                            <!--TODO: ======== Grid (básico-avanzado)  ==========-->
-
-                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Grid nivel básico-avanzado</h5>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>repeat()</b> → repite columnas o filas fácilmente.</p>
-                                <p><b>Ejemplo: </b><code>div { grid-template-columns: repeat(3, 1fr); }</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>minmax()</b> → define un tamaño mínimo y máximo.</p>
-                                <p><b>Ejemplo: </b><code>div { grid-template-columns: minmax(200px, 1fr); }</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>auto-fill</b> → llena el espacio con el máximo número de columnas posibles.</p>
-                                <p><b>Ejemplo: </b><code>div { grid-template-columns: repeat(auto-fill, 200px); }</code>
-                                </p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>auto-fit</b> → parecido a auto-fill, pero ajusta las columnas al espacio
-                                    disponible.</p>
-                                <p><b>Ejemplo:
-                                    </b><code>div { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }</code>
-                                </p>
-                            </div>
-
-                            <div class="col-12 col-lg-12 border border-secondary">
-                                <p><b>fr</b> → unidad fraccional, reparte el espacio disponible proporcionalmente.</p>
-                                <p><b>Ejemplo: </b><code>div { grid-template-columns: 1fr 2fr; }</code></p>
                             </div>
                         </div>
-                    </div>
-                </section>
-
-                <!--TODO: ======== Transiciones y Animaciones  ==========-->
-                <section id="animaciones">
-                    <div class="container">
-                        <h2 class="text-white bg-dark text-center my-3 py-2">Transiciones y Animaciones</h2>
-
-                        <h5 class="bg-dark text-white py-1 mt-3 text-center">Animaciones</h5>
-                        <!--TODO: ======== Animaciones  ==========-->
-                        <div class="row bg-body-secondary">
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>@keyframes</b> → define los fotogramas de la animación.</p>
-                                <p><b>Ejemplo:
-                                        <br>
-                                    </b><code>@keyframes mover { <br> from { left: 0; } <br> to { left: 100px; } <br>}</code>
-                                </p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>animation-name</b> → nombre de la animación definida con @keyframes.</p>
-                                <p><b>Ejemplo:<br> </b><code>div { <br> animation-name: mover; <br>}</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>animation-duration</b> → duración de la animación.</p>
-                                <p><b>Ejemplo:<br> </b><code>div { <br> animation-duration: 2s; <br>}</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>animation-timing-function</b> → curva de aceleración.</p>
-                                <p><b>Ejemplo:<br>
-                                    </b><code>div { <br> animation-timing-function: ease-in-out; <br>}</code>
-                                </p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>animation-delay</b> → tiempo de espera antes de iniciar.</p>
-                                <p><b>Ejemplo:<br> </b><code>div { <br> animation-delay: 1s; <br>}</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>animation-iteration-count</b> → número de repeticiones.</p>
-                                <p><b>Ejemplo:<br>
-                                    </b><code>div { <br> animation-iteration-count: infinite; <br>}</code>
-                                </p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>animation-direction</b> → dirección de la animación.</p>
-                                <p><b>Ejemplo: </b><code>div { <br> animation-direction: alternate; <br>}</code></p>
-                                <p>Valores: normal | reverse | alternate | alternate-reverse</p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>animation-fill-mode</b> → estado del elemento antes y después de la animación.</p>
-                                <p><b>Ejemplo:<br> </b><code>div { <br> animation-fill-mode: forwards; <br>}</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>animation-play-state</b> → controla si la animación está corriendo o pausada.</p>
-                                <p><b>Ejemplo:<br> </b><code>div { <br> animation-play-state: paused; <br>}</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>animation</b> → shorthand con todas las propiedades en una sola.</p>
-                                <p><b>Ejemplo:
-                                        <br>
-                                    </b><code>div { <br> animation: mover 2s ease-in-out 1s infinite alternate; <br>}</code>
-                                </p>
-                            </div>
-
-                            <!--TODO: ======== transiciones  ==========-->
-
-                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Transiciones</h5>
-
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>transition</b> → propiedad abreviada para animar cambios.</p>
-                                <p><b>Ejemplo:<br> </b><code>div { <br> transition: all 0.5s ease; <br>}</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>transition-property</b> → define qué propiedad se anima.</p>
-                                <p><b>Ejemplo:<br>
-                                    </b><code>div { <br> transition-property: background-color; <br>}</code>
-                                </p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>transition-duration</b> → tiempo que dura la transición.</p>
-                                <p><b>Ejemplo:<br> </b><code>div { <br> transition-duration: 0.3s; <br>}</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>transition-timing-function</b> → curva de aceleración.</p>
-                                <p><b>Ejemplo:
-                                        <br> </b><code>div { <br> transition-timing-function: ease-in-out; <br>}</code>
-                                </p>
-                                <p>Valores: linear | ease | ease-in | ease-out | ease-in-out | cubic-bezier()</p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>transition-delay</b> → retardo antes de empezar.</p>
-                                <p><b>Ejemplo:<br> </b><code>div { <br> transition-delay: 0.2s; <br>}</code></p>
-                            </div>
-
-                            <!-- Extras -->
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>transition: none</b> → desactiva todas las transiciones.</p>
-                                <p><b>Ejemplo:<br> </b><code>div { <br> transition: none; <br>}</code></p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>transition multiple</b> → varias propiedades a la vez.</p>
-                                <p><b>Ejemplo:
-                                        <br>
-                                    </b><code>div { <br> transition: background-color 0.3s, transform 0.5s; <br>}</code>
-                                </p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>cubic-bezier()</b> → curva de animación personalizada.</p>
-                                <p><b>Ejemplo:
-                                        <br>
-                                    </b><code>div { <br> transition-timing-function: cubic-bezier(0.68,-0.55,0.27,1.55); <br>}</code>
-                                </p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>steps()</b> → transición por pasos (frame a frame).</p>
-                                <p><b>Ejemplo:<br>
-                                    </b><code>div { <br> transition-timing-function: steps(5); <br>}</code>
-                                </p>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-                </section>
-
-                <!--TODO: ======== RESPONSIVE  ==========-->
-                <section id="responsive">
-                    <div class="container">
-                        <h2 class="text-white bg-dark text-center my-3 py-2">RESPONSIVE </h2>
-
-                        <div class="row bg-body-secondary">
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>@media</b> → regla para aplicar estilos según el tamaño de pantalla o dispositivo.
-                                </p>
-                                <p><b>Ejemplo:
-                                    </b><code>@media (max-width: 768px) { <br> body { <br> font-size: 14px; <br> } <br>}</code>
-                                </p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>max-width / min-width</b> → aplican estilos cuando la pantalla es menor o mayor a
-                                    un ancho específico.</p>
-                                <p><b>Ejemplo:
-                                        <br></b><code>@media (min-width: 1024px) { <br> div { <br> padding: 20px; <br> } <br>}</code>
-                                </p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>orientation</b> → detecta la orientación de la pantalla.</p>
-                                <p><b>Ejemplo:
-                                        <br></b><code>@media (orientation: landscape) { <br> body { <br> background: lightblue; <br> } <br>}</code>
-                                </p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>aspect-ratio</b> → aplica estilos según la relación de aspecto.</p>
-                                <p><b>Ejemplo:
-                                        <br></b><code>@media (aspect-ratio: 16/9) { <br> video { <br> max-width: 100%; <br> } <br>}</code>
-                                </p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>unidades relativas</b> → se adaptan mejor que px fijos.</p>
-                                <p><b>Ejemplo: <br> </b><code>div { <br> width: 50%; <br> font-size: 2em; <br>}</code>
-                                </p>
-                                <p>Unidades: % | em | rem | vw | vh | vmin | vmax</p>
-                            </div>
-
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>clamp()</b> → define un valor adaptable con mínimo, ideal y máximo.</p>
-                                <p><b>Ejemplo: <br> </b><code>h1 { <br> font-size: clamp(16px, 5vw, 32px); <br>}</code>
-                                </p>
-                            </div>
-
-                            <div class="col-12 col-lg-12 border border-secondary">
-                                <p><b>container queries</b> (CSS más moderno) → aplican estilos según el tamaño del
-                                    contenedor, no del viewport.</p>
-                                <p><b>Ejemplo:
-                                        <br>
-                                    </b><code>@container (min-width: 400px) { <br> div { <br> font-size: 18px; <br> } <br>}</code>
-                                </p>
-                            </div>
+                    </section>
 
 
 
-                        </div>
-                    </div>
-                </section>
 
-                <!--TODO: ======== EXTRAS ==========-->
-                <section id="extras">
-                    <div class="container">
-                        <h2 class="text-white bg-dark text-center my-3 py-2">EXTRAS</h2>
 
-                        <div class="row bg-body-secondary">
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>cursor</b> → cambia el estilo del cursor.</p>
-                                <p><b>Ejemplo: </b><code>div { <br> cursor: pointer; <br>}</code></p>
-                            </div>
 
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>overflow-x / overflow-y</b> → controlan el scroll en ejes separados.</p>
-                                <p><b>Ejemplo:
-                                    </b><code>div { <br> overflow-x: scroll; <br> overflow-y: hidden; <br>}</code></p>
-                            </div>
 
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>object-fit</b> → ajuste de imágenes/vídeos.</p>
-                                <p><b>Ejemplo: </b><code>img { <br> object-fit: cover; <br>}</code></p>
-                            </div>
 
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>object-position</b> → posición de imagen/vídeo dentro de su caja.</p>
-                                <p><b>Ejemplo: </b><code>img { <br> object-position: top center; <br>}</code></p>
-                            </div>
 
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>clip-path</b> → recorta elementos con formas.</p>
-                                <p><b>Ejemplo: </b><code>div { <br> clip-path: circle(50%); <br>}</code></p>
-                            </div>
 
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>filter</b> → efectos visuales (blur, brillo, contraste, etc.).</p>
-                                <p><b>Ejemplo: </b><code>img { <br> filter: grayscale(100%); <br>}</code></p>
-                            </div>
 
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>backdrop-filter</b> → efectos de fondo (vidrio esmerilado, blur detrás).</p>
-                                <p><b>Ejemplo: </b><code>div { <br> backdrop-filter: blur(5px); <br>}</code></p>
-                            </div>
 
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>box-shadow</b> → sombra para cajas.</p>
-                                <p><b>Ejemplo: </b><code>div { <br> box-shadow: 4px 4px 10px gray; <br>}</code></p>
-                            </div>
 
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>text-shadow</b> → sombra para textos.</p>
-                                <p><b>Ejemplo: </b><code>h1 { <br> text-shadow: 2px 2px 5px black; <br>}</code></p>
-                            </div>
 
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>resize</b> → permite redimensionar elementos (ej. textareas).</p>
-                                <p><b>Ejemplo: </b><code>textarea { <br> resize: none; <br>}</code></p>
-                            </div>
 
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>pointer-events</b> → controla la interacción con el puntero.</p>
-                                <p><b>Ejemplo: </b><code>div { <br> pointer-events: none; <br>}</code></p>
-                            </div>
 
-                            <div class="col-12 col-lg-6 border border-secondary">
-                                <p><b>will-change</b> → avisa al navegador qué propiedades van a cambiar (optimización).
-                                </p>
-                                <p><b>Ejemplo: </b><code>div { <br> will-change: transform; <br>}</code></p>
-                            </div>
 
 
 
-                        </div>
-                    </div>
-                </section>
 
 
 
@@ -1461,29 +1532,10 @@
 
 
 
+                </main>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            </main>
-
-
-
+            </div>
 
 
 

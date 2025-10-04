@@ -189,695 +189,764 @@
 
 
             <!--!===============MAIN-CENTRAL-SE-VISUALIZA-EN-MÓVILES-Y-ESCRITORIOS=================-->
-            <main class=" col-lg-7 col-xl-5  mx-auto">
-                <!--todo: ====== ESTRUCTURA BASE ======-->
-                <section id="estructuraBoot">
-                    <h2 class="text-white bg-dark text-center py-2">Estructura Bootstrap</h2>
-                    <h5 class="bg-dark text-white py-1 mt-3 text-center">INSTALACIÓN</h5>
+            <div class="cont-main">
+                <main class="col-12 col-xl-8   mx-auto ">
+                    <!--todo: ====== ESTRUCTURA BASE ======-->
+                    <section id="estructuraBoot">
+                        <h2 class="text-white bg-dark text-center py-2">Estructura Bootstrap</h2>
+                        <h5 class="bg-dark text-white py-1 mt-3 text-center">INSTALACIÓN</h5>
 
-                    <div class="container">
-                        <div class="bg-body-secondary">
+                        <div class="container">
+                            <div class="bg-body-secondary">
 
-                            <div class="border border-dark p-3">
-                                <p><b>CDN Bootstrap</b> → Añade Bootstrap desde la web, sin instalar nada.
-                                    <b>Ejemplo:</b><br>
-                                    <code>&lt;!-- CSS de Bootstrap --&gt;</code><br>
-                                    <code>&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"&gt;</code><br><br>
-                                    <code>&lt;!-- Bootstrap Icons --&gt;</code><br>
-                                    <code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"&gt;</code><br><br>
-                                    <code>&lt;!-- JS de Bootstrap --&gt;</code><br>
-                                    <code>&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;</code><br><br>
-                                    <b>Documentación oficial:</b> <a href="https://getbootstrap.com/"
-                                        target="_blank">Bootstrap Oficial</a>
-                                </p>
+                                <div class="border border-dark p-3">
+                                    <p><b>CDN Bootstrap</b> → Añade Bootstrap desde la web, sin instalar nada.
+                                        <b>Ejemplo:</b><br>
+                                        <code>&lt;!-- CSS de Bootstrap --&gt;</code><br>
+                                        <code>&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"&gt;</code><br><br>
+                                        <code>&lt;!-- Bootstrap Icons --&gt;</code><br>
+                                        <code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"&gt;</code><br><br>
+                                        <code>&lt;!-- JS de Bootstrap --&gt;</code><br>
+                                        <code>&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;</code><br><br>
+                                        <b>Documentación oficial:</b> <a href="https://getbootstrap.com/"
+                                            target="_blank">Bootstrap Oficial</a>
+                                    </p>
+                                </div>
+                                <h5 class="bg-dark text-white py-1 mt-3 text-center">Estructura básica</h5>
+
+                                <div class="border border-dark p-3">
+                                    <p><b>.container</b> → Contenedor con ancho fijo que cambia según el tamaño de
+                                        pantalla.
+                                        <b>Ejemplo:</b><br>
+                                        <code>&lt;div class="container"&gt;</code><br>
+                                        <code>&nbsp;&nbsp;Contenido aquí</code><br>
+                                        <code>&lt;/div&gt;</code>
+                                    </p>
+                                </div>
+
+                                <div class="border border-dark p-3">
+                                    <p><b>.container-fluid</b> → Contenedor que ocupa siempre el 100% del ancho
+                                        disponible.
+                                        <b>Ejemplo:</b><br>
+                                        <code>&lt;div class="container-fluid"&gt;</code><br>
+                                        <code>&nbsp;&nbsp;Contenido a todo el ancho</code><br>
+                                        <code>&lt;/div&gt;</code>
+                                    </p>
+                                </div>
+
+                                <div class="border border-dark p-3">
+                                    <p><b>.row</b> → Define una fila en el sistema de rejilla.<br>
+                                        <b>.col</b> → Columna que se ajusta automáticamente dentro de la fila.
+                                        <b>Ejemplo:</b><br>
+                                        <code>&lt;div class="row"&gt;</code><br>
+                                        <code>&nbsp;&nbsp;&lt;div class="col"&gt;Columna 1&lt;/div&gt;</code><br>
+                                        <code>&nbsp;&nbsp;&lt;div class="col"&gt;Columna 2&lt;/div&gt;</code><br>
+                                        <code>&lt;/div&gt;</code>
+                                    </p>
+                                </div>
+
+                                <div class="border border-dark p-3">
+                                    <p><b>Columnas con tamaños fijos y responsive</b> → Bootstrap divide el ancho en 12
+                                        columnas.
+                                        <b>Ejemplo tamaños fijos:</b><br>
+                                        <code>.col-12</code> → ocupa todo el ancho<br>
+                                        <code>.col-6</code> → ocupa la mitad<br>
+                                        <code>.col-4</code> → ocupa un tercio<br><br>
+                                        <b>Ejemplo responsive:</b><br>
+                                        <code>.col-md-6</code> → en pantallas medianas ocupa 6 columnas<br>
+                                        <code>.col-lg-4</code> → en pantallas grandes ocupa 4 columnas<br><br>
+                                        <b>Ejemplo completo:</b><br>
+                                        <code>&lt;div class="row"&gt;</code><br>
+                                        <code>&nbsp;&nbsp;&lt;div class="col-12 col-md-6 col-lg-4"&gt;Columna adaptable&lt;/div&gt;</code><br>
+                                        <code>&nbsp;&nbsp;&lt;div class="col-12 col-md-6 col-lg-8"&gt;Otra columna adaptable&lt;/div&gt;</code><br>
+                                        <code>&lt;/div&gt;</code>
+                                    </p>
+                                </div>
+
+
+
                             </div>
-                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Estructura básica</h5>
-
-                            <div class="border border-dark p-3">
-                                <p><b>.container</b> → Contenedor con ancho fijo que cambia según el tamaño de pantalla.
-                                    <b>Ejemplo:</b><br>
-                                    <code>&lt;div class="container"&gt;</code><br>
-                                    <code>&nbsp;&nbsp;Contenido aquí</code><br>
-                                    <code>&lt;/div&gt;</code>
-                                </p>
-                            </div>
-
-                            <div class="border border-dark p-3">
-                                <p><b>.container-fluid</b> → Contenedor que ocupa siempre el 100% del ancho disponible.
-                                    <b>Ejemplo:</b><br>
-                                    <code>&lt;div class="container-fluid"&gt;</code><br>
-                                    <code>&nbsp;&nbsp;Contenido a todo el ancho</code><br>
-                                    <code>&lt;/div&gt;</code>
-                                </p>
-                            </div>
-
-                            <div class="border border-dark p-3">
-                                <p><b>.row</b> → Define una fila en el sistema de rejilla.<br>
-                                    <b>.col</b> → Columna que se ajusta automáticamente dentro de la fila.
-                                    <b>Ejemplo:</b><br>
-                                    <code>&lt;div class="row"&gt;</code><br>
-                                    <code>&nbsp;&nbsp;&lt;div class="col"&gt;Columna 1&lt;/div&gt;</code><br>
-                                    <code>&nbsp;&nbsp;&lt;div class="col"&gt;Columna 2&lt;/div&gt;</code><br>
-                                    <code>&lt;/div&gt;</code>
-                                </p>
-                            </div>
-
-                            <div class="border border-dark p-3">
-                                <p><b>Columnas con tamaños fijos y responsive</b> → Bootstrap divide el ancho en 12
-                                    columnas.
-                                    <b>Ejemplo tamaños fijos:</b><br>
-                                    <code>.col-12</code> → ocupa todo el ancho<br>
-                                    <code>.col-6</code> → ocupa la mitad<br>
-                                    <code>.col-4</code> → ocupa un tercio<br><br>
-                                    <b>Ejemplo responsive:</b><br>
-                                    <code>.col-md-6</code> → en pantallas medianas ocupa 6 columnas<br>
-                                    <code>.col-lg-4</code> → en pantallas grandes ocupa 4 columnas<br><br>
-                                    <b>Ejemplo completo:</b><br>
-                                    <code>&lt;div class="row"&gt;</code><br>
-                                    <code>&nbsp;&nbsp;&lt;div class="col-12 col-md-6 col-lg-4"&gt;Columna adaptable&lt;/div&gt;</code><br>
-                                    <code>&nbsp;&nbsp;&lt;div class="col-12 col-md-6 col-lg-8"&gt;Otra columna adaptable&lt;/div&gt;</code><br>
-                                    <code>&lt;/div&gt;</code>
-                                </p>
-                            </div>
-
-
-
                         </div>
-                    </div>
-                </section>
+                    </section>
 
-                <!--todo: ====== Tipografía y textos ====== -->
-                <section id="textBoot">
-                    <div class="container">
-                        <h2 class="text-white bg-dark text-center my-3 py-2">Tipografía y textos </h2>
+                    <!--todo: ====== Tipografía y textos ====== -->
+                    <section id="textBoot">
+                        <div class="container">
+                            <h2 class="text-white bg-dark text-center my-3 py-2">Tipografía y textos </h2>
 
-                        <div class="bg-body-secondary">
+                            <div class="bg-body-secondary">
 
-                            <div class="border border-dark p-3">
-                                <p><b>Clases de títulos (.h1 a .h6)</b> → Permiten aplicar estilos de encabezados a
-                                    cualquier elemento.
-                                    <b>Ejemplo:</b><br>
-                                    <code>&lt;p class="h1"&gt;Título grande&lt;/p&gt;</code><br>
-                                    <code>&lt;span class="h3"&gt;Subtítulo mediano&lt;/span&gt;</code>
-                                </p>
+                                <div class="border border-dark p-3">
+                                    <p><b>Clases de títulos (.h1 a .h6)</b> → Permiten aplicar estilos de encabezados a
+                                        cualquier elemento.
+                                        <b>Ejemplo:</b><br>
+                                        <code>&lt;p class="h1"&gt;Título grande&lt;/p&gt;</code><br>
+                                        <code>&lt;span class="h3"&gt;Subtítulo mediano&lt;/span&gt;</code>
+                                    </p>
+                                </div>
+
+                                <div class="border border-dark p-3">
+                                    <p><b>.lead</b> → texto destacado, más grande y con más espacio.
+                                        <b>Ejemplo:</b><br>
+                                        <code>&lt;p class="lead"&gt;Texto destacado&lt;/p&gt;</code>
+                                    </p>
+
+                                    <p><b>.small</b> → texto más pequeño.
+                                        <b>Ejemplo:</b><br>
+                                        <code>&lt;p class="small"&gt;Texto pequeño&lt;/p&gt;</code>
+                                    </p>
+
+                                    <p><b>.fw-bold</b> → texto en negrita.
+                                        <b>Ejemplo:</b><br>
+                                        <code>&lt;p class="fw-bold"&gt;Texto en negrita&lt;/p&gt;</code>
+                                    </p>
+
+                                    <p><b>.text-muted</b> → texto apagado/gris.
+                                        <b>Ejemplo:</b><br>
+                                        <code>&lt;p class="text-muted"&gt;Texto apagado&lt;/p&gt;</code>
+                                    </p>
+                                </div>
+
+                                <div class="border border-dark p-3">
+                                    <p><b>Colores de texto</b> → Cambian el color del texto.
+                                        <b>Ejemplo:</b><br>
+                                        <code>&lt;p class="text-primary"&gt;Texto azul&lt;/p&gt;</code><br>
+                                        <code>&lt;p class="text-danger"&gt;Texto rojo&lt;/p&gt;</code><br>
+                                        <code>&lt;p class="text-success"&gt;Texto verde&lt;/p&gt;</code><br>
+                                        <code>&lt;p class="text-warning"&gt;Texto amarillo&lt;/p&gt;</code><br>
+                                        <code>&lt;p class="text-info"&gt;Texto celeste&lt;/p&gt;</code>
+                                    </p>
+                                </div>
+
+                                <div class="border border-dark p-3">
+                                    <p><b>Alineación de texto</b> → Controla cómo se alinea el contenido.
+                                        <b>Ejemplo:</b><br>
+                                        <code>&lt;p class="text-start"&gt;Texto a la izquierda&lt;/p&gt;</code><br>
+                                        <code>&lt;p class="text-center"&gt;Texto centrado&lt;/p&gt;</code><br>
+                                        <code>&lt;p class="text-end"&gt;Texto a la derecha&lt;/p&gt;</code>
+                                    </p>
+                                </div>
+
+                                <div class="border border-dark p-3">
+                                    <p><b>Transformación de texto</b> → Cambia el estilo de escritura.
+                                        <b>Ejemplo:</b><br>
+                                        <code>&lt;p class="text-lowercase"&gt;todo en minúsculas&lt;/p&gt;</code><br>
+                                        <code>&lt;p class="text-uppercase"&gt;TODO EN MAYÚSCULAS&lt;/p&gt;</code><br>
+                                        <code>&lt;p class="text-capitalize"&gt;Primera letra en mayúscula&lt;/p&gt;</code>
+                                    </p>
+                                </div>
+
+                                <div class="border border-dark p-3">
+                                    <p><b>Peso y estilo de fuente</b> → Cambia grosor y estilo del texto.
+                                        <b>Ejemplo:</b><br>
+                                        <code>&lt;p class="fw-light"&gt;Texto ligero&lt;/p&gt;</code><br>
+                                        <code>&lt;p class="fw-normal"&gt;Texto normal&lt;/p&gt;</code><br>
+                                        <code>&lt;p class="fw-bold"&gt;Texto en negrita&lt;/p&gt;</code><br>
+                                        <code>&lt;p class="fst-italic"&gt;Texto en cursiva&lt;/p&gt;</code>
+                                    </p>
+                                </div>
+
+                                <div class="border border-dark p-3">
+                                    <p><b>Altura de línea (line-height)</b> → Ajusta la separación vertical entre
+                                        líneas.
+                                        <b>Ejemplo:</b><br>
+                                        <code>&lt;p class="lh-1"&gt;Altura mínima&lt;/p&gt;</code><br>
+                                        <code>&lt;p class="lh-sm"&gt;Altura pequeña&lt;/p&gt;</code><br>
+                                        <code>&lt;p class="lh-base"&gt;Altura normal&lt;/p&gt;</code><br>
+                                        <code>&lt;p class="lh-lg"&gt;Altura grande&lt;/p&gt;</code>
+                                    </p>
+                                </div>
+
+                                <div class="border border-dark p-3">
+                                    <p><b>.font-monospace</b> → Aplica tipografía estilo consola (monoespaciada).
+                                        <b>Ejemplo:</b><br>
+                                        <code>&lt;p class="font-monospace"&gt;Texto estilo consola&lt;/p&gt;</code>
+                                    </p>
+                                </div>
+
+
+
                             </div>
-
-                            <div class="border border-dark p-3">
-                                <p><b>.lead</b> → texto destacado, más grande y con más espacio.
-                                    <b>Ejemplo:</b><br>
-                                    <code>&lt;p class="lead"&gt;Texto destacado&lt;/p&gt;</code>
-                                </p>
-
-                                <p><b>.small</b> → texto más pequeño.
-                                    <b>Ejemplo:</b><br>
-                                    <code>&lt;p class="small"&gt;Texto pequeño&lt;/p&gt;</code>
-                                </p>
-
-                                <p><b>.fw-bold</b> → texto en negrita.
-                                    <b>Ejemplo:</b><br>
-                                    <code>&lt;p class="fw-bold"&gt;Texto en negrita&lt;/p&gt;</code>
-                                </p>
-
-                                <p><b>.text-muted</b> → texto apagado/gris.
-                                    <b>Ejemplo:</b><br>
-                                    <code>&lt;p class="text-muted"&gt;Texto apagado&lt;/p&gt;</code>
-                                </p>
-                            </div>
-
-                            <div class="border border-dark p-3">
-                                <p><b>Colores de texto</b> → Cambian el color del texto.
-                                    <b>Ejemplo:</b><br>
-                                    <code>&lt;p class="text-primary"&gt;Texto azul&lt;/p&gt;</code><br>
-                                    <code>&lt;p class="text-danger"&gt;Texto rojo&lt;/p&gt;</code><br>
-                                    <code>&lt;p class="text-success"&gt;Texto verde&lt;/p&gt;</code><br>
-                                    <code>&lt;p class="text-warning"&gt;Texto amarillo&lt;/p&gt;</code><br>
-                                    <code>&lt;p class="text-info"&gt;Texto celeste&lt;/p&gt;</code>
-                                </p>
-                            </div>
-
-                            <div class="border border-dark p-3">
-                                <p><b>Alineación de texto</b> → Controla cómo se alinea el contenido.
-                                    <b>Ejemplo:</b><br>
-                                    <code>&lt;p class="text-start"&gt;Texto a la izquierda&lt;/p&gt;</code><br>
-                                    <code>&lt;p class="text-center"&gt;Texto centrado&lt;/p&gt;</code><br>
-                                    <code>&lt;p class="text-end"&gt;Texto a la derecha&lt;/p&gt;</code>
-                                </p>
-                            </div>
-
-                            <div class="border border-dark p-3">
-                                <p><b>Transformación de texto</b> → Cambia el estilo de escritura.
-                                    <b>Ejemplo:</b><br>
-                                    <code>&lt;p class="text-lowercase"&gt;todo en minúsculas&lt;/p&gt;</code><br>
-                                    <code>&lt;p class="text-uppercase"&gt;TODO EN MAYÚSCULAS&lt;/p&gt;</code><br>
-                                    <code>&lt;p class="text-capitalize"&gt;Primera letra en mayúscula&lt;/p&gt;</code>
-                                </p>
-                            </div>
-
-                            <div class="border border-dark p-3">
-                                <p><b>Peso y estilo de fuente</b> → Cambia grosor y estilo del texto.
-                                    <b>Ejemplo:</b><br>
-                                    <code>&lt;p class="fw-light"&gt;Texto ligero&lt;/p&gt;</code><br>
-                                    <code>&lt;p class="fw-normal"&gt;Texto normal&lt;/p&gt;</code><br>
-                                    <code>&lt;p class="fw-bold"&gt;Texto en negrita&lt;/p&gt;</code><br>
-                                    <code>&lt;p class="fst-italic"&gt;Texto en cursiva&lt;/p&gt;</code>
-                                </p>
-                            </div>
-
-                            <div class="border border-dark p-3">
-                                <p><b>Altura de línea (line-height)</b> → Ajusta la separación vertical entre líneas.
-                                    <b>Ejemplo:</b><br>
-                                    <code>&lt;p class="lh-1"&gt;Altura mínima&lt;/p&gt;</code><br>
-                                    <code>&lt;p class="lh-sm"&gt;Altura pequeña&lt;/p&gt;</code><br>
-                                    <code>&lt;p class="lh-base"&gt;Altura normal&lt;/p&gt;</code><br>
-                                    <code>&lt;p class="lh-lg"&gt;Altura grande&lt;/p&gt;</code>
-                                </p>
-                            </div>
-
-                            <div class="border border-dark p-3">
-                                <p><b>.font-monospace</b> → Aplica tipografía estilo consola (monoespaciada).
-                                    <b>Ejemplo:</b><br>
-                                    <code>&lt;p class="font-monospace"&gt;Texto estilo consola&lt;/p&gt;</code>
-                                </p>
-                            </div>
-
-
-
                         </div>
-                    </div>
-                </section>
+                    </section>
 
-                <!--todo: ================ Colores y utilidades básicas ==================== -->
-                <section id="colorUtilidad">
+                    <!--todo: ================ Colores y utilidades básicas ==================== -->
+                    <section id="colorUtilidad">
 
-                    <!--todo: ====== Colores de texto ====== -->
-                    <div class="container">
-                        <h2 class="text-white bg-dark text-center my-3 py-2">Colores y utilidades básicas</h2>
-                        <h5 class="bg-dark text-white py-1 mt-3 text-center">Colores de texto</h5>
+                        <!--todo: ====== Colores de texto ====== -->
+                        <div class="container">
+                            <h2 class="text-white bg-dark text-center my-3 py-2">Colores y utilidades básicas</h2>
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Colores de texto</h5>
 
-                        <div>
+                            <div>
+                                <div class="border border-dark p-3 bg-body-secondary">
+                                    <p><b>Colores de texto (.text-*)</b> → Cambian el color del texto según la paleta de
+                                        Bootstrap.</p>
+                                    <b>Ejemplo:</b><br>
+
+                                    <code
+                                        class="text-dark">&lt;p class="text-primary"&gt;<span class="text-primary">TEXTO AZUL</span> (primary)&lt;/p&gt;</code><br>
+                                    <code
+                                        class="text-dark">&lt;p class="text-success"&gt;<span class="text-success">TEXTO VERDE</span> (success)&lt;/p&gt;</code><br>
+                                    <code
+                                        class="text-dark">&lt;p class="text-danger"&gt;<span class="text-danger">TEXTO ROJO</span> (danger)&lt;/p&gt;</code><br>
+                                    <code
+                                        class="text-dark">&lt;p class="text-warning"&gt;<span class="text-warning">TEXTO AMARILLO</span> (warning)&lt;/p&gt;</code><br>
+                                    <code
+                                        class="text-dark">&lt;p class="text-info"&gt;<span class="text-info">TEXTO CELESTE</span> (info)&lt;/p&gt;</code><br>
+                                    <code
+                                        class="text-dark">&lt;p class="text-dark"&gt;<span class="text-dark">TEXTO OSCURO</span> (dark)&lt;/p&gt;</code><br>
+                                    <code
+                                        class="text-dark">&lt;p class="text-light bg-dark"&gt;<span class="text-light bg-dark">TEXTO CLARO</span> (light)&lt;/p&gt;</code><br>
+                                    <code
+                                        class="text-dark">&lt;p class="text-muted"&gt;<span class="text-muted">TEXTO ATENUADO</span> (muted)&lt;/p&gt;</code><br>
+                                    <code
+                                        class="text-dark">&lt;p class="text-white bg-dark"&gt;<span class="text-white bg-dark">TEXTO BLANCO</span> (white)&lt;/p&gt;</code><br>
+                                    <code
+                                        class="text-dark">&lt;p class="text-black-50"&gt;<span class="text-black-50">TEXTO NEGRO 50%</span> (black-50)&lt;/p&gt;</code><br>
+                                    <code
+                                        class="text-dark">&lt;p class="text-white-50 bg-dark"&gt;<span class="text-white-50 bg-dark">TEXTO BLANCO 50%</span> (white-50)&lt;/p&gt;</code>
+                                </div>
+                            </div>
+
+                            <!--todo: =====Colores de fondo======= -->
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center ">Colores de fondo</h5>
+
                             <div class="border border-dark p-3 bg-body-secondary">
-                                <p><b>Colores de texto (.text-*)</b> → Cambian el color del texto según la paleta de
-                                    Bootstrap.</p>
+                                <p><b>Colores de fondo (.bg-*)</b> → Aplican un color de fondo según la paleta de
+                                    Bootstrap.
+                                </p>
                                 <b>Ejemplo:</b><br>
 
                                 <code
-                                    class="text-dark">&lt;p class="text-primary"&gt;<span class="text-primary">TEXTO AZUL</span> (primary)&lt;/p&gt;</code><br>
+                                    class="text-dark">&lt;p class="bg-primary text-white"&gt;<span class="bg-primary text-white p-1">FONDO AZUL</span> (primary)&lt;/p&gt;</code><br>
                                 <code
-                                    class="text-dark">&lt;p class="text-success"&gt;<span class="text-success">TEXTO VERDE</span> (success)&lt;/p&gt;</code><br>
+                                    class="text-dark">&lt;p class="bg-success text-white"&gt;<span class="bg-success text-white p-1">FONDO VERDE</span> (success)&lt;/p&gt;</code><br>
                                 <code
-                                    class="text-dark">&lt;p class="text-danger"&gt;<span class="text-danger">TEXTO ROJO</span> (danger)&lt;/p&gt;</code><br>
+                                    class="text-dark">&lt;p class="bg-danger text-white"&gt;<span class="bg-danger text-white p-1">FONDO ROJO</span> (danger)&lt;/p&gt;</code><br>
                                 <code
-                                    class="text-dark">&lt;p class="text-warning"&gt;<span class="text-warning">TEXTO AMARILLO</span> (warning)&lt;/p&gt;</code><br>
+                                    class="text-dark">&lt;p class="bg-warning text-dark"&gt;<span class="bg-warning text-dark p-1">FONDO AMARILLO</span> (warning)&lt;/p&gt;</code><br>
                                 <code
-                                    class="text-dark">&lt;p class="text-info"&gt;<span class="text-info">TEXTO CELESTE</span> (info)&lt;/p&gt;</code><br>
+                                    class="text-dark">&lt;p class="bg-info text-dark"&gt;<span class="bg-info text-dark p-1">FONDO CELESTE</span> (info)&lt;/p&gt;</code><br>
                                 <code
-                                    class="text-dark">&lt;p class="text-dark"&gt;<span class="text-dark">TEXTO OSCURO</span> (dark)&lt;/p&gt;</code><br>
+                                    class="text-dark">&lt;p class="bg-dark text-white"&gt;<span class="bg-dark text-white p-1">FONDO OSCURO</span> (dark)&lt;/p&gt;</code><br>
                                 <code
-                                    class="text-dark">&lt;p class="text-light bg-dark"&gt;<span class="text-light bg-dark">TEXTO CLARO</span> (light)&lt;/p&gt;</code><br>
+                                    class="text-dark">&lt;p class="bg-light text-dark"&gt;<span class="bg-light text-dark p-1">FONDO CLARO</span> (light)&lt;/p&gt;</code><br>
                                 <code
-                                    class="text-dark">&lt;p class="text-muted"&gt;<span class="text-muted">TEXTO ATENUADO</span> (muted)&lt;/p&gt;</code><br>
+                                    class="text-dark">&lt;p class="bg-body text-dark"&gt;<span class="bg-body text-dark p-1">FONDO BODY</span> (body)&lt;/p&gt;</code><br>
                                 <code
-                                    class="text-dark">&lt;p class="text-white bg-dark"&gt;<span class="text-white bg-dark">TEXTO BLANCO</span> (white)&lt;/p&gt;</code><br>
+                                    class="text-dark">&lt;p class="bg-white text-dark"&gt;<span class="bg-white text-dark p-1">FONDO BLANCO</span> (white)&lt;/p&gt;</code><br>
                                 <code
-                                    class="text-dark">&lt;p class="text-black-50"&gt;<span class="text-black-50">TEXTO NEGRO 50%</span> (black-50)&lt;/p&gt;</code><br>
-                                <code
-                                    class="text-dark">&lt;p class="text-white-50 bg-dark"&gt;<span class="text-white-50 bg-dark">TEXTO BLANCO 50%</span> (white-50)&lt;/p&gt;</code>
+                                    class="text-dark">&lt;p class="bg-transparent text-dark"&gt;<span class="bg-transparent text-dark p-1">FONDO TRANSPARENTE</span> (transparent)&lt;/p&gt;</code>
                             </div>
                         </div>
 
-                        <!--todo: =====Colores de fondo======= -->
-                        <h5 class="bg-dark text-white py-1 mt-3 text-center ">Colores de fondo</h5>
+                        <!--todo: ====== Utilidades de espaciado ====== -->
+                        <div class="container">
+                            <h2 class="text-white bg-dark text-center my-3 py-2">Utilidades de espaciado en Bootstrap
+                            </h2>
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Clases de margen (m) y padding (p)</h5>
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Utilidades de espaciado (margin y padding)</b> → Controlan el espacio interno
+                                    (padding) y externo (margen) de los elementos.</p>
+                                <b>Ejemplo:</b><br>
 
-                        <div class="border border-dark p-3 bg-body-secondary">
-                            <p><b>Colores de fondo (.bg-*)</b> → Aplican un color de fondo según la paleta de Bootstrap.
-                            </p>
-                            <b>Ejemplo:</b><br>
+                                <code
+                                    class="text-dark">&lt;div class="m-3"&gt;Margen en todos lados (m-3)&lt;/div&gt;</code><br>
 
-                            <code
-                                class="text-dark">&lt;p class="bg-primary text-white"&gt;<span class="bg-primary text-white p-1">FONDO AZUL</span> (primary)&lt;/p&gt;</code><br>
-                            <code
-                                class="text-dark">&lt;p class="bg-success text-white"&gt;<span class="bg-success text-white p-1">FONDO VERDE</span> (success)&lt;/p&gt;</code><br>
-                            <code
-                                class="text-dark">&lt;p class="bg-danger text-white"&gt;<span class="bg-danger text-white p-1">FONDO ROJO</span> (danger)&lt;/p&gt;</code><br>
-                            <code
-                                class="text-dark">&lt;p class="bg-warning text-dark"&gt;<span class="bg-warning text-dark p-1">FONDO AMARILLO</span> (warning)&lt;/p&gt;</code><br>
-                            <code
-                                class="text-dark">&lt;p class="bg-info text-dark"&gt;<span class="bg-info text-dark p-1">FONDO CELESTE</span> (info)&lt;/p&gt;</code><br>
-                            <code
-                                class="text-dark">&lt;p class="bg-dark text-white"&gt;<span class="bg-dark text-white p-1">FONDO OSCURO</span> (dark)&lt;/p&gt;</code><br>
-                            <code
-                                class="text-dark">&lt;p class="bg-light text-dark"&gt;<span class="bg-light text-dark p-1">FONDO CLARO</span> (light)&lt;/p&gt;</code><br>
-                            <code
-                                class="text-dark">&lt;p class="bg-body text-dark"&gt;<span class="bg-body text-dark p-1">FONDO BODY</span> (body)&lt;/p&gt;</code><br>
-                            <code
-                                class="text-dark">&lt;p class="bg-white text-dark"&gt;<span class="bg-white text-dark p-1">FONDO BLANCO</span> (white)&lt;/p&gt;</code><br>
-                            <code
-                                class="text-dark">&lt;p class="bg-transparent text-dark"&gt;<span class="bg-transparent text-dark p-1">FONDO TRANSPARENTE</span> (transparent)&lt;/p&gt;</code>
-                        </div>
-                    </div>
+                                <code
+                                    class="text-dark">&lt;div class="mt-2"&gt;Margen arriba (mt-2)&lt;/div&gt;</code><br>
 
-                    <!--todo: ====== Utilidades de espaciado ====== -->
-                    <div class="container">
-                        <h2 class="text-white bg-dark text-center my-3 py-2">Utilidades de espaciado en Bootstrap</h2>
-                        <h5 class="bg-dark text-white py-1 mt-3 text-center">Clases de margen (m) y padding (p)</h5>
-                        <div class="border border-dark p-3 bg-body-secondary">
-                            <p><b>Utilidades de espaciado (margin y padding)</b> → Controlan el espacio interno
-                                (padding) y externo (margen) de los elementos.</p>
-                            <b>Ejemplo:</b><br>
+                                <code
+                                    class="text-dark">&lt;div class="ms-4"&gt;Margen izquierda/start (ms-4)&lt;/div&gt;</code><br>
 
-                            <code
-                                class="text-dark">&lt;div class="m-3"&gt;Margen en todos lados (m-3)&lt;/div&gt;</code><br>
+                                <code
+                                    class="text-dark">&lt;div class="me-5"&gt;Margen derecha/end (me-5)&lt;/div&gt;</code><br>
 
-                            <code class="text-dark">&lt;div class="mt-2"&gt;Margen arriba (mt-2)&lt;/div&gt;</code><br>
+                                <code
+                                    class="text-dark">&lt;div class="mx-auto w-50"&gt;Margen automático centrado (mx-auto)&lt;/div&gt;</code><br>
 
-                            <code
-                                class="text-dark">&lt;div class="ms-4"&gt;Margen izquierda/start (ms-4)&lt;/div&gt;</code><br>
+                                <code
+                                    class="text-dark">&lt;div class="p-3"&gt;Padding en todos lados (p-3)&lt;/div&gt;</code><br>
 
-                            <code
-                                class="text-dark">&lt;div class="me-5"&gt;Margen derecha/end (me-5)&lt;/div&gt;</code><br>
+                                <code
+                                    class="text-dark">&lt;div class="py-2 px-4"&gt;Padding vertical 2 + horizontal 4&lt;/div&gt;</code>
+                            </div>
 
-                            <code
-                                class="text-dark">&lt;div class="mx-auto w-50"&gt;Margen automático centrado (mx-auto)&lt;/div&gt;</code><br>
+                            <!--todo: ====== Direcciones de espaciado ====== -->
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Direcciones de espaciado</h5>
 
-                            <code
-                                class="text-dark">&lt;div class="p-3"&gt;Padding en todos lados (p-3)&lt;/div&gt;</code><br>
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Direcciones de espaciado</b> → Se aplican con margin (<code>m</code>) o padding
+                                    (<code>p</code>).</p>
+                                <b>Ejemplo:</b><br>
 
-                            <code
-                                class="text-dark">&lt;div class="py-2 px-4"&gt;Padding vertical 2 + horizontal 4&lt;/div&gt;</code>
-                        </div>
+                                <code
+                                    class="text-dark">&lt;div class="mt-3"&gt;Margen arriba (top)&lt;/div&gt;</code><br>
 
-                        <!--todo: ====== Direcciones de espaciado ====== -->
-                        <h5 class="bg-dark text-white py-1 mt-3 text-center">Direcciones de espaciado</h5>
+                                <code
+                                    class="text-dark">&lt;div class="mb-3"&gt;Margen abajo (bottom)&lt;/div&gt;</code><br>
 
-                        <div class="border border-dark p-3 bg-body-secondary">
-                            <p><b>Direcciones de espaciado</b> → Se aplican con margin (<code>m</code>) o padding
-                                (<code>p</code>).</p>
-                            <b>Ejemplo:</b><br>
+                                <code
+                                    class="text-dark">&lt;div class="ms-3"&gt;Margen inicio (start - izquierda LTR)&lt;/div&gt;</code><br>
 
-                            <code class="text-dark">&lt;div class="mt-3"&gt;Margen arriba (top)&lt;/div&gt;</code><br>
+                                <code
+                                    class="text-dark">&lt;div class="me-3"&gt;Margen final (end - derecha LTR)&lt;/div&gt;</code><br>
 
-                            <code class="text-dark">&lt;div class="mb-3"&gt;Margen abajo (bottom)&lt;/div&gt;</code><br>
+                                <code
+                                    class="text-dark">&lt;div class="mx-3"&gt;Margen horizontal (izq + der)&lt;/div&gt;</code><br>
 
-                            <code
-                                class="text-dark">&lt;div class="ms-3"&gt;Margen inicio (start - izquierda LTR)&lt;/div&gt;</code><br>
+                                <code
+                                    class="text-dark">&lt;div class="my-3"&gt;Margen vertical (arriba + abajo)&lt;/div&gt;</code><br>
 
-                            <code
-                                class="text-dark">&lt;div class="me-3"&gt;Margen final (end - derecha LTR)&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="mx-3"&gt;Margen horizontal (izq + der)&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="my-3"&gt;Margen vertical (arriba + abajo)&lt;/div&gt;</code><br>
-
-                            <code class="text-dark">&lt;div class="m-3"&gt;Margen en todos los lados&lt;/div&gt;</code>
-                        </div>
+                                <code
+                                    class="text-dark">&lt;div class="m-3"&gt;Margen en todos los lados&lt;/div&gt;</code>
+                            </div>
 
 
-                        <!--todo: ====== Valores de espaciado (0–5 y auto) ====== -->
-                        <h5 class="bg-dark text-white py-1 mt-3 text-center">Valores de espaciado (0–5 y auto)</h5>
+                            <!--todo: ====== Valores de espaciado (0–5 y auto) ====== -->
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Valores de espaciado (0–5 y auto)</h5>
 
-                        <div class="border border-dark p-3 bg-body-secondary">
-                            <p><b>Valores de espaciado</b> → Se aplican con margin (<code>m</code>) o padding
-                                (<code>p</code>) junto a la dirección.</p>
-                            <b>Ejemplo: Margin (m-)</b><br>
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Valores de espaciado</b> → Se aplican con margin (<code>m</code>) o padding
+                                    (<code>p</code>) junto a la dirección.</p>
+                                <b>Ejemplo: Margin (m-)</b><br>
 
-                            <code class="text-dark">&lt;div class="m-0"&gt;Espaciado 0 (0rem)&lt;/div&gt;</code><br>
+                                <code class="text-dark">&lt;div class="m-0"&gt;Espaciado 0 (0rem)&lt;/div&gt;</code><br>
 
-                            <code class="text-dark">&lt;div class="m-1"&gt;Espaciado 1 (0.25rem)&lt;/div&gt;</code><br>
+                                <code
+                                    class="text-dark">&lt;div class="m-1"&gt;Espaciado 1 (0.25rem)&lt;/div&gt;</code><br>
 
-                            <code class="text-dark">&lt;div class="m-2"&gt;Espaciado 2 (0.5rem)&lt;/div&gt;</code><br>
+                                <code
+                                    class="text-dark">&lt;div class="m-2"&gt;Espaciado 2 (0.5rem)&lt;/div&gt;</code><br>
 
-                            <code class="text-dark">&lt;div class="m-3"&gt;Espaciado 3 (1rem)&lt;/div&gt;</code><br>
+                                <code class="text-dark">&lt;div class="m-3"&gt;Espaciado 3 (1rem)&lt;/div&gt;</code><br>
 
-                            <code class="text-dark">&lt;div class="m-4"&gt;Espaciado 4 (1.5rem)&lt;/div&gt;</code><br>
+                                <code
+                                    class="text-dark">&lt;div class="m-4"&gt;Espaciado 4 (1.5rem)&lt;/div&gt;</code><br>
 
-                            <code class="text-dark">&lt;div class="m-5"&gt;Espaciado 5 (3rem)&lt;/div&gt;</code><br>
+                                <code class="text-dark">&lt;div class="m-5"&gt;Espaciado 5 (3rem)&lt;/div&gt;</code><br>
 
-                            <code
-                                class="text-dark">&lt;div class="mx-auto"&gt;Espaciado automático (solo margin)&lt;/div&gt;</code>
-                            <br> <br>
+                                <code
+                                    class="text-dark">&lt;div class="mx-auto"&gt;Espaciado automático (solo margin)&lt;/div&gt;</code>
+                                <br> <br>
 
-                            <!--todo: ====== Valores de espaciado (0–5 y auto) PADDING ====== -->
-                            <div>
-                                <p><b>Padding (p-)</b> → Funciona exactamente igual que las clases de margen
-                                    (<code>m-</code>),
-                                    pero en lugar de crear espacio externo genera espacio interno dentro del elemento.
-                                    Solo hay que cambiar la <code>m</code> por una <code>p</code> y se aplican las
-                                    mismas
-                                    direcciones (<code>t</code>, <code>b</code>, <code>s</code>, <code>e</code>,
-                                    <code>x</code>, <code>y</code>, o sin letra)
-                                    y los mismos valores (0–5). Ejemplo: <code>mt-3</code> → margen arriba,
-                                    mientras que <code>pt-3</code> → padding arriba.
+                                <!--todo: ====== Valores de espaciado (0–5 y auto) PADDING ====== -->
+                                <div>
+                                    <p><b>Padding (p-)</b> → Funciona exactamente igual que las clases de margen
+                                        (<code>m-</code>),
+                                        pero en lugar de crear espacio externo genera espacio interno dentro del
+                                        elemento.
+                                        Solo hay que cambiar la <code>m</code> por una <code>p</code> y se aplican las
+                                        mismas
+                                        direcciones (<code>t</code>, <code>b</code>, <code>s</code>, <code>e</code>,
+                                        <code>x</code>, <code>y</code>, o sin letra)
+                                        y los mismos valores (0–5). Ejemplo: <code>mt-3</code> → margen arriba,
+                                        mientras que <code>pt-3</code> → padding arriba.
+                                    </p>
+
+                                </div>
+                            </div>
+
+                            <!--todo: ====== Utilidades de tamaño ====== -->
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Utilidades de tamaño</h5>
+
+                            <!--!ANCHURA-->
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Anchura (w-)</b> → Controlan el ancho de un elemento en porcentaje o automático.
                                 </p>
+                                <b>Ejemplo:</b><br>
 
-                            </div>
-                        </div>
-
-                        <!--todo: ====== Utilidades de tamaño ====== -->
-                        <h5 class="bg-dark text-white py-1 mt-3 text-center">Utilidades de tamaño</h5>
-
-                        <!--!ANCHURA-->
-                        <div class="border border-dark p-3 bg-body-secondary">
-                            <p><b>Anchura (w-)</b> → Controlan el ancho de un elemento en porcentaje o automático.</p>
-                            <b>Ejemplo:</b><br>
-
-                            <code
-                                class="text-dark">&lt;div class="w-25"&gt;Ancho al 25% del contenedor padre&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="w-50"&gt;Ancho al 50% del contenedor padre&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="w-75"&gt;Ancho al 75% del contenedor padre&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="w-100"&gt;Ancho al 100% del contenedor padre&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="w-auto"&gt;Ancho automático según el contenido&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="mw-100"&gt;Ancho máximo 100% del contenedor padre&lt;/div&gt;</code>
-                        </div>
-
-
-                        <!--!ALTURA-->
-                        <div class="border border-dark p-3 bg-body-secondary">
-                            <p><b>Altura (h-)</b> → Controlan la altura de un elemento en porcentaje o automática.</p>
-                            <b>Ejemplo:</b><br>
-
-                            <code
-                                class="text-dark">&lt;div class="h-25"&gt;Altura al 25% del contenedor padre&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="h-50"&gt;Altura al 50% del contenedor padre&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="h-75"&gt;Altura al 75% del contenedor padre&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="h-100"&gt;Altura al 100% del contenedor padre&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="h-auto"&gt;Altura automática según el contenido&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="mh-100"&gt;Altura máxima 100% del contenedor padre&lt;/div&gt;</code>
-                        </div>
-
-
-                        <!--!VIEWPORT-->
-                        <div class="border border-dark p-3 bg-body-secondary">
-                            <p><b>Viewport (vw / vh)</b> → Controlan ancho y alto en relación al tamaño visible de la
-                                pantalla.</p>
-                            <b>Ejemplo:</b><br>
-
-                            <code
-                                class="text-dark">&lt;div class="min-vw-100"&gt;Mínimo ancho 100% del viewport (no puede ser más pequeño)&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="min-vh-100"&gt;Mínimo alto 100% del viewport (no puede ser más pequeño)&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="vw-100"&gt;Ancho igual al 100% del viewport (ocupa todo el ancho visible)&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="vh-100"&gt;Alto igual al 100% del viewport (ocupa todo el alto visible)&lt;/div&gt;</code>
-                        </div>
-
-
-
-                        <!--todo: ====== display y visibilidad ====== -->
-                        <!--! DISPLAY-->
-                        <h2 class="bg-dark text-white py-1 mt-3 text-center">display y visibilidad</h2>
-                        <div class="border border-dark p-3 bg-body-secondary">
-                            <p><b>Display (d-)</b> → Controlan el tipo de visualización de un elemento.</p>
-                            <b>Ejemplo:</b><br>
-
-                            <code
-                                class="text-dark">&lt;div class="d-none"&gt;Oculto (no se muestra en la página)&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="d-inline"&gt;Inline (en línea, no empieza en nueva fila)&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="d-inline-block"&gt;Inline-block (en línea pero con ancho/alto)&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="d-block"&gt;Block (ocupa todo el ancho, empieza en nueva fila)&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="d-flex"&gt;Flex (usa contenedor flexible)&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="d-inline-flex"&gt;Inline-flex (flex en línea)&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="d-grid"&gt;Grid (usa contenedor de cuadrícula)&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="d-table"&gt;Table (se comporta como tabla)&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="d-table-row"&gt;Table-row (se comporta como fila de tabla)&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="d-table-cell"&gt;Table-cell (se comporta como celda de tabla)&lt;/div&gt;</code>
-                        </div>
-
-
-                        <!--! VISIBILIDAD-->
-                        <div class="border border-dark p-3 bg-body-secondary">
-                            <p><b>Visibilidad</b> → Controlan si un elemento es visible u oculto,
-                                pero ocupando el mismo espacio en la página.</p>
-                            <b>Ejemplo:</b><br>
-
-                            <code
-                                class="text-dark">&lt;div class="visible"&gt;Elemento visible (se muestra normalmente)&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="invisible"&gt;Elemento invisible (no se ve, pero conserva el espacio que ocuparía)&lt;/div&gt;</code>
-                        </div>
-
-
-
-
-                        <!--todo: ======Bordes en bootstrap ====== -->
-                        <h2 class="bg-dark text-white py-1 mt-3 text-center">Bordes en bootstrap</h2>
-                        <h5 class="bg-dark text-white py-1 mt-3 text-center">Bordes básicos</h5>
-
-                        <!--! BORDES BÁSICO-->
-                        <div class="border border-dark p-3 bg-body-secondary">
-                            <p><b>Bordes básicos</b> → Permiten añadir o quitar bordes en todos los lados o en lados
-                                específicos.</p>
-                            <b>Ejemplo:</b><br>
-
-                            <code
-                                class="text-dark">&lt;div class="border"&gt;Borde en todos los lados&lt;/div&gt;</code><br>
-
-                            <code class="text-dark">&lt;div class="border-0"&gt;Sin borde&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="border-top"&gt;Borde solo arriba&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="border-end"&gt;Borde solo a la derecha (end)&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="border-bottom"&gt;Borde solo abajo&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="border-start"&gt;Borde solo a la izquierda (start)&lt;/div&gt;</code>
-                        </div>
-
-                        <!--! Colores de bordes-->
-                        <h5 class="bg-dark text-white py-1 mt-3 text-center">Colores de bordes</h5>
-
-                        <div class="border border-dark p-3 bg-body-secondary">
-                            <p><b>Colores de borde</b> → Cambian el color del borde usando la paleta de Bootstrap.</p>
-                            <b>Ejemplo:</b><br>
-
-                            <code
-                                class="text-dark">&lt;div class="border border-primary"&gt;<span class="border border-primary ">Borde azul</span> (primary)&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="border border-secondary"&gt;<span class="border border-secondary ">Borde gris</span> (secondary)&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="border border-success"&gt;<span class="border border-success ">Borde verde</span> (success)&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="border border-danger"&gt;<span class="border border-danger ">Borde rojo</span> (danger)&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="border border-warning"&gt;<span class="border border-warning ">Borde amarillo</span> (warning)&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="border border-info"&gt;<span class="border border-info">Borde celeste</span> (info)&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="border border-light"&gt;<span class="border border-light">Borde claro</span> (light)&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="border border-dark"&gt;<span class="border border-dark ">Borde oscuro</span> (dark)&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="border border-white"&gt;<span class="border border-white ">Borde blanco</span> (white)&lt;/div&gt;</code>
-                        </div>
-
-                        <!--! GROSOR DEL BORDE-->
-                        <h5 class="bg-dark text-white py-1 mt-3 text-center">Grosor del borde</h5>
-                        <div class="border border-dark p-3 bg-body-secondary">
-                            <p><b>Grosor de borde</b> → Ajustan el ancho del borde de un elemento.</p>
-                            <b>Ejemplo:</b><br>
-
-                            <code
-                                class="text-dark">&lt;div class="border border-1"&gt;<span class="border border-1 border-info">Borde fino</span> (border-1)&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="border border-2"&gt;<span class="border border-2 border-info">Borde medio</span> (border-2)&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="border border-3"&gt;<span class="border border-3 border-info">Borde grueso</span> (border-3)&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="border border-4"&gt;<span class="border border-4 border-info ">Borde más grueso</span> (border-4)&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="border border-5"&gt;<span class="border border-5 border-info ">Borde muy grueso</span> (border-5)&lt;/div&gt;</code>
-                        </div>
-
-                        <!--! BORDES REDONDEADOS-->
-                        <h5 class="bg-dark text-white py-1 mt-3 text-center">Bordes redondeados</h5>
-                        <div class="border border-dark p-3 bg-body-secondary">
-                            <p><b>Bordes redondeados</b> → Permiten aplicar diferentes radios de redondeo a las
-                                esquinas.</p>
-                            <b>Ejemplo:</b><br>
-
-                            <code
-                                class="text-dark">&lt;div class="rounded"&gt;<span class="border border-dark rounded ">Redondeado estándar</span> (.rounded)&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="rounded-0"&gt;<span class="border border-dark rounded-0">Sin redondeo</span> (.rounded-0)&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="rounded-1"&gt;<span class="border border-dark rounded-1 ">Redondeo pequeño</span> (.rounded-1)&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="rounded-2"&gt;<span class="border border-dark rounded-2 ">Redondeo medio</span> (.rounded-2)&lt;/div&gt;</code><br>
-
-                            <code
-                                class="text-dark">&lt;div class="rounded-3"&gt;<span class="border border-dark rounded-3 ">Redondeo grande</span> (.rounded-3)&lt;/div&gt;</code><br>
-                            <div class="my-3">
                                 <code
-                                    class="text-dark">&lt;div class="rounded-circle"&gt;<span class="border border-dark rounded-circle p-1 d-inline-block" style="width:3rem;height:3rem;">Círculo</span> (.rounded-circle)&lt;/div&gt;</code><br>
+                                    class="text-dark">&lt;div class="w-25"&gt;Ancho al 25% del contenedor padre&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="w-50"&gt;Ancho al 50% del contenedor padre&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="w-75"&gt;Ancho al 75% del contenedor padre&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="w-100"&gt;Ancho al 100% del contenedor padre&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="w-auto"&gt;Ancho automático según el contenido&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="mw-100"&gt;Ancho máximo 100% del contenedor padre&lt;/div&gt;</code>
                             </div>
-                            <code
-                                class="text-dark">&lt;div class="rounded-pill"&gt;<span class="border border-dark rounded-pill p-2">Forma de pastilla</span> (.rounded-pill)&lt;/div&gt;</code>
+
+
+                            <!--!ALTURA-->
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Altura (h-)</b> → Controlan la altura de un elemento en porcentaje o automática.
+                                </p>
+                                <b>Ejemplo:</b><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="h-25"&gt;Altura al 25% del contenedor padre&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="h-50"&gt;Altura al 50% del contenedor padre&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="h-75"&gt;Altura al 75% del contenedor padre&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="h-100"&gt;Altura al 100% del contenedor padre&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="h-auto"&gt;Altura automática según el contenido&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="mh-100"&gt;Altura máxima 100% del contenedor padre&lt;/div&gt;</code>
+                            </div>
+
+
+                            <!--!VIEWPORT-->
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Viewport (vw / vh)</b> → Controlan ancho y alto en relación al tamaño visible de
+                                    la
+                                    pantalla.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="min-vw-100"&gt;Mínimo ancho 100% del viewport (no puede ser más pequeño)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="min-vh-100"&gt;Mínimo alto 100% del viewport (no puede ser más pequeño)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="vw-100"&gt;Ancho igual al 100% del viewport (ocupa todo el ancho visible)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="vh-100"&gt;Alto igual al 100% del viewport (ocupa todo el alto visible)&lt;/div&gt;</code>
+                            </div>
+
+
+
+                            <!--todo: ====== display y visibilidad ====== -->
+                            <!--! DISPLAY-->
+                            <h2 class="bg-dark text-white py-1 mt-3 text-center">display y visibilidad</h2>
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Display (d-)</b> → Controlan el tipo de visualización de un elemento.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="d-none"&gt;Oculto (no se muestra en la página)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="d-inline"&gt;Inline (en línea, no empieza en nueva fila)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="d-inline-block"&gt;Inline-block (en línea pero con ancho/alto)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="d-block"&gt;Block (ocupa todo el ancho, empieza en nueva fila)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="d-flex"&gt;Flex (usa contenedor flexible)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="d-inline-flex"&gt;Inline-flex (flex en línea)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="d-grid"&gt;Grid (usa contenedor de cuadrícula)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="d-table"&gt;Table (se comporta como tabla)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="d-table-row"&gt;Table-row (se comporta como fila de tabla)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="d-table-cell"&gt;Table-cell (se comporta como celda de tabla)&lt;/div&gt;</code>
+                            </div>
+
+
+                            <!--! VISIBILIDAD-->
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Visibilidad</b> → Controlan si un elemento es visible u oculto,
+                                    pero ocupando el mismo espacio en la página.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="visible"&gt;Elemento visible (se muestra normalmente)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="invisible"&gt;Elemento invisible (no se ve, pero conserva el espacio que ocuparía)&lt;/div&gt;</code>
+                            </div>
+
+
+
+
+                            <!--todo: ======Bordes en bootstrap ====== -->
+                            <h2 class="bg-dark text-white py-1 mt-3 text-center">Bordes en bootstrap</h2>
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Bordes básicos</h5>
+
+                            <!--! BORDES BÁSICO-->
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Bordes básicos</b> → Permiten añadir o quitar bordes en todos los lados o en lados
+                                    específicos.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="border"&gt;Borde en todos los lados&lt;/div&gt;</code><br>
+
+                                <code class="text-dark">&lt;div class="border-0"&gt;Sin borde&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="border-top"&gt;Borde solo arriba&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="border-end"&gt;Borde solo a la derecha (end)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="border-bottom"&gt;Borde solo abajo&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="border-start"&gt;Borde solo a la izquierda (start)&lt;/div&gt;</code>
+                            </div>
+
+                            <!--! Colores de bordes-->
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Colores de bordes</h5>
+
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Colores de borde</b> → Cambian el color del borde usando la paleta de Bootstrap.
+                                </p>
+                                <b>Ejemplo:</b><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="border border-primary"&gt;<span class="border border-primary ">Borde azul</span> (primary)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="border border-secondary"&gt;<span class="border border-secondary ">Borde gris</span> (secondary)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="border border-success"&gt;<span class="border border-success ">Borde verde</span> (success)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="border border-danger"&gt;<span class="border border-danger ">Borde rojo</span> (danger)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="border border-warning"&gt;<span class="border border-warning ">Borde amarillo</span> (warning)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="border border-info"&gt;<span class="border border-info">Borde celeste</span> (info)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="border border-light"&gt;<span class="border border-light">Borde claro</span> (light)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="border border-dark"&gt;<span class="border border-dark ">Borde oscuro</span> (dark)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="border border-white"&gt;<span class="border border-white ">Borde blanco</span> (white)&lt;/div&gt;</code>
+                            </div>
+
+                            <!--! GROSOR DEL BORDE-->
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Grosor del borde</h5>
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Grosor de borde</b> → Ajustan el ancho del borde de un elemento.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="border border-1"&gt;<span class="border border-1 border-info">Borde fino</span> (border-1)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="border border-2"&gt;<span class="border border-2 border-info">Borde medio</span> (border-2)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="border border-3"&gt;<span class="border border-3 border-info">Borde grueso</span> (border-3)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="border border-4"&gt;<span class="border border-4 border-info ">Borde más grueso</span> (border-4)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="border border-5"&gt;<span class="border border-5 border-info ">Borde muy grueso</span> (border-5)&lt;/div&gt;</code>
+                            </div>
+
+                            <!--! BORDES REDONDEADOS-->
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Bordes redondeados</h5>
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Bordes redondeados</b> → Permiten aplicar diferentes radios de redondeo a las
+                                    esquinas.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="rounded"&gt;<span class="border border-dark rounded ">Redondeado estándar</span> (.rounded)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="rounded-0"&gt;<span class="border border-dark rounded-0">Sin redondeo</span> (.rounded-0)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="rounded-1"&gt;<span class="border border-dark rounded-1 ">Redondeo pequeño</span> (.rounded-1)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="rounded-2"&gt;<span class="border border-dark rounded-2 ">Redondeo medio</span> (.rounded-2)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="rounded-3"&gt;<span class="border border-dark rounded-3 ">Redondeo grande</span> (.rounded-3)&lt;/div&gt;</code><br>
+                                <div class="my-3">
+                                    <code
+                                        class="text-dark">&lt;div class="rounded-circle"&gt;<span class="border border-dark rounded-circle p-1 d-inline-block" style="width:3rem;height:3rem;">Círculo</span> (.rounded-circle)&lt;/div&gt;</code><br>
+                                </div>
+                                <code
+                                    class="text-dark">&lt;div class="rounded-pill"&gt;<span class="border border-dark rounded-pill p-2">Forma de pastilla</span> (.rounded-pill)&lt;/div&gt;</code>
+                            </div>
+
+
+                            <!--todo: ======SOMBRAS EN BOOTSTRAP ====== -->
+                            <h2 class="bg-dark text-white py-1 mt-3 text-center">Sombras en bootstrap</h2>
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Sombras (shadow-)</b> → Aplican distintos niveles de sombra alrededor de un
+                                    elemento.
+                                </p>
+                                <b>Ejemplo:</b><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="shadow-none"&gt;<span class="d-inline-block p-2 border shadow-none">Sin sombra</span> (.shadow-none)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="shadow-sm"&gt;<span class="d-inline-block p-2 border shadow-sm">Sombra pequeña</span> (.shadow-sm)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="shadow"&gt;<span class="d-inline-block p-2 border shadow">Sombra normal</span> (.shadow)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="shadow-lg"&gt;<span class="d-inline-block p-2 border shadow-lg">Sombra grande</span> (.shadow-lg)&lt;/div&gt;</code>
+                            </div>
+
+                            <!--todo: ======OVERFLOW EN BOOTSTRAP ====== -->
+                            <h2 class="bg-dark text-white py-1 mt-3 text-center">overflow en Bootstrap</h2>
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Overflow (overflow-)</b> → Controlan el comportamiento del contenido que se
+                                    desborda
+                                    del contenedor.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="overflow-auto"&gt;Scroll automático si se desborda&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="overflow-hidden"&gt;El contenido extra se oculta&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="overflow-visible"&gt;El contenido se muestra aunque se desborde&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="overflow-scroll"&gt;Siempre con scroll, haya desborde o no&lt;/div&gt;</code>
+                            </div>
+
+
+                            <!--todo: ======Posicionamiento EN BOOTSTRAP ====== -->
+                            <h2 class="bg-dark text-white py-1 mt-3 text-center">Posicionamiento en Bootstrap</h2>
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Posicionamiento (position-)</h5>
+                            <!--! Posicionamiento (position-)-->
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Posicionamiento (position-)</b> → Controlan cómo se coloca un elemento dentro de
+                                    su
+                                    contenedor.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="position-static"&gt;Posición estática (por defecto, sin posición especial)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="position-relative"&gt;Posición relativa (puede moverse con top, left, etc., respecto a su lugar original)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="position-absolute"&gt;Posición absoluta (se coloca respecto al primer contenedor con posición distinta a static)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="position-fixed"&gt;Posición fija (queda fijo en la ventana, aunque se haga scroll)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="position-sticky"&gt;Posición sticky (se comporta como relativa hasta que llega al límite definido, luego se queda fijo)&lt;/div&gt;</code>
+                            </div>
+
+                            <!--! FLOTADO (float-)-->
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Flotado (float-)</h5>
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Flotado (float-)</b> → Controlan la alineación flotante de un elemento dentro de
+                                    su
+                                    contenedor.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="float-start"&gt;Flotado a la izquierda (start)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="float-end"&gt;Flotado a la derecha (end)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="float-none"&gt;Sin flotado (valor por defecto)&lt;/div&gt;</code>
+                            </div>
+
+                            <!--!OPACIDAD-->
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Opacidad (opacity-)</h5>
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Opacidad (opacity-)</b> → Controlan la transparencia de un elemento.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="opacity-0"&gt;Totalmente transparente (0%)&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="opacity-25"&gt;Opacidad 25%&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="opacity-50"&gt;Opacidad 50%&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="opacity-75"&gt;Opacidad 75%&lt;/div&gt;</code><br>
+
+                                <code
+                                    class="text-dark">&lt;div class="opacity-100"&gt;Opacidad completa (100%, visible normal)&lt;/div&gt;</code>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
                         </div>
+                    </section>
 
 
-                        <!--todo: ======SOMBRAS EN BOOTSTRAP ====== -->
-                        <h2 class="bg-dark text-white py-1 mt-3 text-center">Sombras en bootstrap</h2>
-                        <div class="border border-dark p-3 bg-body-secondary">
-                            <p><b>Sombras (shadow-)</b> → Aplican distintos niveles de sombra alrededor de un elemento.
-                            </p>
-                            <b>Ejemplo:</b><br>
 
-                            <code
-                                class="text-dark">&lt;div class="shadow-none"&gt;<span class="d-inline-block p-2 border shadow-none">Sin sombra</span> (.shadow-none)&lt;/div&gt;</code><br>
 
-                            <code
-                                class="text-dark">&lt;div class="shadow-sm"&gt;<span class="d-inline-block p-2 border shadow-sm">Sombra pequeña</span> (.shadow-sm)&lt;/div&gt;</code><br>
 
-                            <code
-                                class="text-dark">&lt;div class="shadow"&gt;<span class="d-inline-block p-2 border shadow">Sombra normal</span> (.shadow)&lt;/div&gt;</code><br>
 
-                            <code
-                                class="text-dark">&lt;div class="shadow-lg"&gt;<span class="d-inline-block p-2 border shadow-lg">Sombra grande</span> (.shadow-lg)&lt;/div&gt;</code>
-                        </div>
 
-                        <!--todo: ======OVERFLOW EN BOOTSTRAP ====== -->
-                        <h2 class="bg-dark text-white py-1 mt-3 text-center">overflow en Bootstrap</h2>
-                        <div class="border border-dark p-3 bg-body-secondary">
-                            <p><b>Overflow (overflow-)</b> → Controlan el comportamiento del contenido que se desborda
-                                del contenedor.</p>
-                            <b>Ejemplo:</b><br>
 
-                            <code
-                                class="text-dark">&lt;div class="overflow-auto"&gt;Scroll automático si se desborda&lt;/div&gt;</code><br>
 
-                            <code
-                                class="text-dark">&lt;div class="overflow-hidden"&gt;El contenido extra se oculta&lt;/div&gt;</code><br>
 
-                            <code
-                                class="text-dark">&lt;div class="overflow-visible"&gt;El contenido se muestra aunque se desborde&lt;/div&gt;</code><br>
 
-                            <code
-                                class="text-dark">&lt;div class="overflow-scroll"&gt;Siempre con scroll, haya desborde o no&lt;/div&gt;</code>
-                        </div>
 
 
-                        <!--todo: ======Posicionamiento EN BOOTSTRAP ====== -->
-                        <h2 class="bg-dark text-white py-1 mt-3 text-center">Posicionamiento en Bootstrap</h2>
-                        <h5 class="bg-dark text-white py-1 mt-3 text-center">Posicionamiento (position-)</h5>
-                        <div class="border border-dark p-3 bg-body-secondary">
-                            <p><b>Posicionamiento (position-)</b> → Controlan cómo se coloca un elemento dentro de su
-                                contenedor.</p>
-                            <b>Ejemplo:</b><br>
 
-                            <code
-                                class="text-dark">&lt;div class="position-static"&gt;Posición estática (por defecto, sin posición especial)&lt;/div&gt;</code><br>
 
-                            <code
-                                class="text-dark">&lt;div class="position-relative"&gt;Posición relativa (puede moverse con top, left, etc., respecto a su lugar original)&lt;/div&gt;</code><br>
 
-                            <code
-                                class="text-dark">&lt;div class="position-absolute"&gt;Posición absoluta (se coloca respecto al primer contenedor con posición distinta a static)&lt;/div&gt;</code><br>
 
-                            <code
-                                class="text-dark">&lt;div class="position-fixed"&gt;Posición fija (queda fijo en la ventana, aunque se haga scroll)&lt;/div&gt;</code><br>
 
-                            <code
-                                class="text-dark">&lt;div class="position-sticky"&gt;Posición sticky (se comporta como relativa hasta que llega al límite definido, luego se queda fijo)&lt;/div&gt;</code>
-                        </div>
 
-                        <h5 class="bg-dark text-white py-1 mt-3 text-center">Flotado (float-)</h5>
 
-                        <div class="border border-dark p-3 bg-body-secondary">
-                            <p><b>Flotado (float-)</b> → Controlan la alineación flotante de un elemento dentro de su
-                                contenedor.</p>
-                            <b>Ejemplo:</b><br>
 
-                            <code
-                                class="text-dark">&lt;div class="float-start"&gt;Flotado a la izquierda (start)&lt;/div&gt;</code><br>
 
-                            <code
-                                class="text-dark">&lt;div class="float-end"&gt;Flotado a la derecha (end)&lt;/div&gt;</code><br>
 
-                            <code
-                                class="text-dark">&lt;div class="float-none"&gt;Sin flotado (valor por defecto)&lt;/div&gt;</code>
-                        </div>
 
-                        <h5 class="bg-dark text-white py-1 mt-3 text-center">Opacidad (opacity-)</h5>
 
-                        <div class="border border-dark p-3 bg-body-secondary">
-                            <p><b>Opacidad (opacity-)</b> → Controlan la transparencia de un elemento.</p>
-                            <b>Ejemplo:</b><br>
 
-                            <code
-                                class="text-dark">&lt;div class="opacity-0"&gt;Totalmente transparente (0%)&lt;/div&gt;</code><br>
 
-                            <code class="text-dark">&lt;div class="opacity-25"&gt;Opacidad 25%&lt;/div&gt;</code><br>
 
-                            <code class="text-dark">&lt;div class="opacity-50"&gt;Opacidad 50%&lt;/div&gt;</code><br>
 
-                            <code class="text-dark">&lt;div class="opacity-75"&gt;Opacidad 75%&lt;/div&gt;</code><br>
 
-                            <code
-                                class="text-dark">&lt;div class="opacity-100"&gt;Opacidad completa (100%, visible normal)&lt;/div&gt;</code>
-                        </div>
 
 
 
@@ -889,58 +958,15 @@
 
 
 
-                    </div>
-                </section>
 
 
 
 
 
+                </main>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            </main>
-
-
-
+            </div>
 
 
 
