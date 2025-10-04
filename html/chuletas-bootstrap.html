@@ -174,7 +174,7 @@
                     <li><a class="nav-link text-dark text-white p-3 mb-1" href="#interactivosJs"
                             data-bs-dismiss="offcanvas">Componentes
                             interactivos (requieren JS)</a></li>
-                    <li><a class="nav-link text-dark text-white p-3 mb-1" href="javascript:void(0)"
+                    <li><a class="nav-link text-dark text-white p-3 mb-1" href="#formulariosBoot"
                             data-bs-dismiss="offcanvas">Formularios</a>
                     </li>
                     <li><a class="nav-link text-dark text-white p-3 mb-1" href="javascript:void(0)"
@@ -1840,6 +1840,792 @@
 
 
                     </section>
+
+                    <!--todo: ======================= FORMULARIOS EN BOOTSTRAP ================= -->
+                    <section id="formulariosBoot">
+                        <!--!Formulario básico-->
+                        <div class="container">
+                            <h2 class="text-white bg-dark text-center my-3 py-2">Formularios (Forms) en Bootstrap</h2>
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Formulario básico (estructura con
+                                .form-label, .form-control)</h5>
+
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Formulario básico</b> → Campos de entrada con etiquetas y controles de texto.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <p>
+                                    <code class="text-dark">&lt;form&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&lt;div class="mb-3"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="exampleInputEmail1" class="form-label"&gt;Email&lt;/label&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="email" class="form-control" id="exampleInputEmail1" placeholder="nombre@ejemplo.com"&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&lt;/div&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&lt;div class="mb-3"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="exampleInputPassword1" class="form-label"&gt;Contraseña&lt;/label&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="password" class="form-control" id="exampleInputPassword1"&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&lt;/div&gt;</code><br>
+                                    <code class="text-dark">&lt;/form&gt;</code><br>
+                                </p>
+
+                                <!-- Ejemplo real -->
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            placeholder="nombre@ejemplo.com">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+
+                        <!--!Selects y Textarea-->
+                        <div class="container">
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Selects y Textarea</h5>
+
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Selects y Textarea</b> → Campos de selección y áreas de texto.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <p>
+                                    <code class="text-dark">&lt;div class="mb-3"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;label for="exampleSelect" class="form-label"&gt;Selecciona una opción&lt;/label&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;select class="form-select" id="exampleSelect"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;Opción 1&lt;/option&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;Opción 2&lt;/option&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;Opción 3&lt;/option&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&lt;/select&gt;</code><br>
+                                    <code class="text-dark">&lt;/div&gt;</code><br>
+                                </p>
+
+                                <div class="mb-3">
+                                    <label for="exampleSelect" class="form-label">Selecciona una opción</label>
+                                    <select class="form-select" id="exampleSelect">
+                                        <option>Opción 1</option>
+                                        <option>Opción 2</option>
+                                        <option>Opción 3</option>
+                                    </select>
+                                </div>
+
+                                <p>
+                                    <code class="text-dark">&lt;div class="mb-3"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;label for="exampleTextarea" class="form-label"&gt;Comentario&lt;/label&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;textarea class="form-control" id="exampleTextarea" rows="3"&gt;&lt;/textarea&gt;</code><br>
+                                    <code class="text-dark">&lt;/div&gt;</code><br>
+                                </p>
+
+                                <div class="mb-3">
+                                    <label for="exampleTextarea" class="form-label">Comentario</label>
+                                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--!Checks y Radios-->
+                        <div class="container">
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Checks y Radios</h5>
+
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Checks y Radios</b> → Casillas de verificación y botones de opción.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <p>
+                                    <code class="text-dark">&lt;div class="form-check"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;input class="form-check-input" type="checkbox" id="check1"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;label class="form-check-label" for="check1"&gt;Aceptar términos&lt;/label&gt;</code><br>
+                                    <code class="text-dark">&lt;/div&gt;</code><br>
+                                </p>
+
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="check1">
+                                    <label class="form-check-label" for="check1">Aceptar términos</label>
+                                </div>
+
+                                <p>
+                                    <code class="text-dark">&lt;div class="form-check"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;input class="form-check-input" type="radio" name="exampleRadios" id="radio1"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;label class="form-check-label" for="radio1"&gt;Opción 1&lt;/label&gt;</code><br>
+                                    <code class="text-dark">&lt;/div&gt;</code><br>
+                                </p>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="radio1">
+                                    <label class="form-check-label" for="radio1">Opción 1</label>
+                                </div>
+
+                                <p>
+                                    <code class="text-dark">&lt;div class="form-check"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;input class="form-check-input" type="radio" name="exampleRadios" id="radio2"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;label class="form-check-label" for="radio2"&gt;Opción 2&lt;/label&gt;</code><br>
+                                    <code class="text-dark">&lt;/div&gt;</code><br>
+                                </p>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="radio2">
+                                    <label class="form-check-label" for="radio2">Opción 2</label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--!Validación de formularios-->
+                        <div class="container">
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Validación de formularios</h5>
+
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Validación de formularios</b> → Bootstrap añade estilos para inputs válidos e
+                                    inválidos.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <p>
+                                    <code class="text-dark">&lt;form class="needs-validation" novalidate&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&lt;div class="mb-3"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="validationEmail" class="form-label"&gt;Email&lt;/label&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="email" class="form-control" id="validationEmail" required&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="valid-feedback"&gt;Correcto!&lt;/div&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="invalid-feedback"&gt;Introduce un email válido.&lt;/div&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&lt;/div&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;button class="btn btn-primary" type="submit"&gt;Enviar&lt;/button&gt;</code><br>
+                                    <code class="text-dark">&lt;/form&gt;</code><br>
+                                </p>
+
+                                <!-- Ejemplo real -->
+                                <form class="needs-validation" novalidate>
+                                    <div class="mb-3">
+                                        <label for="validationEmail" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="validationEmail" required>
+                                        <div class="valid-feedback">Correcto!</div>
+                                        <div class="invalid-feedback">Introduce un email válido.</div>
+                                    </div>
+                                    <button class="btn btn-primary" type="submit">Enviar</button>
+                                </form>
+                            </div>
+
+                            <script>
+                                // Script de validación Bootstrap
+                                (function () {
+                                    'use strict'
+                                    var forms = document.querySelectorAll('.needs-validation')
+                                    Array.prototype.slice.call(forms).forEach(function (form) {
+                                        form.addEventListener('submit', function (event) {
+                                            if (!form.checkValidity()) {
+                                                event.preventDefault()
+                                                event.stopPropagation()
+                                            }
+                                            form.classList.add('was-validated')
+                                        }, false)
+                                    })
+                                })()
+                            </script>
+
+                        </div>
+
+                        <!--todo:========== Switches (interruptores) y Range (sliders) =======-->
+                        <!--!Switches-->
+                        <div class="container">
+                            <h2 class="text-white bg-dark text-center my-3 py-2">Switches (interruptores) y Range
+                                (sliders)</h2>
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Switches (interruptores)</h5>
+
+
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Switches</b> → Interruptores visuales que funcionan como checkboxes.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <p>
+                                    <code class="text-dark">&lt;div class="form-check form-switch"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;input class="form-check-input" type="checkbox" id="switch1"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;label class="form-check-label" for="switch1"&gt;Activar opción&lt;/label&gt;</code><br>
+                                    <code class="text-dark">&lt;/div&gt;</code><br>
+                                </p>
+
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="switch1">
+                                    <label class="form-check-label" for="switch1">Activar opción</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--!Range-->
+                        <div class="container">
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Range (sliders)</h5>
+
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Range (sliders)</b> → Barra deslizante para seleccionar un valor dentro de un
+                                    rango.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;label for="customRange1" class="form-label"&gt;Nivel&lt;/label&gt;</code><br>
+                                    <code
+                                        class="text-dark">&lt;input type="range" class="form-range" id="customRange1"&gt;</code><br>
+                                </p>
+
+                                <label for="customRange1" class="form-label">Nivel</label>
+                                <input type="range" class="form-range border border-secondary" id="customRange1">
+                            </div>
+                        </div>
+
+
+                        <!--todo:========== Input groups y Floating labels =======-->
+                        <!--!Input groups-->
+
+                        <div class="container">
+                            <h2 class="text-white bg-dark text-center my-3 py-2">Input groups y Floating labels</h2>
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Input groups</h5>
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Input groups</b> → Permiten añadir texto o botones antes o después de un campo de
+                                    entrada.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <p>
+                                    <code class="text-dark">&lt;div class="input-group mb-3"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;span class="input-group-text"&gt;@&lt;/span&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;input type="text" class="form-control" placeholder="Usuario"&gt;</code><br>
+                                    <code class="text-dark">&lt;/div&gt;</code><br>
+                                </p>
+
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">@</span>
+                                    <input type="text" class="form-control" placeholder="Usuario">
+                                </div>
+
+                                <p>
+                                    <code class="text-dark">&lt;div class="input-group mb-3"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;input type="text" class="form-control" placeholder="Buscar"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;button class="btn btn-outline-secondary" type="button"&gt;Ir&lt;/button&gt;</code><br>
+                                    <code class="text-dark">&lt;/div&gt;</code><br>
+                                </p>
+
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Buscar">
+                                    <button class="btn btn-outline-secondary" type="button">Ir</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--!Floating labels-->
+                        <div>
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Floating labels (etiquetas flotantes
+                                dentro del input)</h5>
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Floating labels</b> → Etiquetas que flotan dentro del campo de entrada al
+                                    escribir.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <p>
+                                    <code class="text-dark">&lt;div class="form-floating mb-3"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;input type="email" class="form-control" id="floatingInput" placeholder="nombre@ejemplo.com"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;label for="floatingInput"&gt;Email&lt;/label&gt;</code><br>
+                                    <code class="text-dark">&lt;/div&gt;</code><br>
+                                </p>
+
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInput"
+                                        placeholder="nombre@ejemplo.com">
+                                    <label for="floatingInput">Email</label>
+                                </div>
+
+                                <p>
+                                    <code class="text-dark">&lt;div class="form-floating"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;textarea class="form-control" placeholder="Escribe un comentario" id="floatingTextarea"&gt;&lt;/textarea&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;label for="floatingTextarea"&gt;Comentario&lt;/label&gt;</code><br>
+                                    <code class="text-dark">&lt;/div&gt;</code><br>
+                                </p>
+
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Escribe un comentario"
+                                        id="floatingTextarea"></textarea>
+                                    <label for="floatingTextarea">Comentario</label>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </section>
+
+                    <!--todo: ======================= Layout avanzado ================= -->
+                    <section id="layoutAvanzado">
+                        <h2 class="text-white bg-dark text-center my-3 py-2">Layout avanzado Bootstrap</h2>
+                        <!--todo:====== Alineación de columnas======= -->
+                        <div class="container">
+                            <h2 class="bg-dark text-white py-1 mt-3 text-center">Alineación de columnas</h2>
+
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Alineación de columnas</b> → Controlan la alineación horizontal y vertical dentro
+                                    del grid.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <div class="mb-5">
+
+                                    <div class="row border border-black bg-light mb-2 justify-content-start mb-3">
+                                        <code>&lt;div class="row justify-content-start"&gt;...&lt;/div&gt;</code><br>
+
+                                        <div class="col-4 bg-primary text-white ">Inicio</div>
+                                        <div class="col-4 bg-secondary text-white">Inicio</div>
+                                    </div>
+
+                                    <div class="row border border-black bg-light mb-2 justify-content-center mb-3">
+                                        <code>&lt;div class="row justify-content-center"&gt;...&lt;/div&gt;</code><br>
+                                        <div class="col-4 bg-primary text-white">Centro</div>
+                                        <div class="col-4 bg-secondary text-white">Centro</div>
+                                    </div>
+
+
+                                    <div class="row border border-black bg-light mb-2 justify-content-end mb-3">
+                                        <code>&lt;div class="row justify-content-end"&gt;...&lt;/div&gt;</code><br>
+
+                                        <div class="col-4 bg-primary text-white">Final</div>
+                                        <div class="col-4 bg-secondary text-white">Final</div>
+                                    </div>
+
+
+                                    <div class="row border border-black bg-light mb-2 justify-content-between mb-3">
+                                        <code>&lt;div class="row justify-content-between"&gt;...&lt;/div&gt;</code><br>
+                                        <div class="col-4 bg-primary text-white">Entre</div>
+                                        <div class="col-4 bg-secondary text-white">Entre</div>
+                                    </div>
+
+                                    <div class="row border border-black bg-light mb-2 justify-content-around mb-3">
+                                        <code>&lt;div class="row justify-content-around"&gt;...&lt;/div&gt;</code><br>
+
+                                        <div class="col-4 bg-primary text-white">Alrededor</div>
+                                        <div class="col-4 bg-secondary text-white">Alrededor</div>
+                                    </div>
+
+                                    <div class="row border border-black bg-light mb-2 justify-content-evenly mb-3">
+                                        <code>&lt;div class="row justify-content-evenly"&gt;...&lt;/div&gt;</code><br>
+                                        <div class="col-4 bg-primary text-white">Evenly</div>
+                                        <div class="col-4 bg-secondary text-white">Evenly</div>
+                                    </div>
+                                </div>
+
+
+                                <div>
+                                    <div class="row border border-black bg-light mb-2 align-items-start mb-3"
+                                        style="height: 100px;">
+                                        <code>&lt;div class="row align-items-start"&gt;...&lt;/div&gt;</code><br>
+                                        <div class="col bg-primary text-white">Arriba</div>
+                                        <div class="col bg-secondary text-white">Arriba</div>
+                                    </div>
+
+                                    <div class="row border border-black bg-light mb-2 align-items-center mb-3"
+                                        style="height: 100px;">
+                                        <code>&lt;div class="row align-items-center"&gt;...&lt;/div&gt;</code><br>
+
+                                        <div class="col bg-primary text-white">Centro</div>
+                                        <div class="col bg-secondary text-white">Centro</div>
+                                    </div>
+
+                                    <div class="row border border-black bg-light mb-2 align-items-end mb-3"
+                                        style="height: 100px;">
+                                        <code>&lt;div class="row align-items-end"&gt;...&lt;/div&gt;</code><br>
+
+                                        <div class="col bg-primary text-white">Abajo</div>
+                                        <div class="col bg-secondary text-white">Abajo</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--todo: ============ Orden de columnas ========-->
+                        <div class="container">
+                            <h2 class="text-white bg-dark text-center my-3 py-2">Orden de columnas (order-*)</h2>
+
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Orden de columnas (order-)</b> → Permiten cambiar el orden de las columnas sin
+                                    modificar el HTML.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <p>
+                                    <code class="text-dark">&lt;div class="row"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;div class="col order-3 bg-primary text-white"&gt;Primera en HTML, tercera en pantalla&lt;/div&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;div class="col order-1 bg-success text-white"&gt;Segunda en HTML, primera en pantalla&lt;/div&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;div class="col order-2 bg-danger text-white"&gt;Tercera en HTML, segunda en pantalla&lt;/div&gt;</code><br>
+                                    <code class="text-dark">&lt;/div&gt;</code><br>
+                                </p>
+
+                                <div class="row">
+                                    <div class="col order-3 bg-primary text-white">Primera en HTML, tercera en pantalla
+                                    </div>
+                                    <div class="col order-1 bg-success text-white">Segunda en HTML, primera en pantalla
+                                    </div>
+                                    <div class="col order-2 bg-danger text-white">Tercera en HTML, segunda en pantalla
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--todo: ============ Offsets (offset-*) ========-->
+                        <div class="container">
+
+                            <h2 class="text-white bg-dark text-center my-3 py-2">Offsets (offset-*)</h2>
+
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Offsets (offset-)</b> → Añaden espacio a la izquierda de una columna para
+                                    desplazarla dentro de la fila.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <p>
+                                    <code class="text-dark">&lt;div class="row"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;div class="col-4 bg-primary text-white"&gt;Columna normal&lt;/div&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;div class="col-4 offset-4 bg-success text-white"&gt;Columna desplazada 4&lt;/div&gt;</code><br>
+                                    <code class="text-dark">&lt;/div&gt;</code><br>
+                                </p>
+
+                                <div class="row mb-2">
+                                    <div class="col-4 bg-primary text-white">Columna normal</div>
+                                    <div class="col-4 offset-4 bg-success text-white">Columna desplazada 4</div>
+                                </div>
+
+                                <p>
+                                    <code class="text-dark">&lt;div class="row"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;div class="col-3 offset-3 bg-danger text-white"&gt;Columna desplazada 3&lt;/div&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;div class="col-3 offset-3 bg-warning text-dark"&gt;Columna desplazada 3&lt;/div&gt;</code><br>
+                                    <code class="text-dark">&lt;/div&gt;</code><br>
+                                </p>
+
+                                <div class="row">
+                                    <div class="col-3 offset-3 bg-danger text-white">Columna desplazada 3</div>
+                                    <div class="col-3 offset-3 bg-warning text-dark">Columna desplazada 3</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--todo: ============ Anidamiento de columnas (nested rows)========-->
+                        <div class="container">
+                            <h2 class="text-white bg-dark text-center my-3 py-2">Anidamiento de columnas (nested rows)
+                            </h2>
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Anidamiento de columnas</b> → Se pueden meter filas (<code>.row</code>) dentro de
+                                    columnas para crear estructuras más complejas.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <p>
+                                    <code class="text-dark">&lt;div class="row"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;div class="col-6 bg-primary text-white"&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;Columna principal</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="row"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-6 bg-success text-white"&gt;Anidada 1&lt;/div&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-6 bg-danger text-white"&gt;Anidada 2&lt;/div&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&lt;/div&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;div class="col-6 bg-warning text-dark"&gt;Columna normal&lt;/div&gt;</code><br>
+                                    <code class="text-dark">&lt;/div&gt;</code><br>
+                                </p>
+
+                                <div class="row">
+                                    <div class="col-6 bg-primary text-white">
+                                        Columna principal
+                                        <div class="row">
+                                            <div class="col-6 bg-success text-white">Anidada 1</div>
+                                            <div class="col-6 bg-danger text-white">Anidada 2</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 bg-warning text-dark">Columna normal</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <!--todo: ======================= Helpers útiles ================= -->
+                    <section>
+                        <h2 class="text-white bg-dark text-center my-3 py-2">Helpers útiles</h2>
+                        <!--!Ratio-->
+                        <div class="container">
+                            <h2 class="text-white bg-dark text-center my-3 py-2">Ratio</h2>
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Ratio</b> → Mantiene proporciones (aspect ratio) en iframes, videos o elementos
+                                    embebidos.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <p>
+                                    <code class="text-dark">&lt;div class="ratio ratio-16x9"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;iframe src="https://www.youtube.com/embed/zpOULjyy-n8" title="YouTube video" allowfullscreen&gt;&lt;/iframe&gt;</code><br>
+                                    <code class="text-dark">&lt;/div&gt;</code><br>
+                                </p>
+
+                                <div>
+                                    <p>ratio ratio-1x1 → Mantiene proporción cuadrada (1:1).</p>
+                                    <p>ratio ratio-4x3 → Mantiene proporción clásica de pantalla (4:3).</p>
+                                    <p>ratio ratio-16x9 → Mantiene proporción panorámica estándar (16:9).</p>
+                                    <p>ratio ratio-21x9 → Mantiene proporción ultra panorámica (21:9).</p>
+                                </div>
+
+                                <div class="ratio ratio-16x9">
+                                    <iframe src="https://www.youtube.com/embed/zpOULjyy-n8" title="YouTube video"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--!Visually hidden-->
+                        <div>
+                            <h2 class="text-white bg-dark text-center my-3 py-2">Visually hidden</h2>
+
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Visually hidden</b> → Texto invisible en pantalla pero accesible para lectores de
+                                    pantalla (útil en accesibilidad).</p>
+                                <b>Ejemplo:</b><br>
+
+                                <p>
+                                    <code class="text-dark">&lt;button class="btn btn-primary"&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;🔍 Buscar</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;span class="visually-hidden"&gt;en la página&lt;/span&gt;</code><br>
+                                    <code class="text-dark">&lt;/button&gt;</code><br>
+                                </p>
+
+                                <button class="btn btn-primary">
+                                    🔍 Buscar <span class="visually-hidden">en la página</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!--!Stretched link-->
+                        <div class="container">
+                            <h2 class="text-white bg-dark text-center my-3 py-2">Stretched link</h2>
+
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Stretched link</b> → Expande un enlace para que toda la caja del contenedor sea
+                                    clicable.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <p>
+                                    <code class="text-dark">&lt;div class="card" style="width: 18rem;"&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&lt;div class="card-body"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5 class="card-title"&gt;Título&lt;/h5&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="card-text"&gt;Texto dentro de la tarjeta.&lt;/p&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="stretched-link"&gt;Ir al enlace&lt;/a&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&lt;/div&gt;</code><br>
+                                    <code class="text-dark">&lt;/div&gt;</code><br>
+                                </p>
+
+                                <div class="card" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Título</h5>
+                                        <p class="card-text">Texto dentro de la tarjeta.</p>
+                                        <a href="#" class="stretched-link">Ir al enlace</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--!Clearfix-->
+                        <div class="container">
+                            <h2 class="text-white bg-dark text-center my-3 py-2">Clearfix</h2>
+
+
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Clearfix</b> → Fuerza a que un contenedor reconozca elementos flotantes
+                                    (<code>float</code>) en su interior.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <p>
+                                    <code class="text-dark">&lt;div class="bg-light border clearfix"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;div class="float-start bg-primary text-white p-2"&gt;Izquierda&lt;/div&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;div class="float-end bg-success text-white p-2"&gt;Derecha&lt;/div&gt;</code><br>
+                                    <code class="text-dark">&lt;/div&gt;</code><br>
+                                </p>
+
+                                <div class="bg-light border clearfix">
+                                    <div class="float-start bg-primary text-white p-2">Izquierda</div>
+                                    <div class="float-end bg-success text-white p-2">Derecha</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--!Helpers de enlaces (.link-*)-->
+                        <div class="container">
+                            <h2 class="text-white bg-dark text-center my-3 py-2">Helpers de enlaces (.link-*)</h2>
+
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Helpers de enlaces (link-*)</b> → Cambian el color de los enlaces usando la paleta
+                                    de Bootstrap.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;a href="#" class="link-primary"&gt;Enlace primary&lt;/a&gt;</code><br>
+                                    <a href="#" class="link-primary">Enlace primary</a>
+                                </p>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;a href="#" class="link-success"&gt;Enlace success&lt;/a&gt;</code><br>
+                                    <a href="#" class="link-success">Enlace success</a>
+                                </p>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;a href="#" class="link-danger"&gt;Enlace danger&lt;/a&gt;</code><br>
+                                    <a href="#" class="link-danger">Enlace danger</a>
+                                </p>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;a href="#" class="link-warning"&gt;Enlace warning&lt;/a&gt;</code><br>
+                                    <a href="#" class="link-warning">Enlace warning</a>
+                                </p>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;a href="#" class="link-info"&gt;Enlace info&lt;/a&gt;</code><br>
+                                    <a href="#" class="link-info">Enlace info</a>
+                                </p>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;a href="#" class="link-dark"&gt;Enlace dark&lt;/a&gt;</code><br>
+                                    <a href="#" class="link-dark">Enlace dark</a>
+                                </p>
+                            </div>
+
+
+
+                        </div>
+
+                        <!--!Helpers de posición-->
+                        <div class="container">
+                            <h2 class="text-white bg-dark text-center my-3 py-2">Helpers de posición</h2>
+
+
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Helpers de posición</b> → Permiten colocar elementos fácilmente con clases de
+                                    posición.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;div class="position-relative bg-light border" style="height:150px;"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;div class="position-absolute top-0 start-0 bg-primary text-white p-1"&gt;Arriba izquierda&lt;/div&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;div class="position-absolute top-0 end-0 bg-success text-white p-1"&gt;Arriba derecha&lt;/div&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;div class="position-absolute bottom-0 start-0 bg-danger text-white p-1"&gt;Abajo izquierda&lt;/div&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;div class="position-absolute bottom-0 end-0 bg-warning text-dark p-1"&gt;Abajo derecha&lt;/div&gt;</code><br>
+                                    <code class="text-dark">&lt;/div&gt;</code><br>
+                                </p>
+
+                                <div class="position-relative bg-light border" style="height:150px;">
+                                    <div class="position-absolute top-0 start-0 bg-primary text-white p-1">Arriba
+                                        izquierda</div>
+                                    <div class="position-absolute top-0 end-0 bg-success text-white p-1">Arriba derecha
+                                    </div>
+                                    <div class="position-absolute bottom-0 start-0 bg-danger text-white p-1">Abajo
+                                        izquierda</div>
+                                    <div class="position-absolute bottom-0 end-0 bg-warning text-dark p-1">Abajo derecha
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </section>
+
+
+
+
+
+
 
 
 

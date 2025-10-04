@@ -18,9 +18,10 @@ Es mi propio manual de referencia para repasar rápido, con ejemplos prácticos 
 
 - ✅ Sección de **HTML5** terminada  
 - ✅ Sección de **CSS3** terminada  
-- 🚧 Próximamente: **Bootstrap 5**  
+- ✅ Sección de **Bootstrap 5** terminada 
 - 🚧 Próximamente: **JavaScript**  
-- 🎨 Próximamente: **Mejoras visuales y diseño más atractivo**  
+- 🎨 Próximamente: **Mejoras visuales y diseño más atractivo**
+- 📱💻🖥️ Próximamente: **Responsividad garantizada**
 
 ---
 
@@ -28,24 +29,34 @@ Es mi propio manual de referencia para repasar rápido, con ejemplos prácticos 
 
 - HTML5  
 - CSS3  
-- [Bootstrap 5](https://getbootstrap.com/) *(en preparación)*  
+- [Bootstrap 5](https://getbootstrap.com/) 
 - JavaScript *(en preparación)*  
 
 ---
 
 ## 📂 Estructura del proyecto
 
-/DevChuletas  
-│  
-├── index.html  
-├── css/  
-│   └── estilos.css  
-├── media/  
-│   └── img/  
-├── secciones/  
-│   ├── html.html  
-│   └── css3.html  
-└── README.md  
+/WEB-CHULETA
+│
+├── css3/
+│   ├── chuletas-bootstrap.css
+│   ├── chuletas-css.css
+│   ├── chuletas-html.css
+│   └── estilos-nav-2sidebar.css
+│
+├── html/
+│   ├── chuletas-bootstrap.html
+│   └── chuletas-css.html
+│
+├── js/
+│   └── script-layout.js
+│
+├── media/
+│
+├── index.html
+└── README.md
+
+
 
 ---
 
