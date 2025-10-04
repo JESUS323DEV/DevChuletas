@@ -171,7 +171,7 @@
                     <li><a class="nav-link text-dark text-white p-3 mb-1" href="#colorUtilidad"
                             data-bs-dismiss="offcanvas">Colores y
                             utilidades básicas</a></li>
-                    <li><a class="nav-link text-dark text-white p-3 mb-1" href="#texto-parrafo"
+                    <li><a class="nav-link text-dark text-white p-3 mb-1" href="#interactivosJs"
                             data-bs-dismiss="offcanvas">Componentes
                             interactivos (requieren JS)</a></li>
                     <li><a class="nav-link text-dark text-white p-3 mb-1" href="javascript:void(0)"
@@ -191,7 +191,7 @@
             <!--!===============MAIN-CENTRAL-SE-VISUALIZA-EN-MÓVILES-Y-ESCRITORIOS=================-->
             <div class="cont-main">
                 <main class="col-12 col-xl-8   mx-auto ">
-                    <!--todo: ====== ESTRUCTURA BASE ======-->
+                    <!--todo: ======================== ESTRUCTURA BASE =============================-->
                     <section id="estructuraBoot">
                         <h2 class="text-white bg-dark text-center py-2">Estructura Bootstrap</h2>
                         <h5 class="bg-dark text-white py-1 mt-3 text-center">INSTALACIÓN</h5>
@@ -269,7 +269,7 @@
                         </div>
                     </section>
 
-                    <!--todo: ====== Tipografía y textos ====== -->
+                    <!--todo: ======================= Tipografía y textos ================= -->
                     <section id="textBoot">
                         <div class="container">
                             <h2 class="text-white bg-dark text-center my-3 py-2">Tipografía y textos </h2>
@@ -918,7 +918,928 @@
                         </div>
                     </section>
 
+                    <!--todo: ================ Componentes interactivos de Bootstrap ==================== -->
+                    <section id="interactivosJs">
+                        <!--!Alerts-->
+                        <div class="container">
+                            <h2 class="text-white bg-dark text-center my-3 py-2">Componentes interactivos de Bootstrap
+                                con
+                                JS</h2>
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">componentes interactivos Alerts</h5>
 
+
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Alerts (alert-)</b> → Muestran mensajes de aviso o notificación con diferentes
+                                    estilos.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <div>
+                                    <code
+                                        class="text-dark">&lt;div class="alert alert-primary" role="alert"&gt;Alerta azul (primary)&lt;/div&gt;</code><br>
+                                    <div class="alert alert-primary" role="alert">Alerta azul (primary)</div>
+                                </div>
+
+                                <div>
+                                    <code
+                                        class="text-dark">&lt;div class="alert alert-success" role="alert"&gt;Alerta verde (success)&lt;/div&gt;</code><br>
+                                    <div class="alert alert-success" role="alert">Alerta verde (success)</div>
+                                </div>
+
+                                <div>
+                                    <code
+                                        class="text-dark">&lt;div class="alert alert-danger" role="alert"&gt;Alerta roja (danger)&lt;/div&gt;</code><br>
+                                    <div class="alert alert-danger" role="alert">Alerta roja (danger)</div>
+                                </div>
+
+                                <div>
+                                    <code
+                                        class="text-dark">&lt;div class="alert alert-warning" role="alert"&gt;Alerta amarilla (warning)&lt;/div&gt;</code><br>
+                                    <div class="alert alert-warning" role="alert">Alerta amarilla (warning)</div>
+                                </div>
+
+                                <div>
+                                    <code
+                                        class="text-dark">&lt;div class="alert alert-info" role="alert"&gt;Alerta celeste (info)&lt;/div&gt;</code><br>
+                                    <div class="alert alert-info" role="alert">Alerta celeste (info)</div>
+                                </div>
+
+                                <div>
+                                    <code
+                                        class="text-dark">&lt;div class="alert alert-light" role="alert"&gt;Alerta clara (light)&lt;/div&gt;</code><br>
+                                    <div class="alert alert-light" role="alert">Alerta clara (light)</div>
+                                </div>
+
+                                <div>
+                                    <code
+                                        class="text-dark">&lt;div class="alert alert-dark" role="alert"&gt;Alerta oscura (dark)&lt;/div&gt;</code><br>
+                                    <div class="alert alert-dark" role="alert">Alerta oscura (dark)</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--!Badges-->
+                        <div class="container">
+
+                            <h5 class="text-white bg-dark text-center my-3 py-2">Badges (Insignias / Etiquetas
+                                pequeñas)</h5>
+
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Badges (badge-)</b> → Pequeños contadores o etiquetas, se suelen usar en botones o
+                                    títulos.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <div>
+                                    <code
+                                        class="text-dark">&lt;span class="badge bg-primary"&gt;Primary&lt;/span&gt;</code><br>
+                                    <span class="badge bg-primary">Primary</span>
+                                </div>
+
+                                <div>
+                                    <code
+                                        class="text-dark">&lt;span class="badge bg-success"&gt;Success&lt;/span&gt;</code><br>
+                                    <span class="badge bg-success">Success</span>
+                                </div>
+
+                                <div>
+                                    <code
+                                        class="text-dark">&lt;span class="badge bg-danger"&gt;Danger&lt;/span&gt;</code><br>
+                                    <span class="badge bg-danger">Danger</span>
+                                </div>
+
+                                <div>
+                                    <code
+                                        class="text-dark">&lt;span class="badge bg-warning text-dark"&gt;Warning&lt;/span&gt;</code><br>
+                                    <span class="badge bg-warning text-dark">Warning</span>
+                                </div>
+
+                                <div>
+                                    <code
+                                        class="text-dark">&lt;span class="badge bg-info text-dark"&gt;Info&lt;/span&gt;</code><br>
+                                    <span class="badge bg-info text-dark">Info</span>
+                                </div>
+
+                                <div>
+                                    <code
+                                        class="text-dark">&lt;span class="badge bg-light text-dark"&gt;Light&lt;/span&gt;</code><br>
+                                    <span class="badge bg-light text-dark">Light</span>
+                                </div>
+
+                                <div>
+                                    <code
+                                        class="text-dark">&lt;span class="badge bg-dark"&gt;Dark&lt;/span&gt;</code><br>
+                                    <span class="badge bg-dark">Dark</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--todo: ========== Botones========-->
+                        <!--!Botones básicos (btn-)-->
+                        <div class="container">
+                            <h2 class="text-white bg-dark text-center my-3 py-2">Botones</h2>
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Botones básicos (btn-)</h5>
+
+
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Botones (btn-)</b> → Estilos de botones con diferentes colores y variantes.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <div>
+                                    <code
+                                        class="text-dark">&lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;</code><br>
+                                    <button class="btn btn-primary">Primary</button>
+                                </div>
+
+                                <div>
+                                    <code
+                                        class="text-dark">&lt;button class="btn btn-success"&gt;Success&lt;/button&gt;</code><br>
+                                    <button class="btn btn-success">Success</button>
+                                </div>
+
+                                <div>
+                                    <code
+                                        class="text-dark">&lt;button class="btn btn-danger"&gt;Danger&lt;/button&gt;</code><br>
+                                    <button class="btn btn-danger">Danger</button>
+                                </div>
+
+                                <div>
+                                    <code
+                                        class="text-dark">&lt;button class="btn btn-warning text-dark"&gt;Warning&lt;/button&gt;</code><br>
+                                    <button class="btn btn-warning text-dark">Warning</button>
+                                </div>
+
+                                <div>
+                                    <code
+                                        class="text-dark">&lt;button class="btn btn-info text-dark"&gt;Info&lt;/button&gt;</code><br>
+                                    <button class="btn btn-info text-dark">Info</button>
+                                </div>
+
+                                <div>
+                                    <code
+                                        class="text-dark">&lt;button class="btn btn-light text-dark"&gt;Light&lt;/button&gt;</code><br>
+                                    <button class="btn btn-light text-dark">Light</button>
+                                </div>
+
+                                <div>
+                                    <code
+                                        class="text-dark">&lt;button class="btn btn-dark"&gt;Dark&lt;/button&gt;</code><br>
+                                    <button class="btn btn-dark">Dark</button>
+                                </div>
+
+                                <div>
+                                    <code
+                                        class="text-dark">&lt;button class="btn btn-link"&gt;Link&lt;/button&gt;</code><br>
+                                    <button class="btn btn-link">Link</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--!Botones en grupo (btn-group)-->
+                        <div class="container">
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Botones (btn-group)</h5>
+
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Grupos de botones (btn-group)</b> → Permiten agrupar varios botones en línea como
+                                    si fueran un bloque.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <p>
+                                    <code>&lt;div class="btn-group" role="group"&gt;</code><br>
+
+
+                                    <code
+                                        class="text-dark">&lt;button class="btn btn-primary"&gt;Izquierda&lt;/button&gt;</code><br>
+                                    <code
+                                        class="text-dark">&lt;button class="btn btn-primary"&gt;Centro&lt;/button&gt;</code><br>
+                                    <code
+                                        class="text-dark">&lt;button class="btn btn-primary"&gt;Derecha&lt;/button&gt;</code><br>
+
+                                    <code> &lt;/div&gt;</code>
+                                </p>
+
+                                <div class="btn-group" role="group">
+                                    <button class="btn btn-primary">Izquierda</button>
+                                    <button class="btn btn-primary">Centro</button>
+                                    <button class="btn btn-primary">Derecha</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--!botones outline-->
+                        <div class="container">
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Botones (btn-outline-)</h5>
+
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Botones outline (btn-outline-)</b> → Botones con borde coloreado y fondo
+                                    transparente.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;button class="btn btn-outline-primary"&gt;Primary&lt;/button&gt;</code><br>
+                                    <button class="btn btn-outline-primary">Primary</button>
+                                </p>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;button class="btn btn-outline-success"&gt;Success&lt;/button&gt;</code><br>
+                                    <button class="btn btn-outline-success">Success</button>
+                                </p>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;button class="btn btn-outline-danger"&gt;Danger&lt;/button&gt;</code><br>
+                                    <button class="btn btn-outline-danger">Danger</button>
+                                </p>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;button class="btn btn-outline-warning"&gt;Warning&lt;/button&gt;</code><br>
+                                    <button class="btn btn-outline-warning">Warning</button>
+                                </p>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;button class="btn btn-outline-dark"&gt;Dark&lt;/button&gt;</code><br>
+                                    <button class="btn btn-outline-dark">Dark</button>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!--! Tamaño de botones-->
+                        <div class="container">
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Botones con tamaños (btn-lg, btn-sm)
+                            </h5>
+
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Botones: tamaños</b> → Cambian el tamaño del botón.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;button class="btn btn-primary btn-lg"&gt;Botón grande&lt;/button&gt;</code><br>
+                                    <button class="btn btn-primary btn-lg">Botón grande</button>
+                                </p>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;button class="btn btn-primary"&gt;Botón normal&lt;/button&gt;</code><br>
+                                    <button class="btn btn-primary">Botón normal</button>
+                                </p>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;button class="btn btn-primary btn-sm"&gt;Botón pequeño&lt;/button&gt;</code><br>
+                                    <button class="btn btn-primary btn-sm">Botón pequeño</button>
+                                </p>
+                            </div>
+
+
+                        </div>
+
+                        <!--!Botones: estados-->
+                        <div class="container">
+                            <h5 class="bg-dark text-white py-1 mt-3 text-center">Botones: estados</h5>
+
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Botones: estados</b> → Muestran diferentes estados de interacción.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;button class="btn btn-primary active"&gt;Activo&lt;/button&gt;</code><br>
+                                    <button class="btn btn-primary active">Activo</button>
+                                </p>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;button class="btn btn-primary"&gt;Normal&lt;/button&gt;</code><br>
+                                    <button class="btn btn-primary">Normal</button>
+                                </p>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;button class="btn btn-primary disabled"&gt;Deshabilitado&lt;/button&gt;</code><br>
+                                    <button class="btn btn-primary disabled">Deshabilitado</button>
+                                </p>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;button class="btn btn-primary" disabled&gt;Deshabilitado (atributo)&lt;/button&gt;</code><br>
+                                    <button class="btn btn-primary" disabled>Deshabilitado (atributo)</button>
+                                </p>
+                            </div>
+
+
+                        </div>
+
+                        <!--todo: ========== Collapse - dropdowns========-->
+                        <!--!Collapse-->
+                        <div class="container">
+                            <h2 class="text-white bg-dark text-center my-3 py-2">Componentes desplegables: Collapse &
+                                Dropdowns</h2>
+                            <h5 class="text-white bg-dark text-center my-3 py-2">Collapse</h5>
+
+                            <div class="border border-dark p-3 bg-body-secondary">
+
+                                <p><b>Collapse</b> → Permite mostrar u ocultar contenido al hacer clic en un botón o
+                                    enlace.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#demoCollapse"&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;Mostrar/Ocultar</code><br>
+                                    <code class="text-dark">&lt;/button&gt;</code><br>
+                                    <code class="text-dark">&lt;div class="collapse" id="demoCollapse"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;div class="card card-body"&gt;Contenido oculto que se despliega&lt;/div&gt;</code><br>
+                                    <code class="text-dark">&lt;/div&gt;</code><br>
+                                </p>
+
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#demoCollapse">
+                                    Mostrar/Ocultar
+                                </button>
+                                <div class="collapse" id="demoCollapse">
+                                    <div class="card card-body">
+                                        Contenido oculto que se despliega
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--!dropdowns-->
+                        <div>
+                            <h5 class="text-white bg-dark text-center my-3 py-2">Dropdowns</h5>
+
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Dropdowns</b> → Menús desplegables que se abren al hacer clic en un botón.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <p>
+                                    <code class="text-dark">&lt;div class="dropdown"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;Menú desplegable</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&lt;/button&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&lt;ul class="dropdown-menu"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opción 1&lt;/a&gt;&lt;/li&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opción 2&lt;/a&gt;&lt;/li&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opción 3&lt;/a&gt;&lt;/li&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&lt;/ul&gt;</code><br>
+                                    <code class="text-dark">&lt;/div&gt;</code><br>
+                                </p>
+
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown">
+                                        Menú desplegable
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                                        <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+
+                        <!--todo: ========== modales========-->
+
+                        <div class="container">
+                            <h2 class="text-white bg-dark text-center my-3 py-2">Modal (ventana emergente)</h2>
+
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Modal</b> → Ventana emergente superpuesta que se abre sobre el contenido
+                                    principal.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <p>
+                                    <code class="text-dark">&lt;!-- Botón que abre el modal --&gt;</code><br>
+                                    <code
+                                        class="text-dark">&lt;button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#demoModal"&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;Abrir Modal</code><br>
+                                    <code class="text-dark">&lt;/button&gt;</code><br><br>
+
+                                    <code class="text-dark">&lt;!-- Modal --&gt;</code><br>
+                                    <code
+                                        class="text-dark">&lt;div class="modal fade" id="demoModal" tabindex="-1"&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&lt;div class="modal-dialog"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="modal-content"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="modal-header"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5 class="modal-title"&gt;Título del Modal&lt;/h5&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="button" class="btn-close" data-bs-dismiss="modal"&gt;&lt;/button&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="modal-body"&gt;Contenido del modal&lt;/div&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="modal-footer"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="button" class="btn btn-secondary" data-bs-dismiss="modal"&gt;Cerrar&lt;/button&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="button" class="btn btn-primary"&gt;Guardar cambios&lt;/button&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&lt;/div&gt;</code><br>
+                                    <code class="text-dark">&lt;/div&gt;</code><br>
+                                </p>
+
+                                <!-- Botón real -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#demoModal">
+                                    Abrir Modal
+                                </button>
+
+                                <!-- Modal real -->
+                                <div class="modal fade" id="demoModal" tabindex="-1">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Título del Modal</h5>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Contenido del modal
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Cerrar</button>
+                                                <button type="button" class="btn btn-primary">Guardar cambios</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <!--todo: ========== Navbar (barra de navegación responsive) ========-->
+                        <div>
+                            <h2 class="text-white bg-dark text-center my-3 py-2">Navbar (barra de navegación responsive)
+                            </h2>
+
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Navbar</b> → Barra de navegación responsive con menú colapsable.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;nav class="navbar navbar-expand-lg navbar-light bg-light"&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&lt;div class="container-fluid"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="navbar-brand" href="#"&gt;MiWeb&lt;/a&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/button&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="collapse navbar-collapse" id="navbarNav"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class="navbar-nav"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;&lt;a class="nav-link active" href="#"&gt;Inicio&lt;/a&gt;&lt;/li&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#"&gt;Características&lt;/a&gt;&lt;/li&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#"&gt;Precios&lt;/a&gt;&lt;/li&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;&lt;a class="nav-link disabled"&gt;Deshabilitado&lt;/a&gt;&lt;/li&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&lt;/div&gt;</code><br>
+                                    <code class="text-dark">&lt;/nav&gt;</code><br>
+                                </p>
+
+                                <!--! Navbar real -->
+                                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                                    <div class="container-fluid">
+                                        <a class="navbar-brand" href="#">MiWeb</a>
+                                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#navbarNav">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                        <div class="collapse navbar-collapse" id="navbarNav">
+                                            <ul class="navbar-nav">
+                                                <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="#">Características</a>
+                                                </li>
+                                                <li class="nav-item"><a class="nav-link" href="#">Precios</a></li>
+                                                <li class="nav-item"><a class="nav-link disabled">Deshabilitado</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+
+
+                        </div>
+
+                        <!--todo: ========== offcanvas========-->
+                        <div class="container">
+                            <h2 class="text-white bg-dark text-center my-3 py-2">Offcanvas (menú lateral que
+                                aparece/desaparece)
+                            </h2>
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Offcanvas</b> → Menú lateral que se abre y cierra desde un botón.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <p>
+                                    <code class="text-dark">&lt;!-- Botón que abre el offcanvas --&gt;</code><br>
+                                    <code
+                                        class="text-dark">&lt;button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demoOffcanvas"&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;Abrir menú lateral</code><br>
+                                    <code class="text-dark">&lt;/button&gt;</code><br><br>
+
+                                    <code class="text-dark">&lt;!-- Offcanvas --&gt;</code><br>
+                                    <code
+                                        class="text-dark">&lt;div class="offcanvas offcanvas-start" tabindex="-1" id="demoOffcanvas"&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&lt;div class="offcanvas-header"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5 class="offcanvas-title"&gt;Menú&lt;/h5&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="button" class="btn-close" data-bs-dismiss="offcanvas"&gt;&lt;/button&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&lt;/div&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&lt;div class="offcanvas-body"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;Contenido del menú lateral</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&lt;/div&gt;</code><br>
+                                    <code class="text-dark">&lt;/div&gt;</code><br>
+                                </p>
+
+                                <!-- Botón real -->
+                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#demoOffcanvas">
+                                    Abrir menú lateral
+                                </button>
+
+                                <!-- Offcanvas real -->
+                                <div class="offcanvas offcanvas-start" tabindex="-1" id="demoOffcanvas">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title">Menú</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        Contenido del menú lateral
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <!--todo: ========== Pagination ========-->
+                        <div class="container">
+                            <h2 class="text-white bg-dark text-center my-3 py-2">Pagination Navegación con enlaces
+                                numerados</h2>
+
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Pagination</b> → Navegación con enlaces numerados para moverse entre páginas.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <p>
+                                    <code class="text-dark">&lt;nav aria-label="Page navigation"&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&lt;ul class="pagination"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;Anterior&lt;/a&gt;&lt;/li&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;1&lt;/a&gt;&lt;/li&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="page-item active"&gt;&lt;a class="page-link" href="#"&gt;2&lt;/a&gt;&lt;/li&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;3&lt;/a&gt;&lt;/li&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;Siguiente&lt;/a&gt;&lt;/li&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&lt;/ul&gt;</code><br>
+                                    <code class="text-dark">&lt;/nav&gt;</code><br>
+                                </p>
+
+                                <!-- Ejemplo real -->
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination">
+                                        <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+
+
+                        </div>
+
+
+                        <!--todo: ========== Popovers ========-->
+                        <div class="container">
+
+                            <h2 class="text-white bg-dark text-center my-3 py-2">Popovers Ventanas flotantes con texto
+                            </h2>
+
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Popovers</b> → Ventanas flotantes con texto que aparecen al hacer clic en un
+                                    elemento.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Título" data-bs-content="Este es el contenido del popover."&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;Haz clic para ver popover</code><br>
+                                    <code class="text-dark">&lt;/button&gt;</code><br>
+                                </p>
+
+                                <!-- Ejemplo real -->
+                                <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover"
+                                    title="Título" data-bs-content="Este es el contenido del popover.">
+                                    Haz clic para ver popover
+                                </button>
+                            </div>
+
+                            <script>
+                                // Inicializar Popovers
+                                document.addEventListener("DOMContentLoaded", function () {
+                                    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+                                    popoverTriggerList.map(function (popoverTriggerEl) {
+                                        return new bootstrap.Popover(popoverTriggerEl)
+                                    })
+                                });
+                            </script>
+
+
+                        </div>
+
+                        <!--todo: ========== Progress (barras de progreso) ========-->
+                        <div class="container">
+
+                            <h2 class="text-white bg-dark text-center my-3 py-2">Progress (barras de progreso)
+                            </h2>
+
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Progress</b> → Barras que muestran el progreso de una tarea.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <p>
+                                    <code class="text-dark">&lt;div class="progress"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;div class="progress-bar" style="width: 25%;"&gt;25%&lt;/div&gt;</code><br>
+                                    <code class="text-dark">&lt;/div&gt;</code><br>
+                                </p>
+
+                                <div class="progress mb-2">
+                                    <div class="progress-bar" style="width: 25%;">25%</div>
+                                </div>
+
+                                <p>
+                                    <code class="text-dark">&lt;div class="progress"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;div class="progress-bar bg-success" style="width: 50%;"&gt;50%&lt;/div&gt;</code><br>
+                                    <code class="text-dark">&lt;/div&gt;</code><br>
+                                </p>
+
+                                <div class="progress mb-2">
+                                    <div class="progress-bar bg-success" style="width: 50%;">50%</div>
+                                </div>
+
+                                <p>
+                                    <code class="text-dark">&lt;div class="progress"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;div class="progress-bar bg-info" style="width: 75%;"&gt;75%&lt;/div&gt;</code><br>
+                                    <code class="text-dark">&lt;/div&gt;</code><br>
+                                </p>
+
+                                <div class="progress mb-2">
+                                    <div class="progress-bar bg-info" style="width: 75%;">75%</div>
+                                </div>
+
+                                <p>
+                                    <code class="text-dark">&lt;div class="progress"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;div class="progress-bar bg-danger" style="width: 100%;"&gt;100%&lt;/div&gt;</code><br>
+                                    <code class="text-dark">&lt;/div&gt;</code><br>
+                                </p>
+
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger" style="width: 100%;">100%</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--todo: ========== Spinners (iconos de carga) ========-->
+                        <div class="container">
+                            <h2 class="text-white bg-dark text-center my-3 py-2">Spinners (iconos de carga)
+                            </h2>
+
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Spinners</b> → Iconos animados que indican carga o procesamiento.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;div class="spinner-border text-primary" role="status"&gt;&lt;/div&gt;</code><br>
+                                <div class="spinner-border text-primary" role="status"></div>
+                                </p>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;div class="spinner-border text-success" role="status"&gt;&lt;/div&gt;</code><br>
+                                <div class="spinner-border text-success" role="status"></div>
+                                </p>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;div class="spinner-border text-danger" role="status"&gt;&lt;/div&gt;</code><br>
+                                <div class="spinner-border text-danger" role="status"></div>
+                                </p>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;div class="spinner-grow text-warning" role="status"&gt;&lt;/div&gt;</code><br>
+                                <div class="spinner-grow text-warning" role="status"></div>
+                                </p>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;div class="spinner-grow text-info" role="status"&gt;&lt;/div&gt;</code><br>
+                                <div class="spinner-grow text-info" role="status"></div>
+                                </p>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;div class="spinner-grow text-dark" role="status"&gt;&lt;/div&gt;</code><br>
+                                <div class="spinner-grow text-dark" role="status"></div>
+                                </p>
+                            </div>
+
+
+                        </div>
+
+                        <!--todo: ==========  Toast (notificaciones flotantes) ========-->
+
+                        <div class="container">
+                            <h2 class="text-white bg-dark text-center my-3 py-2">Toast (notificaciones flotantes)
+                            </h2>
+
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Toast</b> → Notificaciones flotantes que aparecen en pantalla de forma ligera.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;button type="button" class="btn btn-primary" id="liveToastBtn"&gt;Mostrar Toast&lt;/button&gt;</code><br>
+                                </p>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;div class="toast-container position-fixed bottom-0 end-0 p-3"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&lt;div id="liveToast" class="toast" role="alert"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="toast-header"&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;strong class="me-auto"&gt;Bootstrap&lt;/strong&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;small&gt;Hace 1 min&lt;/small&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="button" class="btn-close" data-bs-dismiss="toast"&gt;&lt;/button&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</code><br>
+                                    <code
+                                        class="text-dark">&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="toast-body"&gt;Hola, este es un toast.&lt;/div&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;&lt;/div&gt;</code><br>
+                                    <code class="text-dark">&lt;/div&gt;</code><br>
+                                </p>
+
+                                <!-- Ejemplo real -->
+                                <button type="button" class="btn btn-primary" id="liveToastBtn">Mostrar Toast</button>
+
+                                <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                                    <div id="liveToast" class="toast" role="alert">
+                                        <div class="toast-header">
+                                            <strong class="me-auto">Bootstrap</strong>
+                                            <small>Hace 1 min</small>
+                                            <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                                        </div>
+                                        <div class="toast-body">
+                                            Hola, este es un toast.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <script>
+                                // Inicializar Toast
+                                document.addEventListener("DOMContentLoaded", function () {
+                                    const toastTrigger = document.getElementById('liveToastBtn')
+                                    const toastLive = document.getElementById('liveToast')
+                                    if (toastTrigger) {
+                                        const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLive)
+                                        toastTrigger.addEventListener('click', () => {
+                                            toastBootstrap.show()
+                                        })
+                                    }
+                                });
+                            </script>
+
+
+                        </div>
+
+                        <!--todo: ==========  Tooltips (Pequeños mensajes flotantes) ========-->
+
+                        <div class="container">
+                            <h2 class="text-white bg-dark text-center my-3 py-2">Tooltips (Pequeños mensajes flotantes)
+                            </h2>
+
+                            <div class="border border-dark p-3 bg-body-secondary">
+                                <p><b>Tooltips</b> → Pequeños mensajes flotantes que aparecen al pasar el ratón sobre un
+                                    elemento.</p>
+                                <b>Ejemplo:</b><br>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip arriba"&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;Arriba&lt;/button&gt;</code><br>
+                                </p>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip derecha"&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;Derecha&lt;/button&gt;</code><br>
+                                </p>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip abajo"&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;Abajo&lt;/button&gt;</code><br>
+                                </p>
+
+                                <p>
+                                    <code
+                                        class="text-dark">&lt;button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip izquierda"&gt;</code><br>
+                                    <code class="text-dark">&nbsp;&nbsp;Izquierda&lt;/button&gt;</code><br>
+                                </p>
+
+                                <!-- Ejemplo real -->
+                                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Tooltip arriba">Arriba</button>
+                                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip"
+                                    data-bs-placement="right" title="Tooltip derecha">Derecha</button>
+                                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip"
+                                    data-bs-placement="bottom" title="Tooltip abajo">Abajo</button>
+                                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="Tooltip izquierda">Izquierda</button>
+                            </div>
+
+                            <script>
+                                // Inicializar Tooltips
+                                document.addEventListener("DOMContentLoaded", function () {
+                                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                                    tooltipTriggerList.map(function (tooltipTriggerEl) {
+                                        return new bootstrap.Tooltip(tooltipTriggerEl)
+                                    })
+                                });
+                            </script>
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </section>
 
 
 
