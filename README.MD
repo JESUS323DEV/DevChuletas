@@ -58,6 +58,7 @@ Es mi propio manual de referencia para repasar rápido, con ejemplos prácticos 
 
 
 
+
 ---
 
 ## 🧠 Nota personal
@@ -65,17 +66,21 @@ Es mi propio manual de referencia para repasar rápido, con ejemplos prácticos 
 Este proyecto es como mi **cuaderno digital** de desarrollo web.  
 Me ayuda a repasar lo aprendido y tenerlo siempre a mano, además de servir como ejemplo práctico de mi avance.  
 
-Ahora mismo voy por **CSS3**, pero irá creciendo con cada nueva tecnología que aprenda.  
+Ya he completado **HTML5** y **CSS3**, y ahora también tengo toda la sección de **Bootstrap** documentada.  
+El proyecto seguirá creciendo con **JavaScript** y otras tecnologías más adelante.  
+
 
 ---
 
 ## 🚀 Próximos pasos
 - [x] Completar la sección de **Html**
 - [x] Completar la sección de **CSS3**  
-- [ ] Añadir secciones de **Bootstrap** y **JavaScript**  
+- [X] Añadir secciones de **Bootstrap** 
+- [ ] Añadir secciones de **JavaScript**  
 - [ ] Incluir ejemplos interactivos  
 - [ ] Publicar en **GitHub Pages** para acceso rápido online  
 - [ ] 🎨 **Mejoras visuales y diseño más atractivo**  
+- [ ] 📱💻🖥️ **Responsividad**
 
 ---
 
